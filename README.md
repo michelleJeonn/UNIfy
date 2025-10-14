@@ -15,6 +15,8 @@ The system uses machine learning to:
 
 - **Node.js** (latest version) - [Download here](https://nodejs.org/en/download/)
 - **Python 3.8+** (for ML backend)
+- **AWS Account** (for authentication and database)
+- **AWS CLI** configured with credentials
 - **8GB+ RAM** (for TensorFlow training)
 
 ### Frontend Setup
@@ -30,10 +32,51 @@ The system uses machine learning to:
    npm install
    ```
 
-3. **Run the frontend locally**
+3. **Configure AWS credentials**
+   ```bash   
+   aws configure
+   # When prompted, enter:
+   # - AWS Access Key ID
+   # - AWS Secret Access Key
+   # - Default region name: us-east-2
+   # - Default output format: json
+   ```
+
+
+4. **Start Amplify sandbox (in a separate terminal)**
+   ```bash
+   npx ampx sandbox
+   ```
+   Keep this running during development. This creates:
+   AWS Cognito User Pool (authentication)
+   DynamoDB tables (user profiles and recommendation history)
+   **sandbox is running if it shows "Watching for file changes..."**
+
+
+5. **Create a test user**
+   Get your User Pool ID from the sandbox output, then run:
+   ```bash
+   # Replace us-east-2_XXXXXXXXX with your actual User Pool ID
+   aws cognito-idp admin-create-user \
+     --user-pool-id us-east-2_XXXXXXXXX \
+     --username test@example.com \
+     --user-attributes Name=email,Value=test@example.com Name=email_verified,Value=true \
+     --message-action SUPPRESS \
+     --region us-east-2
+
+   aws cognito-idp admin-set-user-password \
+     --user-pool-id us-east-2_XXXXXXXXX \
+     --username test@example.com \
+     --password TestPassword123! \
+     --permanent \
+     --region us-east-2
+   ```
+
+6. **Run the frontend locally**
    ```bash
    npm run dev
    ```
+
 
 ### Backend Setup (ML Pipeline)
 
@@ -275,6 +318,29 @@ UNIfy/
    - Load models once at startup
    - Cache frequently used data
    - Optimize feature encoding
+
+### Amplify Issues
+
+1. **"amplify_outputs.json not found"**
+   ```bash
+   # Make sure sandbox is running
+   npx ampx sandbox
+   ```
+2. **"Already signed in user"**
+   ```bash
+   # Clear browser storage or use incognito mode
+   # Session persistence is normal behavior
+   ```
+3. **"Can't find variable: signInUser"
+   ```bash
+   # Restart dev server
+   # Press Ctrl+C then run:
+   npm run dev
+
+   # Verify auth service exists
+   ls -la src/services/auth.ts
+   ```
+
 
 ## 🔮 Future Enhancements
 

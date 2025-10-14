@@ -1,14 +1,35 @@
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import type { FormEvent } from "react";
+import { useState, type FormEvent } from "react";
+import { signInUser } from "../services/auth";
 
 export default function Login() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Can add validation later
-    navigate("/information");
+    setIsLoading(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get('email')?.toString() || '';
+    const password = formData.get('password')?.toString() || '';
+
+    console.log('Attempting login with:', { email });
+
+    const result = await signInUser({ email, password });
+
+    if (result.success) {
+      console.log('Login successful!');
+      navigate("/information");
+    } else {
+      console.error('Login failed:', result.error);
+      setError(result.error || 'Login failed');
+    }
+
+    setIsLoading(false);
   };
 
   return (
@@ -24,6 +45,13 @@ export default function Login() {
           <h1 className="text-2xl font-bold">UNIfy</h1>
           <p className="text-gray-600 mt-2">Log in to your account</p>
         </div>
+
+        {error && (
+          <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-md">
+            <p className="text-red-800 text-sm">{error}</p>
+          </div>
+        )}
+
 
         {/* Login Form */}
         <form className="space-y-6" onSubmit={handleSubmit}>

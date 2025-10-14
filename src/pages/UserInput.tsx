@@ -12,10 +12,20 @@ export default function UserInput() {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
-
+  
     try {
       const formData = new FormData(e.currentTarget);
-
+  
+      // Get authenticated user
+      const { getAuthenticatedUser } = await import("../services/auth");
+      const authResult = await getAuthenticatedUser();
+      
+      if (!authResult.success || !authResult.user) {
+        throw new Error('You must be logged in to submit. Please log in first.');
+      }
+  
+      const userId = authResult.user.userId;
+  
       // Create student profile from form data
       const profile: StudentProfile = {
         mental_health: formData.get('mental-health')?.toString() || 'None',
@@ -24,19 +34,44 @@ export default function UserInput() {
         gpa: parseFloat(formData.get('gpa')?.toString() || '3.0'),
         severity: (formData.get('severity')?.toString() as 'mild' | 'moderate' | 'severe') || 'moderate'
       };
-
+  
       console.log('Form submitted with profile:', profile);
-
+  
+      // Save user profile to DynamoDB
+      const { saveUserProfile, saveRecommendationHistory } = await import("../services/dynamodb");
+      
+      const userProfile = {
+        userId,
+        email: formData.get('email')?.toString() || '',
+        fullName: formData.get('name')?.toString() || '',
+        school: formData.get('school')?.toString(),
+        gpa: profile.gpa,
+        mentalHealth: profile.mental_health,
+        physicalHealth: profile.physical_health,
+        severity: profile.severity,
+        courses: profile.courses,
+      };
+  
+      await saveUserProfile(userProfile);
+  
       // Get recommendations from API
       const result = await getRecommendations(profile);
-
+  
+      // Save recommendation history to DynamoDB
+      await saveRecommendationHistory({
+        userId,
+        timestamp: new Date().toISOString(),
+        recommendations: JSON.stringify(result.recommendations),
+        studentProfile: JSON.stringify(profile),
+      });
+  
       // Store recommendations in sessionStorage for the recommendations page
       sessionStorage.setItem('recommendations', JSON.stringify(result));
       sessionStorage.setItem('studentProfile', JSON.stringify(profile));
-
+  
       // Navigate to recommendations page
       navigate("/recommendations");
-
+  
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
     } finally {
