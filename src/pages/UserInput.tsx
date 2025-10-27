@@ -162,13 +162,11 @@ export default function UserInput() {
             <label className="block text-sm font-medium mb-2 text-lime-600">
               University Preference
             </label>
-            <select
-              id="preference"
-              name="preference"
+            <input
+              id="university"
+              name="university"
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-lime-500 focus:border-lime-500"
-            >
-              <option value="">Select a university</option>
-            </select>
+            />
           </div>
 
           {/* Application Round */}
@@ -186,23 +184,6 @@ export default function UserInput() {
               </label>
             </div>
           </fieldset>
-
-          {/* Financial Preference */}
-          <div>
-            <label
-              htmlFor="financial-preference"
-              className="block text-sm font-medium mb-1 text-lime-600"
-            >
-              Financial Preference
-            </label>
-            <select
-              id="financial-preference"
-              name="financial-preference"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-lime-500 focus:border-lime-500"
-            >
-              <option value="">Select an option</option>
-            </select>
-          </div>
 
           {/* Extracurriculars */}
           <div>
