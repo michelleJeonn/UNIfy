@@ -8,11 +8,13 @@ import Eligibility from "../pages/Eligibility";
 import RequiredDocs from "../pages/RequiredDocs";
 import Submission from "../pages/Submissions";
 import Signup from "../pages/signup";
+import About from "../pages/about";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
       <Route path="/login" element={<Login />} />
       <Route path="/information" element={<UserInput />} />
       <Route path="/roadmap" element={<RoadMap />} />

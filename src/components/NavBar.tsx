@@ -25,16 +25,12 @@ export default function NavBar() {
                   About us
                 </Link>
               </li>
-              <li>
+              {/* Removing this because there's nothing to add here per Figma doc */}
+              {/* <li>
                 <Link to="/services" className="hover:text-gray-500">
                   Services
                 </Link>
-              </li>
-              <li>
-                <Link to="/updates" className="hover:text-gray-500">
-                  Updates
-                </Link>
-              </li>
+              </li> */}
             </ul>
 
             {/* Hamburger Menu */}
