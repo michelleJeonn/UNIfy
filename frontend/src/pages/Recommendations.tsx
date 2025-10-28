@@ -167,6 +167,20 @@ export default function Recommendations() {
                       </div>
                     </div>
                   )}
+
+                  {/* Generate Roadmap Button */}
+                  <div className="mt-4">
+                    <button
+                      onClick={() => {
+                        // Store selected university and navigate to roadmap
+                        sessionStorage.setItem('selectedUniversity', JSON.stringify(university));
+                        navigate('/roadmap');
+                      }}
+                      className="bg-lime-500 hover:bg-lime-600 text-white px-4 py-2 rounded-md transition"
+                    >
+                      Generate Roadmap
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>

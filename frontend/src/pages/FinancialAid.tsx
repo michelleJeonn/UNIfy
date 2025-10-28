@@ -9,7 +9,7 @@ interface University {
   location: string;
 }
 
-export default function Eligibility() {
+export default function FinancialAid() {
   const navigate = useNavigate();
   const [selectedUniversity, setSelectedUniversity] = useState<University | null>(null);
   const [studentProfile, setStudentProfile] = useState<StudentProfile | null>(null);
@@ -41,7 +41,7 @@ export default function Eligibility() {
           if (response.success && response.roadmap) {
             setRoadmapData(response.roadmap);
           } else {
-            setError(response.error?.message || 'Failed to load eligibility data');
+            setError(response.error?.message || 'Failed to load financial aid information');
           }
           setLoading(false);
         })
@@ -63,7 +63,7 @@ export default function Eligibility() {
           <div className="flex items-center justify-center min-h-[400px]">
             <div className="text-center">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-lime-500 mx-auto mb-4"></div>
-              <p>Loading eligibility information...</p>
+              <p>Loading financial aid information...</p>
             </div>
           </div>
         </main>
@@ -98,90 +98,57 @@ export default function Eligibility() {
       {/* Body */}
       <main className="pt-32 pb-16 px-4 max-w-6xl mx-auto">
         <PageHeader
-          title={`Eligibility and Prerequisites - ${selectedUniversity.name}`}
-          description="Let's see if you meet the minimum requirements for your target programs."
+          title={`Financial Aid - ${selectedUniversity.name}`}
+          description="Explore available financial aid and grants for students with disabilities."
         />
 
-        {/* Requirements Display */}
+        {/* Financial Aid Section */}
         <div className="space-y-8 mt-8">
-          {/* GPA Requirement */}
-          <div className="bg-lime-50 border border-lime-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-lime-900">GPA Requirement</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <p className="text-sm text-gray-600 mb-1">Your GPA</p>
-                <p className="text-2xl font-bold text-gray-900">{studentProfile?.gpa}</p>
-              </div>
-              <div>
-                <p className="text-sm text-gray-600 mb-1">Required GPA</p>
-                <p className="text-xl font-semibold text-lime-700">{roadmapData.eligibility.gpa_requirement}</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Prerequisites */}
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-blue-900">Course Prerequisites</h3>
-            {roadmapData.eligibility.prerequisites && roadmapData.eligibility.prerequisites.length > 0 ? (
+          {/* Available Aid */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+            <h3 className="text-lg font-semibold mb-4 text-green-900">Available Financial Aid</h3>
+            {roadmapData.financial_aid.available_aids && roadmapData.financial_aid.available_aids.length > 0 ? (
               <ul className="space-y-2">
-                {roadmapData.eligibility.prerequisites.map((prerequisite, index) => (
+                {roadmapData.financial_aid.available_aids.map((aid, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span className="text-gray-800">{prerequisite}</span>
+                    <span className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="text-gray-800">{aid}</span>
                   </li>
                 ))}
               </ul>
             ) : (
-              <p className="text-gray-600">No specific prerequisites listed</p>
+              <p className="text-gray-600">No specific financial aid listed</p>
             )}
           </div>
 
-          {/* Disability Accommodations */}
+          {/* Disability Grants */}
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-purple-900">Available Accommodations</h3>
-            {roadmapData.eligibility.disability_accommodations && roadmapData.eligibility.disability_accommodations.length > 0 ? (
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-gray-600 mb-2">Your Needs:</p>
-                  <div className="flex flex-wrap gap-2">
-                    {studentProfile?.mental_health !== 'None' && (
-                      <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-                        {studentProfile.mental_health}
-                      </span>
-                    )}
-                    {studentProfile?.physical_health !== 'None' && (
-                      <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-                        {studentProfile.physical_health}
-                      </span>
-                    )}
-                    {studentProfile?.mental_health === 'None' && studentProfile?.physical_health === 'None' && (
-                      <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-                        No specific disabilities listed
-                      </span>
-                    )}
-                  </div>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600 mb-2">Available at {selectedUniversity.name}:</p>
-                  <div className="flex flex-wrap gap-2">
-                    {roadmapData.eligibility.disability_accommodations.map((accommodation, index) => (
-                      <span key={index} className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">
-                        {accommodation}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+            <h3 className="text-lg font-semibold mb-4 text-purple-900">Disability-Specific Grants</h3>
+            {roadmapData.financial_aid.disability_grants && roadmapData.financial_aid.disability_grants.length > 0 ? (
+              <ul className="space-y-2">
+                {roadmapData.financial_aid.disability_grants.map((grant, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="text-gray-800">{grant}</span>
+                  </li>
+                ))}
+              </ul>
             ) : (
-              <p className="text-gray-600">No specific accommodations listed</p>
+              <p className="text-gray-600">No specific disability grants listed</p>
             )}
+          </div>
+
+          {/* Application Process */}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 className="text-lg font-semibold mb-4 text-blue-900">Application Process</h3>
+            <p className="text-gray-800 whitespace-pre-wrap">{roadmapData.financial_aid.application_process}</p>
           </div>
 
           {/* Additional Notes */}
-          {roadmapData.eligibility.notes && (
+          {roadmapData.financial_aid.notes && (
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-2 text-yellow-900">Additional Information</h3>
-              <p className="text-gray-800 whitespace-pre-wrap">{roadmapData.eligibility.notes}</p>
+              <h3 className="text-lg font-semibold mb-2 text-yellow-900">Important Information</h3>
+              <p className="text-gray-800 whitespace-pre-wrap">{roadmapData.financial_aid.notes}</p>
             </div>
           )}
         </div>
@@ -205,3 +172,4 @@ export default function Eligibility() {
     </div>
   );
 }
+

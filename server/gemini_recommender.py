@@ -268,3 +268,119 @@ def get_gemini_recommendations(student_profile: Dict[str, any]) -> Dict[str, any
         _gemini_recommender = GeminiRecommender()
     
     return _gemini_recommender.get_recommendations(student_profile)
+
+
+def get_university_roadmap_details(university_name: str, student_profile: Dict[str, any]) -> Dict[str, any]:
+    """
+    Get detailed roadmap information for a specific university using Gemini AI.
+    
+    Args:
+        university_name: Name of the university
+        student_profile: Dictionary containing student information
+        
+    Returns:
+        Dictionary with roadmap details (documents, eligibility, financial aid)
+    """
+    global _gemini_recommender
+    
+    if _gemini_recommender is None or not _gemini_recommender.available:
+        return {
+            "success": False,
+            "error": "Gemini AI not available",
+            "source": "gemini_ai"
+        }
+    
+    try:
+        # Create a detailed prompt for university-specific roadmap
+        prompt = f"""
+You are an expert educational counselor specializing in helping students with disabilities navigate university admissions.
+
+Student Profile:
+- Mental Health: {student_profile.get('mental_health', 'None')}
+- Physical Health: {student_profile.get('physical_health', 'None')}
+- Course of Interest: {student_profile.get('courses', 'Not specified')}
+- GPA: {student_profile.get('gpa', 'Not specified')}
+- Severity Level: {student_profile.get('severity', 'Not specified')}
+
+Provide detailed roadmap information for {university_name} in the following JSON format:
+
+{{
+  "required_documents": {{
+    "general": ["document1", "document2"],
+    "disability_specific": ["document1", "document2"],
+    "notes": "Additional notes about documentation requirements"
+  }},
+  "eligibility": {{
+    "gpa_requirement": "Minimum GPA required",
+    "prerequisites": ["prerequisite1", "prerequisite2"],
+    "disability_accommodations": ["accommodation1", "accommodation2"],
+    "notes": "Additional eligibility information"
+  }},
+  "financial_aid": {{
+    "available_aids": ["aid1", "aid2"],
+    "disability_grants": ["grant1", "grant2"],
+    "application_process": "How to apply for financial aid",
+    "notes": "Additional financial aid information"
+  }}
+}}
+
+Focus on:
+1. Specific requirements for students with {student_profile.get('mental_health', 'disabilities')} and/or {student_profile.get('physical_health', 'disabilities')}
+2. Disability accommodation documentation requirements
+3. Available financial aid for students with disabilities
+4. Step-by-step guidance for the application process
+
+Provide detailed, specific information about {university_name} including links to disability services and financial aid offices when relevant.
+"""
+        
+        print(f"Calling Gemini AI for roadmap details for {university_name}...")
+        response = _gemini_recommender.model.generate_content(
+            prompt,
+            generation_config=genai.types.GenerationConfig(
+                max_output_tokens=2048,
+                temperature=0.7,
+            ),
+            safety_settings=[
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+                },
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+                }
+            ]
+        )
+        
+        if not response.text:
+            return {
+                "success": False,
+                "error": "Response blocked by safety filters",
+                "source": "gemini_ai"
+            }
+        
+        # Parse the response
+        roadmap_details = _gemini_recommender._parse_gemini_response(response.text)
+        
+        return {
+            "success": True,
+            "source": "gemini_ai",
+            "university_name": university_name,
+            "roadmap": roadmap_details
+        }
+        
+    except Exception as e:
+        print(f"Error getting roadmap details: {str(e)}")
+        return {
+            "success": False,
+            "error": f"Failed to get roadmap details: {str(e)}",
+            "source": "gemini_ai"
+        }

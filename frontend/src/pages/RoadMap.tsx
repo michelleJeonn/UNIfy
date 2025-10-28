@@ -9,28 +9,46 @@ interface RoadmapData {
   recommendations: RecommendationResponse;
 }
 
+interface University {
+  name: string;
+  location: string;
+  score: number;
+  accessibility_rating: number;
+  disability_support_rating: number;
+  available_accommodations: string[];
+  reason: string;
+}
+
 
 export default function RoadMap() {
   const navigate = useNavigate();
   const [roadmapData, setRoadmapData] = useState<RoadmapData | null>(null);
+  const [selectedUniversity, setSelectedUniversity] = useState<University | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Get the roadmap data from sessionStorage
     const storedData = sessionStorage.getItem('roadmapData');
+    const storedUniversity = sessionStorage.getItem('selectedUniversity');
+    
+    if (storedUniversity) {
+      try {
+        const parsedUniversity: University = JSON.parse(storedUniversity);
+        setSelectedUniversity(parsedUniversity);
+      } catch (error) {
+        console.error('Error parsing selected university:', error);
+      }
+    }
+    
     if (storedData) {
       try {
         const parsedData: RoadmapData = JSON.parse(storedData);
         setRoadmapData(parsedData);
       } catch (error) {
         console.error('Error parsing roadmap data:', error);
-        // Redirect back to form if data is corrupted
-        navigate('/information');
       }
-    } else {
-      // No data available, redirect back to form
-      navigate('/information');
     }
+    
     setLoading(false);
   }, [navigate]);
 
@@ -74,12 +92,31 @@ export default function RoadMap() {
           {/* Hero Section */}
           <section>
             <h1 className="text-[34px] leading-[1.1] sm:text-5xl md:text-6xl font-normal tracking-tight">
-              Your step‑by‑step plan for ___ University
+              Your step‑by‑step plan for {selectedUniversity ? selectedUniversity.name : 'your'} University
             </h1>
             <p className="mt-6 text-[18px] sm:text-xl leading-6 sm:leading-7 tracking-[-0.02em] text-black">
               Click on each Checkpoint for more details.
             </p>
+
+            {/* Selected University Info */}
+            {selectedUniversity && (
+              <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <div className="text-sm text-blue-900 font-semibold mb-2">{selectedUniversity.location}</div>
+                <div className="flex items-center gap-4 text-sm">
+                  <div>
+                    <span className="text-blue-600">Overall Score: </span>
+                    <span className="font-semibold">{selectedUniversity.score}/5</span>
+                  </div>
+                  <div>
+                    <span className="text-blue-600">Accessibility: </span>
+                    <span className="font-semibold">{selectedUniversity.accessibility_rating}/5</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Source Information */}
+            {roadmapData && (
             <div className="mt-6 p-4 bg-lime-50 border border-lime-200 rounded-lg">
               <p className="text-sm text-lime-800">
                 <strong>Recommendation Source:</strong> {recommendations.source.replace('_', ' ')}
@@ -88,9 +125,10 @@ export default function RoadMap() {
                 Found {recommendations.recommendations.length} university recommendations
               </p>
             </div>
+            )}
 
             {/* Accommodations Needed */}
-            {recommendations.needed_accommodations && recommendations.needed_accommodations.length > 0 && (
+            {roadmapData && recommendations.needed_accommodations && recommendations.needed_accommodations.length > 0 && (
               <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                 <h3 className="font-semibold text-blue-900 mb-2">Recommended Accommodations:</h3>
                 <ul className="text-sm text-blue-800">
@@ -142,6 +180,12 @@ export default function RoadMap() {
           className="bg-[#92BD3A] text-white px-5 py-2 rounded-md hover:bg-lime-600 transition"
         >
           Required Documents
+        </button>
+        <button
+          onClick={() => navigate("/financial-aid")}
+          className="bg-[#92BD3A] text-white px-5 py-2 rounded-md hover:bg-lime-600 transition"
+        >
+          Financial Aid
         </button>
         <button
           onClick={() => navigate("/submission")}

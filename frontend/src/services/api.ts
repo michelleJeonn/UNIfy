@@ -128,3 +128,65 @@ export async function checkHealth(): Promise<any> {
     throw error;
   }
 }
+
+export interface RoadmapDetails {
+  required_documents: {
+    general: string[];
+    disability_specific: string[];
+    notes?: string;
+  };
+  eligibility: {
+    gpa_requirement: string;
+    prerequisites: string[];
+    disability_accommodations: string[];
+    notes?: string;
+  };
+  financial_aid: {
+    available_aids: string[];
+    disability_grants: string[];
+    application_process: string;
+    notes?: string;
+  };
+}
+
+export interface RoadmapResponse {
+  success: boolean;
+  source: string;
+  university_name: string;
+  roadmap: RoadmapDetails;
+  error?: {
+    code: string;
+    message: string;
+  };
+}
+
+/**
+ * Get detailed roadmap information for a specific university
+ */
+export async function getUniversityRoadmap(
+  universityName: string,
+  profile: StudentProfile
+): Promise<RoadmapResponse> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/api/roadmap`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        university_name: universityName,
+        student_profile: profile,
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error?.message || `HTTP ${response.status}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Roadmap API Error:', error);
+    throw error;
+  }
+}

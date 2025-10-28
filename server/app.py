@@ -314,6 +314,64 @@ def get_gemini_recommendations_endpoint():
         return error_response("Internal server error", 500, "INTERNAL_ERROR")
 
 
+@app.route('/api/roadmap', methods=['POST'])
+def get_university_roadmap():
+    """
+    Get detailed roadmap information for a specific university.
+    
+    Expected JSON payload:
+    {
+        "university_name": "University of Toronto",
+        "student_profile": {
+            "mental_health": "ADHD",
+            "physical_health": "None",
+            "courses": "Computer Science",
+            "gpa": 3.8,
+            "severity": "moderate"
+        }
+    }
+    """
+    try:
+        if not request.is_json:
+            return error_response("Request must be JSON", 400, "NOT_JSON")
+        
+        data = request.get_json()
+        
+        # Validate required fields
+        if 'university_name' not in data:
+            return error_response("Missing required field: university_name", 400, "VALIDATION_ERROR")
+        
+        if 'student_profile' not in data:
+            return error_response("Missing required field: student_profile", 400, "VALIDATION_ERROR")
+        
+        university_name = data['university_name']
+        student_profile = data['student_profile']
+        
+        # Validate student profile
+        ok, msg = validate_student_profile(student_profile)
+        if not ok:
+            return error_response(f"Invalid student profile: {msg}", 400, "VALIDATION_ERROR")
+        
+        logger.info(f"Getting roadmap details for {university_name}")
+        
+        # Try to get roadmap details from Gemini AI
+        try:
+            from gemini_recommender import get_university_roadmap_details
+            result = get_university_roadmap_details(university_name, student_profile)
+        except ImportError:
+            result = {
+                "success": False,
+                "error": "Gemini AI not available",
+                "source": "gemini_ai"
+            }
+        
+        return jsonify(result)
+        
+    except Exception as e:
+        logger.error(f"Error in roadmap endpoint: {str(e)}")
+        return error_response("Internal server error", 500, "INTERNAL_ERROR")
+
+
 @app.errorhandler(404)
 def not_found(error):
     """Handle 404 errors."""
