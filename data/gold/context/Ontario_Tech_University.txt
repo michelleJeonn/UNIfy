@@ -1,0 +1,79 @@
+Ontario Tech University
+=======================
+
+[physical_disabilities_supported]
+  - Mobility impairments (wheelchair/scooter use, difficulty walking/climbing stairs, temporary injuries)
+  - Dexterity limitations (arthritis, RSI, hand/arm injuries)
+  - Sensory impairments (low vision, blindness, deafness, hearing loss)
+  - Chronic medical conditions (e.g., MS, asthma, fatigue)
+  - Temporary conditions (post-surgery, concussion, sports-related injuries)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, large print, Braille, PDFs
+  - Assistive tech and adaptive software support
+  - Note-taking, lecture recording, and ASL interpretation
+  - Personalized accommodation plans each term
+  - Support for permanent and temporary disabilities
+  - Accessible campus navigation tools
+  - Confidential service; diagnosis not shared with instructors
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, large print, PDFs
+  - Assistive tech and adaptive software support
+  - Note-taking and lecture recording
+  - Personalized accommodation plans each term
+  - Support for permanent and temporary disabilities
+  - Peer coaching and transition workshops available
+  - Confidential service; diagnosis not shared with instructors
+
+[documentation_requirements]
+  - To be completed by the student:
+  - A signed consent to release information form.
+  - A completed consideration on the basis of disability form.
+  - To be completed by the attending healthcare professional:
+  - Medical or psychological documentation (refer to disability documentation).
+  - To be completed by your most recent educational institution:
+  - A verification of accommodations form indicating whether or not you received disability accommodations (e.g. accommodation plan, IEP, IPRC, etc.). This form must be completed by an authorized professional and can be submitted either directly by the institution or by you.
+
+[documentation_submission]
+  - Email all of your documents to studentaccessibility@ontariotechu.ca with the subject line Admissions Consideration.
+  - In the body of your email include your full name, student number and OUAC ID.
+
+[registration_process]
+  - Email all of your documents to studentaccessibility@ontariotechu.ca with the subject line Admissions Consideration. In the body of your email include your full name, student number and OUAC ID.
+
+[counselling_services]
+  - Ontario Tech University offers:
+  - Intake sessions
+  - Drop-in sessions
+  - Therapy and specialized supports
+
+[support_24_7_contact]
+  - Security Office (24/7): 905‑721‑8668 ext. 2400
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP at Ontario Tech University, you must typically meet the following criteria:
+  - Ontario Resident: You must be an Ontario resident. This is generally defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident of Canada, or a Protected Person. International students are not eligible for OSAP.
+  - Approved Program of Study: You must be registered in an OSAP-approved program that leads to a degree, diploma, or certificate. Most undergraduate and graduate programs at Ontario Tech are approved for OSAP.
+  - Eligible Course Load: Your registration must meet the minimum requirements for either full-time or part-time OSAP.
+  - Good Standing: You must not be in default on any previous OSAP loans or have any restrictions on your OSAP account.
+  - Satisfactory Academic Progress: You need to maintain satisfactory academic progress throughout your studies.
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need.
+  - Lifetime Funding Limit: You must not have exceeded the lifetime limit of student loan funding (typically 340 weeks for most students, 400 weeks for doctoral studies, or up to 520 weeks for students with a permanent disability).
+  - First-Time Applicant Module: If you are a full-time or micro-credential student making your first OSAP application for the 2024–2025 or 2025–2026 school year, you will need to complete an interactive financial literacy module.
+
+[bursaries]
+  - Students with Disabilities Scholarship/Bursary (internal)
+  - BSWD / CSG-DSE

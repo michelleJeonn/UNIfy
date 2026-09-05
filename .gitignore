@@ -31,3 +31,10 @@ dist-ssr
 # Python
 __pycache__/
 *.pyc
+
+# Secrets — never commit
+.env
+.env.local
+
+# Derived caches - regenerable, not source of truth
+data/clean/segment_embeddings.npz

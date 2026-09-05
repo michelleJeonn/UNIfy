@@ -38,7 +38,7 @@ Advocacy & community: Students for Barrier-Free Access (SBA)",Certificate of Dis
 Same-day counselling 
 On-location counselling
 Wellness counselling for Black, Indigenous and/or Persons of Colour (BIPOC) students 
-Short-term intensive counselling",1,1,"• Campus Security (24/7): 416‑978‑2222
+Short-term intensive counselling",True,True,"• Campus Security (24/7): 416‑978‑2222
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Be an Ontario resident who is a Canadian citizen, permanent resident of Canada, or a protected person (international students are not eligible for OSAP) 
 Be registered in an OSAP approved program 
 Be enrolled in an eligible course load 
@@ -142,7 +142,7 @@ Transition support: help with high school-to-university adjustment",Certificate 
 Same-day counselling 
 On-location counselling
 Wellness counselling for Black, Indigenous and/or Persons of Colour (BIPOC) students 
-Short-term intensive counselling",1,1,"• Campus Security (24/7): 416‑978‑2222
+Short-term intensive counselling",True,True,"• Campus Security (24/7): 416‑978‑2222
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Be an Ontario resident who is a Canadian citizen, permanent resident of Canada, or a protected person (international students are not eligible for OSAP) 
 Be registered in an OSAP approved program 
 Be enrolled in an eligible course load 
@@ -248,7 +248,7 @@ Online support available",Certificate of Disability,"1. Complete online form.
 Same-day counselling 
 On-location counselling
 Wellness counselling for Black, Indigenous and/or Persons of Colour (BIPOC) students 
-Short-term intensive counselling",1,1,"• Campus Security (24/7): 416‑978‑2222
+Short-term intensive counselling",True,True,"• Campus Security (24/7): 416‑978‑2222
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Be an Ontario resident who is a Canadian citizen, permanent resident of Canada, or a protected person (international students are not eligible for OSAP) 
 Be registered in an OSAP approved program 
 Be enrolled in an eligible course load 
@@ -355,7 +355,7 @@ Step 2: Monitor your Waterloo email for next steps. We will email you within app
 Step 3: Meet your Accommodation Consultant. During your appointment, you and your Accommodation Consultant will finalize your accommodation plan and they will show you how to sign into the AccessAbility Services online system to request and manage your accommodations.","University of Waterloo offers:
 Brief counselling
 Single session counselling 
-Crisis appointments",1,1,"• Campus Police (24/7): 519‑888‑4911
+Crisis appointments",True,True,"• Campus Police (24/7): 519‑888‑4911
 Empower Me (24/7 mental health): 1‑855‑853‑0565","be a Canadian citizen, permanent resident or have protected person status; international students are ineligible.
 have Ontario residency, that is, have lived in Ontario for at least 12 consecutive months without attending full-time postsecondary school.
 be neither in default on a previous OSAP student loan nor on OSAP restriction.
@@ -462,7 +462,7 @@ Step 4. Meet your program coordinator - (Log in to MySAS Portal - Click “Appoi
 
 Step 5. Receive your accommodation plan - (Log in to MySAS Portal - Click “Appointment” in the menu on the left - Click “Accommodation Letter/Emails” in the menu - Review your letter of accommodation)","McMaster University offers: 
 Short-term counselling (Indigo Path)
-Same-day single session appointments (Orange Path)",1,1,"• Campus Security (24/7): 905‑522‑4135
+Same-day single session appointments (Orange Path)",True,True,"• Campus Security (24/7): 905‑522‑4135
 Student Assistance Program (Aspiria, 24/7 mental health): 1‑877‑234‑5327","Apply for OSAP if Ontario is the last Canadian province that you have resided in for at least 12 consecutive months without being a full-time college or university student, and you meet all other eligibility criteria.Apply for OSAP if Ontario is the last Canadian province that you have resided in for at least 12 consecutive months without being a full-time college or university student, and you meet all other eligibility criteria.
 OSAP for Full-Time Students and OSAP for Part-Time Students are separate programs and require separate applications. So if you receive full-time OSAP one term and drop to part-time studies the next term, you’ll need to do a new application for part-time OSAP.
 Full-time: Enrolled in at least 60% of a 100% course load for your program in each term. Co-op work terms are always considered a 100% course load.
@@ -531,7 +531,7 @@ Step 2. Submit your Intake form & Documentation - (There are two options for reg
 
 Step 3. Monitor your inbox for next steps (Depending on the registration option you chose, you will receive a specific email outlining your next steps.
 TRO intake form - We'll email you about booking your registration appointment.
-ERO intake form - We'll email you with information about your accommodation plan.)",contact 416-979-5195 or csdc@torontomu.ca for counselling services,1,1,"• Campus Safety (24/7): 416‑979‑5040
+ERO intake form - We'll email you with information about your accommodation plan.)",contact 416-979-5195 or csdc@torontomu.ca for counselling services,True,True,"• Campus Safety (24/7): 416‑979‑5040
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Ontario Resident: You must be an Ontario resident. This generally means Ontario is the most recent province where you lived for at least 12 consecutive months, not including time spent as a full-time post-secondary student.
 Canadian Citizen, Permanent Resident, or Protected Person: You must be one of these to be eligible for OSAP. International students are not eligible.
 Financial Need: OSAP assesses your financial need based on your educational costs and your available financial resources (including your income, family income, and any other scholarships or savings).
@@ -621,7 +621,7 @@ Step 2. Upload an electronic copy of your documentation to our online Registrati
 Step 3. Look for an email from sasreg@yorku.ca outlining next steps; you should hear back within five business days.","York University offers:
 In-person counselling
 Virtual counselling
-Group counselling",1,1,"• Security Services (24/7): 416‑736‑5333
+Group counselling",True,True,"• Security Services (24/7): 416‑736‑5333
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To apply for full-time OSAP aid, you must:
  • register in full-time studies for the session 
  • be a Canadian citizen, permanent resident or have protected person status; international students are ineligible.
@@ -1059,7 +1059,7 @@ Step 2. Upload an electronic copy of your documentation to our online Registrati
 Step 3. Look for an email from sasreg@yorku.ca outlining next steps; you should hear back within five business days.","York University offers:
 In-person counselling
 Virtual counselling
-Group counselling",1,1,"• Security Services (24/7): 416‑736‑5333
+Group counselling",True,True,"• Security Services (24/7): 416‑736‑5333
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To apply for full-time OSAP aid, you must:
  • register in full-time studies for the session 
  • be a Canadian citizen, permanent resident or have protected person status; international students are ineligible.
@@ -1499,7 +1499,7 @@ Step 2. Upload an electronic copy of your documentation to our online Registrati
 Step 3. Look for an email from sasreg@yorku.ca outlining next steps; you should hear back within five business days.","York University offers:
 In-person counselling
 Virtual counselling
-Group counselling",1,1,"• Security Services (24/7): 416‑736‑5333
+Group counselling",True,True,"• Security Services (24/7): 416‑736‑5333
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To apply for full-time OSAP aid, you must:
  • register in full-time studies for the session 
  • be a Canadian citizen, permanent resident or have protected person status; international students are ineligible.
@@ -1590,7 +1590,7 @@ Step 5. When you receive an email with the name of your Accessibility Advisor, b
 One-on-one appointments
 Physcoeducation
 Therapy groups 
-Mental health training",1,1,"• Campus Security (24/7): 613‑533‑6111
+Mental health training",True,True,"• Campus Security (24/7): 613‑533‑6111
 Empower Me (24/7 mental health): 1‑855‑649‑8641","To be considered for OSAP, a student must meet the following requirements:
  • Be a Canadian citizen, permanent resident, or protected person
  • Meet Ontario residency requirements
@@ -1656,7 +1656,7 @@ Step 3. Bring your completed Medical Documentation (PDF) OR psychoeducational as
 Step 4. During your registration appointment, you'll meet with an Accessibility Advisor who will review your medical documentation with you to discuss the impact of your disability(ies), your learning needs, essential requirements of your program of study, and any previous academic accommodations. Following this discussion, academic accommodations will be identified and your accommodation plan will be developed with your Advisor.","OCAD University offers:
 Single counselling sessions
 Same day counselling services
-Short-term counselling services",1,1,"• Campus Security (24/7): 416‑977‑6000 ext. 511
+Short-term counselling services",True,True,"• Campus Security (24/7): 416‑977‑6000 ext. 511
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP, you must be:
  • An Ontario resident who is a Canadian citizen, permanent resident, or a protected person._x000B__x000B_
  • Enrolled in an OSAP-approved program._x000B__x000B_
@@ -1737,7 +1737,7 @@ Step 5: Attend a Summer Orientation Event - Various accessibility events are hos
 Step 6: Request Your Accommodations - Once registered with SAS, go to the SAS Portal to send your accommodation letters to instructors using the SAS Student Portal . You’ll need to do this every semester for each course.
 Step 7: Communicate with Instructors - Discuss Your Accommodations (if needed)","University of Guelph offers:
 Same Day Drop-In Counselling
-Drop-in Counselling for Black, Racialized and Students of Colour",1,1,"• Campus Police (24/7): 519‑824‑4120 ext. 52245
+Drop-in Counselling for Black, Racialized and Students of Colour",True,True,"• Campus Police (24/7): 519‑824‑4120 ext. 52245
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","The University of Guelph's classification for OSAP purposes is crucial:
 
 Full-time OSAP: You are considered a full-time student for OSAP if you are enrolled in at least 60% of a full course load (1.5 credits or more per term for undergraduate students).
@@ -1817,7 +1817,7 @@ Step 5: Attend a Summer Orientation Event - Various accessibility events are hos
 Step 6: Request Your Accommodations - Once registered with SAS, go to the SAS Portal to send your accommodation letters to instructors using the SAS Student Portal . You’ll need to do this every semester for each course.
 Step 7: Communicate with Instructors - Discuss Your Accommodations (if needed)","University of Guelph offers:
 Same Day Drop-In Counselling
-Drop-in Counselling for Black, Racialized and Students of Colour",1,1,"• Campus Police (24/7): 519‑824‑4120 ext. 52245
+Drop-in Counselling for Black, Racialized and Students of Colour",True,True,"• Campus Police (24/7): 519‑824‑4120 ext. 52245
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","The University of Guelph's classification for OSAP purposes is crucial:
 
 Full-time OSAP: You are considered a full-time student for OSAP if you are enrolled in at least 60% of a full course load (1.5 credits or more per term for undergraduate students).
@@ -1892,7 +1892,7 @@ Confidential and personalized service","- Attention Disability: Attention Disabi
 3. Complete the Accessible Learning Registration Form. 
 4. Submit your documentation. 
 5. Promptly respond to messages from Accessible Learning in your myLaurier inbox about next steps.","Step 1: Registration and Documentation - (Review Disability Documentation Requirements - If applicable, review Interim Accommodations, UW Double Degree, or Service Animals. - Complete the Accessible Learning Registration Form - Submit your documentation. - Promptly respond to messages from Accessible Learning in your myLaurier inbox about next steps.)
-Step 2: Meet Your Accessible Learning Consultant - (If Accessible Learning determines you are eligible for support after reviewing your registration form and documentation, we will email your @mylaurier email address about meeting with an Accessible Learning consultant.)",Laurier University offers virtual/on-site short-term or goal-directed counselling services,1,1,"• Special Constables (24/7): 519‑885‑3333
+Step 2: Meet Your Accessible Learning Consultant - (If Accessible Learning determines you are eligible for support after reviewing your registration form and documentation, we will email your @mylaurier email address about meeting with an Accessible Learning consultant.)",Laurier University offers virtual/on-site short-term or goal-directed counselling services,True,True,"• Special Constables (24/7): 519‑885‑3333
 Empower Me (24/7 mental health): 1‑855‑649‑8641","To be generally eligible for OSAP, you must:
 
 Be an Ontario resident who is a Canadian citizen, permanent resident of Canada, or a protected person. International students are not eligible for OSAP.
@@ -1964,7 +1964,7 @@ Step 3. Complete the intake form.
 Step 4. Enter your disability-related information and upload your documentation.
 Step 5. After reviewing your documentation and intake form, a member of our team will contact you about booking an appointment.","University of Ottawa offers:
 Ontario Structured Psychotheraphy (OSP)
-Same-day intake appointments",1,1,"• Protection Services (24/7): 613‑562‑5411
+Same-day intake appointments",True,True,"• Protection Services (24/7): 613‑562‑5411
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP assistance, you must at least:
 
 be a Canadian citizen, a permanent resident or a protected person and have the appropriate documentation to support this;
@@ -2026,7 +2026,7 @@ Confidential service; no diagnosis disclosure needed","- OSAP Disability Verific
 ​Step 3. Attend an Intake Appointment - Once Accessibility Services has received your Registration Form and your required documentation, we will contact you to arrange for an intake appointment. At this appointment, we will review your documents together, and discuss the academic accommodations that would best support you. We will also provide you with an orientation to the Learning Centre and teach you how to access our resources.","Algoma University offers:
 One-on-one counselling services
 Crisis intervention
-Safety planning on-campus",1,1,"• Campus Security (24/7): 705‑949‑2301 ext. 4910
+Safety planning on-campus",True,True,"• Campus Security (24/7): 705‑949‑2301 ext. 4910
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","An Ontario resident.
 
 
@@ -2095,7 +2095,7 @@ Confidential service—no need to disclose diagnosis to professors","- A complet
 - A letter or original functional assessment report from a licensed medical practitioner, qualified in the appropriate specialty area (or a general medical practitioner who has preferably been treating the patient over the last 6 months), which must be current (within the last 6 months).",Upload through the SAS Student Registration.,Complete SAS Student Registration,"Brock University offers:
 Open door single session counselling
 Group workshops
-In-person or online 1:1 counselling",1,1,"• Campus Security (24/7): 905‑688‑5550 ext. 3200
+In-person or online 1:1 counselling",True,True,"• Campus Security (24/7): 905‑688‑5550 ext. 3200
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP at Brock University, you must typically be:
 
 An Ontario resident: This is usually based on where you have lived for the past 12 consecutive months, excluding time spent as a full-time post-secondary student.
@@ -2168,7 +2168,7 @@ Step 4: Submit your documentation before your appointment - Your disability docu
 Step 5: FIVE: Attend your intake appointment - When requesting an intake appointment, you have the options of selecting an in-person or a virtual meeting with a PMC Coordinator. (If you’re attending an in-person intake appointment, please note that the Paul Menton Centre is located in Room 501 of the Nideyinàn Building (NN). You will receive directions on how to navigate to our office. If you are new to the Carleton campus, please take some time to become familiarized with our interactive campus map and parking services for visitors.)","Carleton University offers: 
 Single-session counselling 
 Brief individual counselling
-Group counselling and workshops",1,1,"• Campus Safety (24/7): 613‑520‑4444
+Group counselling and workshops",True,True,"• Campus Safety (24/7): 613‑520‑4444
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","• Ontario Resident: You must be an Ontario resident. This is typically determined by where you have lived for the past 12 consecutive months, not including time spent as a full-time post-secondary student._x000B__x000B_
  • Citizenship/Status: You must be a Canadian citizen, Permanent Resident, or Protected Person of Canada. International students are not eligible for OSAP._x000B__x000B_
  • Approved Program: You must be enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate. Most undergraduate, Master's, and Doctoral degree programs at Carleton are approved for OSAP. If you're a Special Student or in certain diploma/certificate programs, you should contact Carleton's Awards Office to confirm eligibility._x000B__x000B_
@@ -2242,7 +2242,7 @@ Confidential service—diagnosis disclosure not mandatory","- Student Accessibil
 Step 2: Connect With SAS - Once you have registered in your classes, connect with SAS to schedule an appointment to set up accommodations and start the registration process. (this appointment can take place as early as late June or July)
 If you are unable to meet in person, email or phone SAS to request a phone or video appointment.
 Step 3: Activate Your Term Accommodations - Prior to the term start date SAS will email you with instructions on how to activate your accommodations for the term. You will need to complete this process each and every term for which you require accommodations. (SAS Staff will process your accommodation request and send your accommodation form(s) to your instructors. You will receive a copy of the email that goes to your instructors in your Lakehead University email inbox. The Accommodation Form will be attached to the email. Save this form to your computer for your future reference. Once you receive these emails your accommodations are active for the term.)
-Step 4: Participate in SAS Procedures - Students requesting or registered with academic accommodations through Student Accessibility Services (SAS) have a duty to participate in the accommodation process by following SAS timeline requests: including but not limited to regularly checking your @lakeheadu.ca student email, completing the accommodation request form at the beginning of each term, booking tests, or requesting alternate dates/start times for tests according to the SAS timelines.","Lakehead University offers 1:1 in-person, virtual counselling services",1,1,"• Campus Security (Thunder Bay): 807‑343‑8911
+Step 4: Participate in SAS Procedures - Students requesting or registered with academic accommodations through Student Accessibility Services (SAS) have a duty to participate in the accommodation process by following SAS timeline requests: including but not limited to regularly checking your @lakeheadu.ca student email, completing the accommodation request form at the beginning of each term, booking tests, or requesting alternate dates/start times for tests according to the SAS timelines.","Lakehead University offers 1:1 in-person, virtual counselling services",True,True,"• Campus Security (Thunder Bay): 807‑343‑8911
 Campus Security (Orillia): 705‑330‑4008
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To qualify for OSAP at Lakehead University, you generally must meet the following:
 
@@ -2314,7 +2314,7 @@ Step 2. Please return completed form and any supporting documentation to accessi
 Virtual counselling
 Virtual interactive workshop: The Inquiring Mind
 Group counselling
-Same-day individual counselling",1,1,"• Campus Safety (24/7): 705‑673‑6562
+Same-day individual counselling",True,True,"• Campus Safety (24/7): 705‑673‑6562
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Laurentian University, situated in Sudbury, Ontario, adheres to the provincial guidelines for the Ontario Student Assistance Program (OSAP). This means the core eligibility criteria for OSAP funding are the same for students at Laurentian as they are for students at any other publicly funded post-secondary institution in Ontario.
 
 General OSAP Eligibility
@@ -2393,7 +2393,7 @@ Self-Help Services
 Drop-In Sessions
 Counsellor Assisted E-Support
 Group Therapy
-Individual Therapy",1,1,"• Campus Security (24/7): 705‑498‑7244
+Individual Therapy",True,True,"• Campus Security (24/7): 705‑498‑7244
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP at Nipissing University, you must typically meet the following criteria:
 
 Ontario Resident: You must be an Ontario resident, generally defined by having lived in Ontario for the past 12 consecutive months, excluding time spent as a full-time post-secondary student.
@@ -2465,7 +2465,7 @@ To be completed by your most recent educational institution:
 2. In the body of your email include your full name, student number and OUAC ID.","Email all of your documents to studentaccessibility@ontariotechu.ca with the subject line Admissions Consideration. In the body of your email include your full name, student number and OUAC ID.","Ontario Tech University offers: 
 Intake sessions
 Drop-in sessions
-Therapy and specialized supports",1,1,"• Security Office (24/7): 905‑721‑8668 ext. 2400
+Therapy and specialized supports",True,True,"• Security Office (24/7): 905‑721‑8668 ext. 2400
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP at Ontario Tech University, you must typically meet the following criteria:
 
 Ontario Resident: You must be an Ontario resident. This is generally defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
@@ -2554,7 +2554,7 @@ Support for Eating Disorders - Sheena's Place
 Private Therapy with Student Health Benefits 
 2SLGBTQ+ Support 
 Talk Now - Mental Health and Addictions Clinic 
-Peterborough Family Health Team - Groups",0,1,"• Campus Security (Peterborough): 705‑748‑1333
+Peterborough Family Health Team - Groups",False,True,"• Campus Security (Peterborough): 705‑748‑1333
 Campus Security (Durham): 905‑435‑5111
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP at Trent University, you generally must meet the following:
 
@@ -2665,7 +2665,7 @@ Support for Eating Disorders - Sheena's Place
 Private Therapy with Student Health Benefits 
 2SLGBTQ+ Support 
 Talk Now - Mental Health and Addictions Clinic 
-Peterborough Family Health Team - Groups",0,1,"• Campus Security (Peterborough): 705‑748‑1333
+Peterborough Family Health Team - Groups",False,True,"• Campus Security (Peterborough): 705‑748‑1333
 Campus Security (Durham): 905‑435‑5111
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP at Trent University, you generally must meet the following:
 
@@ -2795,7 +2795,7 @@ Step 4. If you do not have up to date documentation you can check out our Docume
 Group therapy
 Individual therapy
 Self-guided therapy through TAO 
-Combination of different therapies",1,1,"• Campus Police (24/7): 519‑253‑3000 ext. 4444
+Combination of different therapies",True,True,"• Campus Police (24/7): 519‑253‑3000 ext. 4444
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","To be eligible for OSAP at the University of Windsor, you must generally meet the following:
 
 Ontario Resident: You must be an Ontario resident. This is typically defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
@@ -2846,7 +2846,7 @@ Alternate formats and assistive technologies provided as needed
 
 Personalized and confidential support plans
 
-Staff help identify and remove accessibility barriers",Email communications@uontario.ca for document information.,Email communications@uontario.ca,email communications@uontario.ca,email communications@uontario.ca,0,1,• Good2Talk (24/7 mental health): 1‑866‑925‑5454,"To be eligible for OSAP at Université de l'Ontario français, you must typically meet the following:
+Staff help identify and remove accessibility barriers",Email communications@uontario.ca for document information.,Email communications@uontario.ca,email communications@uontario.ca,email communications@uontario.ca,False,True,• Good2Talk (24/7 mental health): 1‑866‑925‑5454,"To be eligible for OSAP at Université de l'Ontario français, you must typically meet the following:
 
 Ontario Resident: You must be an Ontario resident. This is generally defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
 
@@ -2939,7 +2939,7 @@ Group/Individual Workshops
 Single session counselling
 Brief individual therapy
 Case manager involvement
-Support from Special Constables",1,1,"•Campus Safety (24/7): 519‑661‑3300
+Support from Special Constables",True,True,"•Campus Safety (24/7): 519‑661‑3300
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Residency Requirements
 OSAP is open to Ontario residents who are:
 
@@ -3030,7 +3030,7 @@ Group/Individual Workshops
 Single session counselling
 Brief individual therapy
 Case manager involvement
-Support from Special Constables",1,1,"•Campus Safety (24/7): 519‑661‑3300
+Support from Special Constables",True,True,"•Campus Safety (24/7): 519‑661‑3300
 Good2Talk (24/7 mental health): 1‑866‑925‑5454","Residency Requirements
 OSAP is open to Ontario residents who are:
 

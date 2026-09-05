@@ -1,0 +1,97 @@
+Carleton University
+===================
+
+[physical_disabilities_supported]
+  - Mobility impairments (e.g., wheelchair/scooter users, difficulty walking, climbing stairs, temporary injuries)
+  - Dexterity limitations (e.g., arthritis, repetitive strain, hand/arm injuries)
+  - Sensory impairments (hearing or vision loss)
+  - Chronic health conditions affecting physical functioning
+  - Temporary physical challenges (e.g., post-surgery recovery, fractures)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, Braille, accessible PDFs
+  - Assistive technology and adaptive software support
+  - Peer note-taking and lecture recording available
+  - ASL interpreting and real-time captioning
+  - Personalized accommodation plans created each term
+  - Temporary accommodations for short-term conditions
+  - Confidential support through the Paul Menton Centre
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, accessible PDFs
+  - Assistive technology and adaptive software support
+  - Peer note-taking and lecture recording available
+  - Personalized accommodation plans created each term
+  - Temporary accommodations for short-term conditions
+  - Confidential support through the Paul Menton Centre
+
+[documentation_requirements]
+  - Acquired Brain Injury (ABI): copy of a recent neuro-psychological assessment, PMC Documentation of Acquired Brain Injury Form completed by a regulated healthcare professional
+  - Attention deficit / Hyperactivity Disorder (ADHD): copy of your latest comprehensive psychoeducational assessment (completed by a registered psychologist or psychological associate), an assessment completed within the last 5 years (or at the age of 18 years or older), PMC Documentation of ADHD Form completed by a regulated health care practitioner
+  - Autism Spectrum Disorders: Psycho-educational assessment (PEA) (completed within the last 5 years or performed using adult-normed tests), PMC ASD documentation Form (completed by a regulated health care practitioner who can confirm diagnosis and provide information on current functional limitations)
+  - Chronic Medical Conditions: PMC Documentation of Medical Disability Form (completed by a regulated health care professional is preferred), If it is not possible to get this form completed in time for your intake appointment, we will accept other medical documents that confirm that nature of your disability and functional impairments relevant to the university setting as interim documentation.
+  - Deaf and Hard of Hearing: recent audiogram or audiology assessment report, AND PMC Documentation of Hearing Impairment Form (completed by an otolaryngologist, audiologist or treating family physician)
+  - Learning Disabilities (LD): recent Psycho-Educational Assessment (PEA) (completed by a registered psychologist or psychological associate within the last 5 years or at the age of 18 years or older is preferred)
+  - Mobility/Physical Disabilities: PMC Documentation of Mobility Disability Form (completed by a regulated health care professional)
+  - Mental Health Disabilities: PMC Documentation of Mental Health Disability Form (completed by a regulated health care professional who has knowledge of the student’s history and is licensed to diagnose and treat mental health disorders), copy of a recent psychological assessment report completed by a registered psychologist or psychological associate
+  - Blind and Partially Sighted: PMC Documentation of Vision Impairment Form (completed by an ophthalmologist, optometrist, low vision specialist or treating family physician)
+
+[documentation_submission]
+  - Complete PMC Appointment Request Form.
+  - Provide a copy of your disability documentation.
+
+[registration_process]
+  - Request an intake appointment - To register with the PMC, you must provide a copy of your disability documentation and attend a 1-hour intake appointment with a Disabilities Coordinator.
+  - Create a Ventus student account - You will be required to create a Ventus student account prior to your intake appointment.Ventus is a one-stop academic accommodation management tool to help you manage and keep track of your accommodations in your courses.
+  - Complete the AFI and Intake Consent From - You will receive a confirmation email to your CMAIL with details of your appointment 1-3 business days prior to your scheduled appointment. The email will include instructions on the completion of the Intake Consent Form and the Assessment of Functional Impairment (AFI) questionnaire which must be completed prior to your appointment.
+  - Submit your documentation before your appointment - Your disability documentation can be uploaded directly to Ventus where your PMC Coordinator will be able to review the information.
+  - FIVE: Attend your intake appointment - When requesting an intake appointment, you have the options of selecting an in-person or a virtual meeting with a PMC Coordinator. (If you’re attending an in-person intake appointment, please note that the Paul Menton Centre is located in Room 501 of the Nideyinàn Building (NN).
+  - You will receive directions on how to navigate to our office.
+  - If you are new to the Carleton campus, please take some time to become familiarized with our interactive campus map and parking services for visitors.)
+
+[counselling_services]
+  - Carleton University offers:
+  - Single-session counselling
+  - Brief individual counselling
+  - Group counselling and workshops
+
+[support_24_7_contact]
+  - Campus Safety (24/7): 613‑520‑4444
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - Ontario Resident: You must be an Ontario resident. This is typically determined by where you have lived for the past 12 consecutive months, not including time spent as a full-time post-secondary student._x000B__x000B_
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident, or Protected Person of Canada. International students are not eligible for OSAP._x000B__x000B_
+  - Approved Program: You must be enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate. Most undergraduate, Master's, and Doctoral degree programs at Carleton are approved for OSAP. If you're a Special Student or in certain diploma/certificate programs, you should contact Carleton's Awards Office to confirm eligibility._x000B__x000B_
+  - Eligible Course Load: You must be enrolled in enough courses to qualify as either a full-time or part-time student for OSAP purposes.
+  - Good Standing: You must not be in default on any previous OSAP loans or have any restrictions on your OSAP account._x000B__x000B_
+  - Academic Progress: You need to maintain satisfactory academic progress in your program of study.
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need._x000B__x000B_
+  - Lifetime Funding Limit: You must not have exceeded the lifetime limit of student loan funding (typically 340 weeks, 400 weeks for doctoral studies, or up to 520 weeks for students with disabilities).
+
+[bursaries]
+  - BSWD / CSG-DSE
+  - Dr. John Davis Burton Award
+  - IODE Lord Dundonald Giselle Lazure Memorial Award
+  - Making a Difference Entrance Award
+  - Susan Scott Parker Scholarship
+  - Thomas Sorensen Memorial Scholarship
+  - Walker Wood Entrance Awards
+  - Canadian Council of the Blind Bursary
+  - Charles Watters Memorial Bursary
+  - Ed Ireland Student Bursaries
+  - Hollis Peirce Bursary
+  - John Teuscher Memorial Scholarship
+  - Nicholas Leroux Memorial Bursary
+  - Paul Menton Memorial Bursary
+  - William Fraser Bursary for Students with Disabilities

@@ -1,13 +1,24 @@
-tensorflow>=2.10.0
-scikit-learn>=1.1.0
+# Data pipeline (preprocessing.py)
 pandas>=1.5.0
 numpy>=1.21.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-jupyter>=1.0.0
-google-generativeai>=0.8.0
+pyarrow>=14.0.0
+
+# API server (app.py)
 flask>=3.0.0
 flask-cors>=6.0.0
-hmmlearn>=0.3.0
 python-dotenv>=1.2.1
-pyarrow>=14.0.0
+
+# Recommender backend (claude_recommender.py). Reads CLAUDE_API_KEY, or
+# ANTHROPIC_API_KEY. Without a key the recommender still works: it falls back to a
+# rule-based needs mapping over the same measured data.
+anthropic>=1.4.0
+
+# Extraction benchmark (extraction/embedding.py) - optional, large.
+# The keyword baseline, corpus, gold tooling and evaluator need none of this.
+sentence-transformers>=6.0.0
+torch>=2.4.0
+
+# Removed with the Gemini backend: google-generativeai. Removed with the old
+# pipeline: tensorflow, scikit-learn, hmmlearn,
+# matplotlib, seaborn, jupyter. Re-add what the accommodation-extraction
+# work in the next step actually needs, rather than carrying them forward.

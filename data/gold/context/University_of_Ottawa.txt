@@ -1,0 +1,89 @@
+University of Ottawa
+====================
+
+[physical_disabilities_supported]
+  - Mobility impairments
+  - Wheelchair/scooter use, difficulty walking or climbing stairs, long-distance mobility issues, temporary injuries
+  - Dexterity limitations
+  - Conditions like arthritis, repetitive strain injuries, hand/arm injuries
+  - Vision impairments
+  - Low vision or legal blindness
+  - Hearing impairments
+  - From partial hearing loss to deafness
+  - Chronic health conditions
+  - Including MS, cancer, asthma, chronic fatigue, cardiovascular issues
+  - Temporary physical conditions
+  - Post-surgery recovery, concussions, fractures, etc.
+  - Supports Cognitive (ADHD, autism), Mental health (Anxiety, depression), Sensory (Visual impairments), Physical (Wheelchair), Medical (Epilepsy) disabilities.
+  - All programs offer accommodations (exam time, note-taking, adaptive tech, tailored plans or functional assessments, alternate software/lab access
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, Braille, large print, accessible PDFs
+  - Assistive tech: screen readers, speech-to-text, mind-mapping tools
+  - ASL interpretation and real-time captioning available
+  - Personalized accommodation plans via online portal
+  - Interim accommodations for temporary issues (e.g., concussion)
+  - Confidential service; diagnoses not shared with professors
+  - Support for physical and chronic conditions
+  - Staff coordinate with students and professors
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, large print, accessible PDFs
+  - Assistive tech: screen readers, speech-to-text, mind-mapping tools
+  - Peer note-taking support
+  - Personalized accommodation plans via online portal
+  - Interim accommodations for temporary issues (e.g., concussion)
+  - Confidential service; diagnoses not shared with professors
+  - Support for mental health, ADHD, autism, learning disabilities
+  - Staff coordinate with students and professors
+
+[documentation_requirements]
+  - ADD/ADHD: Psychoeducational assessment completed within the last five years or at the age of 18, Neuropsychological assessment completed within the last five years or at the age of 18, Academic Accommodations Documentation of ADHD (PDF)
+  - Acquired Brain Injury: Neuropsychological assessment completed within the last five years or at the age of 18, Academic Accommodations Documentation of Acquired Brain Injury (PDF)
+  - Autism Spectrum Disorder: Psychoeducational assessment completed within the last five years or at the age of 18, Neuropsychological assessment completed within the last five years or at the age of 18, Academic Accommodations Documentation of ASD (PDF)
+  - Chronic Medical Disability: Academic Accommodations Documentation of Physical or Chronic Condition (PDF)
+  - Hearing Impairment: Audiology assessment, Academic Accommodations Documentation of Vision or Hearing Impairment (PDF)
+  - Interim Service Request: Interim Service Request Medical Certificate (PDF)
+  - Mental Health Disabilities: Academic Accommodations Documentation of Mental Health Disability (PDF)
+  - Physical Disability: Occupational Therapist or Physical Therapy Assessment in conjunction with the Academic Accommodations medical certificate that is completed by a family physician or specialized physician, Academic Accommodations Documentation of Physical or Chronic Condition (PDF)
+  - Vision Loss or Impairment: Academic Accommodations Documentation of Vision or Hearing Impairment (PDF), CNIB Vision Assessment, CNIB Card (for interim academic accommodations of one term)
+
+[documentation_submission]
+  - Upload Through Academic Accommodations Ventus Portal
+
+[registration_process]
+  - Collect your disability-related documentation (available in the Documentation by type of disability section on this page).
+  - Create your Ventus account.
+  - Complete the intake form.
+  - Enter your disability-related information and upload your documentation.
+  - After reviewing your documentation and intake form, a member of our team will contact you about booking an appointment.
+
+[counselling_services]
+  - University of Ottawa offers:
+  - Ontario Structured Psychotheraphy (OSP)
+  - Same-day intake appointments
+
+[support_24_7_contact]
+  - Protection Services (24/7): 613‑562‑5411
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP assistance, you must at least:
+  - be a Canadian citizen, a permanent resident or a protected person and have the appropriate documentation to support this
+  - be an Ontario resident as defined by OSAP
+  - be enrolled in an approved program that is 12 or more weeks in length leading to a degree, certificate or diploma.
+
+[bursaries]
+  - Education Bursary for Students with Disabilities
+  - Education Bursary for International Students with Disabilities
+  - BSWD / CSG-DSE (Ontario)

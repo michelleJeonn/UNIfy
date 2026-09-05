@@ -1,0 +1,109 @@
+University of Waterloo
+======================
+
+[physical_disabilities_supported]
+  - Mobility Impairments
+  - Examples: Wheelchair or scooter users; difficulty walking long distances or navigating stairs; conditions like limb loss or muscular dystrophy
+  - Accommodations include:
+  - Accessible entrances, buildings, and classrooms
+  - Reserved seating and accessible housing
+  - Alternative format for exams in the Tim Nolan Testing Centre ￼ ￼
+  - Dexterity Impairments
+  - Examples: Arthritis, repetitive strain injuries (RSI), short-term hand/arm injuries
+  - Assistive devices (ergonomic keyboards/mice)
+  - Option to type exams instead of handwriting
+  - Note-taking support ￼ ￼
+  - Vision Impairments
+  - Examples: Low vision, partial or legal blindness
+  - Alternate formats (large-print, digital text)
+  - Assistive technology (screen magnifiers/readers)
+  - Support for accessible documents and orientation ￼
+  - Hearing Impairments
+  - Examples: Partial hearing loss to deafness
+  - Captioning (real-time or human-transcribed)
+  - FM listening systems or other audio amplification
+  - Notetaking assistance ￼ ￼
+  - Chronic Physical Health Conditions
+  - Examples: Multiple sclerosis, cancer treatment, severe asthma, chronic fatigue, cardiovascular conditions
+  - Deadline extensions, flexible attendance
+  - Rest breaks during classes or exams
+  - Option for medical leave or withdrawal ￼ ￼
+  - Temporary Physical Disabilities
+  - Examples: Post-surgery recovery, concussions, fractures, sprains
+  - Temporary exam accommodations
+  - Modified seating or classroom access
+  - Access to mobility aids and note-taking services
+
+[mental_disabilities_supported]
+  - mood disorders
+  - Neurodiversity
+  - Trauma and its effects
+  - Learning Disabilities
+  - anxiety disorders
+
+[physical_accommodations]
+  - Extra time and breaks for tests/exams
+  - Alternate exam locations
+  - Lecture materials in accessible formats
+  - Assistive tech (screen readers, speech-to-text)
+  - Accessible housing and campus navigation support
+  - Individualized accommodation plans each term
+  - Disability-related bursaries and medical leave options
+
+[mental_accommodations]
+  - Extra time and breaks for tests/exams
+  - Alternate exam locations
+  - Lecture materials in accessible formats
+  - Assistive tech (screen readers, speech-to-text)
+  - Note-taking and peer support services
+  - Academic strategy and tech workshops
+  - Support for mental health and chronic conditions
+  - Individualized accommodation plans each term
+  - Disability-related bursaries and medical leave options
+
+[documentation_requirements]
+  - Brain Injury: Acquired Brain Injury Disability Verification Form
+  - ADHD: ADHD Disability Verification Form
+  - Hearing Disability: Hearing Disability Verification Form
+  - Learning Disability: Learning Disability Documentation Requirements
+  - Medical Disability: Medical Disability Verification Form
+  - Mental Health Disability: Mental Health Disability Verification Form
+  - Physical and/or Mobility Disability: Physical and/or Mobility Disability Verification Form
+  - Visual Disability: Visual Disability Verification Form
+  - Functional Limitation: Functional Limitation Verification Form
+  - Medical Cannabis Request: Medical Cannabis Request Verification Form
+  - Service Animal: Service Animal Verification Request Form
+  - Service Animal Health: Verification of Animal’s Health Form
+
+[documentation_submission]
+  - Submit documentation via AIM.
+  - Submit additional documentation request form.
+  - Upload documentation to the additional documentation request form.
+  - Submit documentation via: in-person (Needles Hall North, Room 1401), Sendit, email (access@uwaterloo.ca), fax (519-746-2401)
+
+[registration_process]
+  - Complete the AccessAbility Services' online application to begin the registration process (this will take approximately 5-10 minutes to complete). If you have a University of Waterloo Verification Form or alternate documentation in your possession, upload it with your application. It's okay if you don’t have documentation. Apply if you believe you need accommodations
+  - Monitor your Waterloo email for next steps. We will email you within approximately 14 days (2 weeks) to schedule your registration appointment once we've reviewed your application. Please note that our response time may vary during peak times. Incoming students: you will begin to receive emails from us in mid-June when your Waterloo email is active.
+  - Meet your Accommodation Consultant. During your appointment, you and your Accommodation Consultant will finalize your accommodation plan and they will show you how to sign into the AccessAbility Services online system to request and manage your accommodations.
+
+[counselling_services]
+  - University of Waterloo offers:
+  - Brief counselling
+  - Single session counselling
+  - Crisis appointments
+
+[support_24_7_contact]
+  - Campus Police (24/7): 519‑888‑4911
+  - Empower Me (24/7 mental health): 1‑855‑853‑0565
+
+[osap_eligibility]
+  - be a Canadian citizen, permanent resident or have protected person status; international students are ineligible.
+  - have Ontario residency, that is, have lived in Ontario for at least 12 consecutive months without attending full-time postsecondary school.
+  - be neither in default on a previous OSAP student loan nor on OSAP restriction.
+  - maintain satisfactory academic progress while receiving OSAP aid.
+  - have demonstrated financial need as calculated by the government. Gross family income as well as student resources and assets are taken into consideration.
+
+[bursaries]
+  - Ross & Doris Dixon Bursary
+  - Special Achievement Bursary
+  - BSWD / CSG-DSE

@@ -3,7 +3,9 @@
 import os
 import sys
 import requests
-import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -11,7 +13,9 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 def test_flask_api():
     """Test the Flask API endpoints"""
-    base_url = "http://localhost:5000"
+    # Read the port from .env rather than hardcoding it. Port 5000 is taken by the
+    # AirPlay receiver on macOS, which answers 403 and makes this suite look broken.
+    base_url = f"http://{os.getenv('FLASK_HOST', '127.0.0.1')}:{os.getenv('FLASK_PORT', '5001')}"
 
     print("🧪 Testing UNIfy Flask API Integration")
     print("=" * 50)
@@ -54,7 +58,7 @@ def test_flask_api():
 
         if response.status_code == 200:
             data = response.json()
-            print(f"Recommendations endpoint working")
+            print("Recommendations endpoint working")
             print(f"   Source: {data.get('source', 'unknown')}")
             print(f"   Success: {data.get('success', False)}")
             if data.get('needed_accommodations'):
@@ -70,25 +74,25 @@ def test_flask_api():
         print(f"Recommendations endpoint error: {e}")
         return False
 
-    # Test Gemini endpoint
-    print("\n3. Testing Gemini AI endpoint...")
+    # Test the direct recommender endpoint
+    print("\n3. Testing direct recommender endpoint...")
     try:
         response = requests.post(
-            f"{base_url}/api/gemini",
+            f"{base_url}/api/claude",
             json=test_profile,
             headers={"Content-Type": "application/json"}
         )
 
         if response.status_code == 200:
             data = response.json()
-            print(f"Gemini endpoint working")
+            print("Direct recommender endpoint working")
             print(f"   Source: {data.get('source', 'unknown')}")
             print(f"   Success: {data.get('success', False)}")
         else:
-            print(f"Gemini endpoint failed: {response.status_code}")
+            print(f"Direct recommender endpoint failed: {response.status_code}")
             print(f"   Response: {response.text}")
     except Exception as e:
-        print(f"Gemini endpoint error: {e}")
+        print(f"Direct recommender endpoint error: {e}")
 
     # Test API test endpoint
     print("\n4. Testing API test endpoint...")
@@ -96,7 +100,7 @@ def test_flask_api():
         response = requests.get(f"{base_url}/api/test")
         if response.status_code == 200:
             data = response.json()
-            print(f"Test endpoint working")
+            print("Test endpoint working")
             print(f"   Message: {data.get('message', 'No message')}")
         else:
             print(f"Test endpoint failed: {response.status_code}")
@@ -108,20 +112,28 @@ def test_flask_api():
 
 
 def test_direct_imports():
-    """Test direct imports of ML and Gemini modules"""
+    """Test that the recommender imports and is grounded in real data."""
     print("\n🔧 Testing direct module imports...")
 
     try:
-        from ml_pipeline import get_recommendations as ml_get_recommendations
-        print("ML Pipeline import successful")
-    except Exception as e:
-        print(f"ML Pipeline import failed: {e}")
+        from claude_recommender import ClaudeRecommender
+        recommender = ClaudeRecommender()
+        print(f"Recommender import successful "
+              f"({len(recommender.matrix)} universities, {len(recommender.labels)} labels)")
 
-    try:
-        from gemini_recommender import get_gemini_recommendations
-        print("Gemini Recommender import successful")
+        # The point of the grounded backend: it can only name schools in the dataset.
+        known = set(recommender.matrix["university"])
+        needs = recommender._rule_based_needs({"mental_health": "ADHD",
+                                               "physical_health": "None",
+                                               "severity": "moderate"})
+        named = {u["name"] for u in recommender.rank(needs)}
+        invented = named - known
+        if invented:
+            print(f"FAIL: recommended universities not in the dataset: {invented}")
+        else:
+            print(f"All {len(named)} recommended universities are in the dataset")
     except Exception as e:
-        print(f"Gemini Recommender import failed: {e}")
+        print(f"Recommender import failed: {e}")
 
 
 if __name__ == "__main__":

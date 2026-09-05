@@ -1,0 +1,95 @@
+TMU
+===
+
+[physical_disabilities_supported]
+  - Mobility Impairments
+  - Examples: wheelchair/scooter users, difficulty navigating stairs or long distances, muscular dystrophy, limb loss.
+  - Support: accessible buildings and classrooms, seating accommodations, mobility on campus, photocopy assistance for those with limited mobility .
+  - Dexterity Impairments
+  - Examples: arthritis, repetitive strain injuries, short-term arm or hand injuries.
+  - Support: ergonomic keyboards/mice, ability to type exams, assistance with note-taking and materials.
+  - Vision Impairments
+  - Examples: low vision or total blindness.
+  - Support: adaptive technology like screen readers and magnifiers (e.g., JAWS, Kurzweil 3000), alternative-format documents (large-print, digital), orientation aids .
+  - Hearing Impairments
+  - Examples: partial hearing loss, deafness.
+  - Support: captioning services, FM systems, assistive audio devices, note-taking support.
+  - Chronic Physical Health Conditions
+  - Examples: multiple sclerosis, cancer treatment, severe asthma, chronic fatigue, cardiovascular conditions.
+  - Support: flexible deadlines, attendance and exam modifications, rest breaks, accommodation plans tailored to health-related barriers .
+  - Temporary Physical Disabilities
+  - Examples: recovery from surgery, concussions, fractures or sprains.
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources.
+
+[mental_disabilities_supported]
+  - bipolar disorder
+  - schizophrenia
+  - obsessive-compulsive disorder (OCD)
+  - eating disorders
+  - attention-deficit/hyperactivity disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Quiet, private or low-sensory exam rooms
+  - Alternate formats: accessible PDFs, audio, large print
+  - Assistive tech support (screen readers, adaptive software)
+  - Personalized accommodation plans via AAS portal
+  - Accessible campus spaces (e.g., SLC support)
+  - Confidential registration & privacy protections
+  - Faculty trained in accessibility policies
+
+[mental_accommodations]
+  - Extended time & scheduled breaks for exams
+  - Quiet, private or low-sensory exam rooms
+  - Alternate formats: accessible PDFs, audio, large print
+  - Assistive tech support (screen readers, adaptive software)
+  - Peer note-taking services
+  - Personalized accommodation plans via AAS portal
+  - Transition programs (e.g., SHIFT orientation)
+  - Workshops & academic strategy support
+  - Confidential registration & privacy protections
+  - Faculty trained in accessibility policies
+
+[documentation_requirements]
+  - Disability Assessment Form
+
+[documentation_submission]
+  - Option 1: Submit through Traditional Registration Option TRO; for students who would like to attend a virtual registration appointment with a student accommodation facilitator.
+  - Option 2: Submit through Express Registration Option ERO; for students who do not require a registration appointment with a student accommodation facilitator.
+
+[registration_process]
+  - Obtain your disability documentation
+  - Submit your Intake form & Documentation - (There are two options for registering with AAS - the Traditional Registration Option (TRO) and the Express Registration Option (ERO).
+  - Each option has it's own different online intake form that you complete.
+  - TRO is best suited for students who would like to attend a virtual registration appointment with a Student Accommodation Facilitator to ask questions and discuss concerns, and ERO offers students a remote and expedited way for AAS to develop and approve an academic accommodation plan.
+  - Monitor your inbox for next steps (Depending on the registration option you chose, you will receive a specific email outlining your next steps.
+  - TRO intake form - We'll email you about booking your registration appointment.
+  - ERO intake form - We'll email you with information about your accommodation plan.)
+
+[counselling_services]
+  - contact 416-979-5195 or csdc@torontomu.ca for counselling services
+
+[support_24_7_contact]
+  - Campus Safety (24/7): 416‑979‑5040
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - Ontario Resident: You must be an Ontario resident. This generally means Ontario is the most recent province where you lived for at least 12 consecutive months, not including time spent as a full-time post-secondary student.
+  - Canadian Citizen, Permanent Resident, or Protected Person: You must be one of these to be eligible for OSAP. International students are not eligible.
+  - Financial Need: OSAP assesses your financial need based on your educational costs and your available financial resources (including your income, family income, and any other scholarships or savings).
+  - Good Standing on Previous Loans: Any previous OSAP loans must be in good standing, with no defaults or restrictions.
+
+[bursaries]
+  - AwardSpring disability-focused awards
+  - School of Disability Studies in-program awards (Beth Foulkes Community Living Award, Bill & Lucille Owen Award, etc.)
+  - Beth Foulkes Community Living Award
+  - Bill & Lucille Owen Award in Public Policy
+  - Canadian Foundation for Physically Disabled Persons Disability Studies Award
+  - David & Sylvia Pollock Disability Studies Entrance Award
+  - Emma Hardie International Disability Award
+  - Harry E. Foster Memorial Award
+  - Helen Henderson Award in Writing for Disability Activism
+  - Jake Edelson Award in Community Organising
+  - Karen Tench Memorial Award in Community Inclusion & Advocacy
+  - Malcolm Jeffreys Memorial Leadership Award
+  - M.K. Chant Disability Studies Awards
+  - BSWD / CSG-DSE

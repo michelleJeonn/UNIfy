@@ -1,0 +1,86 @@
+Algoma University
+=================
+
+[physical_disabilities_supported]
+  - Mobility impairments (e.g. wheelchair/scooter use, difficulty with walking/gaining balance)
+  - Dexterity limitations (e.g. arthritis, repetitive strain, hand/arm injuries)
+  - Vision impairments (low vision to blindness)
+  - Additionally, they support other disability types (brain injury, ADHD, etc.)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Note-taking support and lecture recording available
+  - Alternate formats: audio, Braille, large print, PDFs
+  - Assistive tech: screen readers, magnifiers, memory aids
+  - Personalized accommodation plans for each student
+  - Support for physical, sensory, and chronic conditions
+  - Temporary accommodations available (e.g., concussion)
+  - Accessible campus: ramps, elevators, washrooms, housing
+  - One-on-one intake meeting required to register
+  - Confidential service; no diagnosis disclosure needed
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Note-taking support and lecture recording available
+  - Alternate formats: audio, large print, PDFs
+  - Assistive tech: screen readers, memory aids
+  - Personalized accommodation plans for each student
+  - Support for ADHD and mental health conditions
+  - Temporary accommodations available (e.g., concussion)
+  - One-on-one intake meeting required to register
+  - Confidential service; no diagnosis disclosure needed
+
+[documentation_requirements]
+  - OSAP Disability Verification Form
+  - Algoma University Confirmation of Disability Form
+  - Psychoeducational Assessment
+
+[documentation_submission]
+  - Contact learning@algomau.ca to inquire about registering with us. You will be sent a form to complete to register with Accessibility Services.
+  - Complete Registration Form
+  - Secure and Submit Documentation in registration form
+  - Attend an Intake Appointment
+
+[registration_process]
+  - ​Step 1. Complete Registration Form - Contact ​learning@algomau.ca​ to inquire about registering with us. You will be sent a form to complete to register with Accessibility Services. The form tells us a little bit about you and your needs while at school. You will then complete the registration form and return it to us.
+  - Secure and Submit your Documentation - Accessibility Services will review your completed registration form and based on the information that you provided will then guide you to the specific medical documentation that you will need to submit to complete your registration.
+  - Documentation required is typically one of the following: OSAP Disability Verification Form, Algoma University Confirmation of Disability Form, Psychoeducational Assessment
+  - Attend an Intake Appointment - Once Accessibility Services has received your Registration Form and your required documentation, we will contact you to arrange for an intake appointment.
+  - At this appointment, we will review your documents together, and discuss the academic accommodations that would best support you.
+  - We will also provide you with an orientation to the Learning Centre and teach you how to access our resources.
+
+[counselling_services]
+  - Algoma University offers:
+  - One-on-one counselling services
+  - Crisis intervention
+  - Safety planning on-campus
+
+[support_24_7_contact]
+  - Campus Security (24/7): 705‑949‑2301 ext. 4910
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - An Ontario resident.
+  - A Canadian citizen, Permanent Resident, or Protected Person of Canada. (International students are not eligible for OSAP).
+  - Enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate.
+  - Enrolled in an eligible course load (full-time or part-time, as defined by OSAP).
+  - In good academic standing with the university and good financial standing with OSAP (meaning no previous defaults or overpayments).
+  - Able to demonstrate financial need.
+  - Within the lifetime limit of student loan funding (typically 340 weeks, with exceptions for doctoral studies or students with disabilities).
+  - Your OSAP application type depends on your course load:
+  - Full-time OSAP: You're considered full-time for OSAP if you're taking 60% or more of a full course load. This generally translates to 1.5 credits or more per term for undergraduate students._x000B__x000B_
+  - Students with a permanent or persistent/prolonged disability: If you have a documented disability, you can be considered full-time for OSAP purposes if you are taking 40% or more of a full course load (e.g., 1.0 credit or more per term for undergraduate students). You also have the option to apply as a part-time student._x000B__x000B_
+  - Part-time OSAP: You apply for part-time OSAP if your course load is between 20% and 59% of a full course load (or less than 40% if you have a disability).
+
+[bursaries]
+  - Ontario BSWD & Canada CSG‑DSE
+  - Special Bursary Program (part‑time)
+  - External Awards for Students with Disabilities (internal listing)

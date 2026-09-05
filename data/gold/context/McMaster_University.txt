@@ -1,0 +1,121 @@
+McMaster University
+===================
+
+[physical_disabilities_supported]
+  - Mobility Impairments
+  - Examples: Wheelchair or scooter users; difficulty walking long distances or navigating stairs; conditions like limb loss or muscular dystrophy
+  - Accommodations include:
+  - Accessible entrances, buildings, and classrooms
+  - Reserved seating and accessible housing
+  - Alternative format for exams in the Tim Nolan Testing Centre ￼ ￼
+  - Dexterity Impairments
+  - Examples: Arthritis, repetitive strain injuries (RSI), short-term hand/arm injuries
+  - Assistive devices (ergonomic keyboards/mice)
+  - Option to type exams instead of handwriting
+  - Note-taking support ￼ ￼
+  - Vision Impairments
+  - Examples: Low vision, partial or legal blindness
+  - Alternate formats (large-print, digital text)
+  - Assistive technology (screen magnifiers/readers)
+  - Support for accessible documents and orientation ￼
+  - Hearing Impairments
+  - Examples: Partial hearing loss to deafness
+  - Captioning (real-time or human-transcribed)
+  - FM listening systems or other audio amplification
+  - Notetaking assistance ￼ ￼
+  - Chronic Physical Health Conditions
+  - Examples: Multiple sclerosis, cancer treatment, severe asthma, chronic fatigue, cardiovascular conditions
+  - Deadline extensions, flexible attendance
+  - Rest breaks during classes or exams
+  - Option for medical leave or withdrawal ￼ ￼
+  - Temporary Physical Disabilities
+  - Examples: Post-surgery recovery, concussions, fractures, sprains
+  - Temporary exam accommodations
+  - Modified seating or classroom access
+  - Access to mobility aids and note-taking services
+
+[mental_disabilities_supported]
+  - mood disorders
+  - Neurodiversity
+  - Trauma and its effects
+  - Learning Disabilities
+  - anxiety disorders
+  - bipolar disorder
+  - schizophrenia
+  - obsessive-compulsive disorder (OCD)
+  - eating disorders
+  - attention-deficit/hyperactivity disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Quiet, accessible exam spaces
+  - Alternate formats: audio, large print, accessible PDF
+  - Assistive tech & adaptive software tools
+  - Note-taking support (manual or digital)
+  - Accessible housing, campus navigation & testing centre
+  - Individual accommodation plans via MySAS portal
+  - Mental health, chronic illness & disability bursaries
+  - Faculty receives accommodation letters
+
+[mental_accommodations]
+  - Extended time & scheduled breaks for tests/exams
+  - Quiet, accessible exam spaces
+  - Alternate formats: audio, large print, accessible PDF
+  - Assistive tech & adaptive software tools
+  - Note-taking support (manual or digital)
+  - Individual accommodation plans via MySAS portal
+  - Academic coaching & learning strategy workshops
+  - Transition support program for new students
+  - Mental health, chronic illness & disability bursaries
+  - Faculty receives accommodation letters
+
+[documentation_requirements]
+  - SAS Medical Documentation
+  - Learning disabilities and autism spectrum disorders: Full psycho-educational assessment, memory assessment (if memory aids are required); Within the last five years (older documentation considered on a case-by-case basis).
+  - ADD/ADHD: Psycho-educational assessment, medical report (outlining history and areas of weakness, strength), memory assessment (if memory aids are required); Within the last five years (older documentation considered on a case-by-case basis).
+  - Mental health disability: Student Accessibility Services form, mental health assessment, doctor’s letter, memory assessment (if memory aids are required); Within the last five years (older documentation considered on a case-by-case basis).
+  - Acquired brain injury (ABI): Neuropsychological assessment; Within the last five years (older documentation considered on a case-by-case basis).
+  - Blind or visually impaired: Doctor’s letter, Canadian National Institute for the Blind (CNIB) registration number (if legally blind); CNIB registration date (if legally blind) or within the last five years (older documentation considered on a case-by-case basis).
+  - Deaf or hard of hearing: Full audiology report, doctor’s letter; Within the last five years (older documentation considered on a case-by-case basis).
+  - Central auditory processing disorder: Audiology report; Within the last five years (older documentation considered on a case-by-case basis).
+  - Chronic medical condition or physical disability: Student Accessibility Services form, mental health assessment, doctor’s letter; Within the last five years (older documentation considered on a case-by-case basis).
+
+[documentation_submission]
+  - Log into Mysas Portal.
+  - Navigate to Accommodation.
+  - Access Documents.
+  - Upload Documents.
+
+[registration_process]
+  - Complete the Intake Form - ( Log in to MySAS Portal - Click “Accommodation” in the menu on the left - Click “Intake Request” in the menu.
+  - Then, select “Form.” - Complete the intake form.
+  - Make sure to fill out all the required fields - Before submitting, go back to make sure that your information is accurate.
+  - Also, check that all the required fields are complete - Save and submit your request - Next, we’ll email you to upload your documentation - Please upload your documentation within 12 calendar days)
+  - Upload your documentation - (Log in to MySAS Portal - Click “Accommodation” in the menu on the left - Click “Documents” in the menu - Upload your documentation or assessment of functional impairment (AFI) - Click save and submit your request)
+  - Book an intake appointment - (Log in to MySAS Portal - Click “Appointment” in the menu on the left - Request a new appointment by completing the form - Choose “Intake” from the list of appointment types - Review and select a time.
+  - We recommend checking your calendar and timetable first.
+  - Appointments can be virtual or in person.
+  - Note: All appointments take place Monday to Friday, 8:30 a.m. to 3:30 p.m. - Confirm your appointment.)
+  - Meet your program coordinator - (Log in to MySAS Portal - Click “Appointment” in the menu on the left - View your appointment details in the “Approved Appointments” section on the right)
+  - Receive your accommodation plan - (Log in to MySAS Portal - Click “Appointment” in the menu on the left - Click “Accommodation Letter/Emails” in the menu - Review your letter of accommodation)
+
+[counselling_services]
+  - McMaster University offers:
+  - Short-term counselling (Indigo Path)
+  - Same-day single session appointments (Orange Path)
+
+[support_24_7_contact]
+  - Campus Security (24/7): 905‑522‑4135
+  - Student Assistance Program (Aspiria, 24/7 mental health): 1‑877‑234‑5327
+
+[osap_eligibility]
+  - Apply for OSAP if Ontario is the last Canadian province that you have resided in for at least 12 consecutive months without being a full-time college or university student, and you meet all other eligibility criteria.Apply for OSAP if Ontario is the last Canadian province that you have resided in for at least 12 consecutive months without being a full-time college or university student, and you meet all other eligibility criteria.
+  - OSAP for Full-Time Students and OSAP for Part-Time Students are separate programs and require separate applications. So if you receive full-time OSAP one term and drop to part-time studies the next term, you’ll need to do a new application for part-time OSAP.
+  - Full-time: Enrolled in at least 60% of a 100% course load for your program in each term. Co-op work terms are always considered a 100% course load.
+  - Part-time: Enrolled in between 20% and 59% of a 100% course load for your program in each term.
+  - Apply for OSAP if Ontario is the last Canadian province that you have resided in for at least 12 consecutive months without being a full-time college or university student, and you meet all other eligibility criteria.
+
+[bursaries]
+  - Kevin Collins Abilities Scholarship
+  - McMaster Achievement Awards of Excellence
+  - NEADS National Student Awards & other external funds
+  - BSWD / CSG-DSE

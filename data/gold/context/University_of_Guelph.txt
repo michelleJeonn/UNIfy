@@ -1,0 +1,114 @@
+University of Guelph
+====================
+
+[physical_disabilities_supported]
+  - Mobility impairments: wheelchair/scooter users, difficulty walking or climbing stairs, long-distance travel, temporary injuries
+  - Dexterity limitations: arthritis, repetitive strain injuries (RSI), arm/hand injuries
+  - Vision impairments: low vision, legal or total blindness
+  - Hearing impairments: partial loss up to Deafness
+  - Chronic health conditions: MS, cancer, asthma, fatigue, cardiovascular issues
+  - Temporary impairments: post-surgery, concussion, fractures, etc.
+  - Academic Adjustments
+  - Extended exam times, quiet/private rooms, assistive tech (screen readers, speech-to-text), note-taking support, audio recording, flexible deadlines, moderated attendance expectations
+  - Alternative Formats
+  - Digital textbooks, screen-reader-friendly content, accessible formats (audio, braille)
+  - Exam Supports
+  - SAS Exam Centre bookings, private exam rooms, use of computers or assistive tools
+  - Orientation & Peer Assistance
+  - Orientation programs (START Accessible), peer mentoring, coaching for academic and life skills
+  - Library Accessibility Services
+  - Adaptive technology lab (screen readers, others), quiet study rooms with accessibility features
+  - Mobility & Service Animal Support
+  - Campus mobility assistance, door-to-door transit aid
+  - Financial Support
+  - Disabled students may qualify for reduced tuition, bursaries, and disability-access bursary funding
+  - "Academic Adjustments
+  - Disabled students may qualify for reduced tuition, bursaries, and disability-access bursary funding"
+  - Disabled students may qualify for reduced tuition, bursaries, and disability-access bursary funding""
+  - ""Academic Adjustments
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Accessible formats: audio, PDF, large print, Braille
+  - Assistive tech and adaptive software support
+  - Note-taking, lecture recording, and seating accommodations
+  - Reduced course load options
+  - One-on-one advisor support and peer coaching
+  - Transition/orientation programs
+  - Support for temporary, chronic, and physical conditions
+  - Help with accessible housing and campus navigation
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Accessible formats: audio, PDF, large print
+  - Assistive tech and adaptive software support
+  - Note-taking, lecture recording, and seating accommodations
+  - Deadline extensions and flexible attendance
+  - Reduced course load options
+  - One-on-one advisor support and peer coaching
+  - Transition/orientation programs
+  - Support for temporary, chronic, and mental health conditions
+
+[documentation_requirements]
+  - Functional Assessment Form
+  - ADHD: Functional Assessment Form, Psychoeducational Assessment (Conducted by a psychologist within the last three years, using adult norms; or was conducted when you were 17 years of age or older, using adult norms.)
+  - ASD: Functional Assessment Form, Psychoeducational Assessment (Conducted by a psychologist within the last three years, using adult norms; or was conducted when you were 17 years of age or older, using adult norms.)
+  - Chronic Health/Medical: Functional Assessment Form
+  - Concussion/Mild Traumatic Brain Injury (mTBI): Mild Traumatic Brain Injury (mTBI) (Concussion) Assessment Form, Neuropsychological Evaluation
+  - Deaf/deaf, Hard of Hearing (D/HH): Functional Assessment Form, Current Audiologist Assessment
+  - Learning Disability (LD): Psychoeducational Assessment (Conducted by a psychologist within the last three years, using adult norms; or was conducted when you were 17 years of age or older, using adult norms.)
+  - Low Vision, Blind: Functional Assessment Form
+  - Mental Health: Functional Assessment Form
+  - Multiple Disabilities: email sasintake@uoguelph.ca
+
+[documentation_submission]
+  - Ensure your documentation is a PDF. If there are multiple pages in the document, please ensure all pages are in the same file. You can scan paper documents with an app on your phone. We recommend searching the App Store or Google Play for a PDF scanner such as Adobe Scan for Android and iOS (free).
+  - Name your file with your STUDENT ID number and the type of document it is (e.g. 1023456 Functional Assessment).
+  - If you recently submitted an SAS application, you should have received an email with a link to upload your documentation.
+  - If you are already registered and assigned an SAS Advisor, log in to the SAS student portal, then click on "additional documentation" on the left.
+  - If you have any items under "list of applications submitted" that have the status "New". Click on "View Application"
+  - If you do not have any items under "list of applications submitted" or none that are "new," then click on "Submit Additional Documentation".
+  - Provide a file name - it's usually best to describe the type of documentation (e.g. functional assessment, psychoeducational assessment, or medical note)
+  - Click on the "choose file" button to browse your computer and select the file.
+  - Click on "Upload Documentation" button
+  - That's it! You should see a message that says "File was Successfully Uploaded"
+
+[registration_process]
+  - Complete the SAS Application Form - What you need to complete the application: Currently enrolled or accepted an offer of admission, Have a U of G Username and log-in credentials, Have a Student ID, Current students can apply at any time of the semester
+  - Submit Your Documentation - Documentation can be included at the time of applying or uploaded later using the customized link sent by email.
+  - Submissions will be processed as quickly as possible to ensure fall semester accommodations are in place as soon as possible.
+  - Some restrictions on accommodations may apply depending on academic deadlines throughout each semester.
+  - You will be required to submit documentation from a registered health professional which verifies the existence of a disability and describes your current functional abilities given the condition you experience.
+  - Book Your Intake Appointment with your SAS Advisor - After submitting your application, use the portal to book an intake appointment using the SAS Student Portal
+  - Apply for OSAP or Financial Support - Mark "Disability" on Your Application - (If you're applying for OSAP and have a documented disability, check the disability box. This could help you qualify for extra supports like the Bursary for Students with Disabilities (BSWD).)
+  - Attend a Summer Orientation Event - Various accessibility events are hosted during the summer (June - September) to help first-year undergrads, returning, transfer and graduate students understand how SAS works. If you are attending the University of Guelph for the first time in the Fall semester, be sure to check out our Orientation Events page to help you navigate your first year with SAS.
+  - Request Your Accommodations - Once registered with SAS, go to the SAS Portal to send your accommodation letters to instructors using the SAS Student Portal . You’ll need to do this every semester for each course.
+  - Communicate with Instructors - Discuss Your Accommodations (if needed)
+
+[counselling_services]
+  - University of Guelph offers:
+  - Same Day Drop-In Counselling
+  - Drop-in Counselling for Black, Racialized and Students of Colour
+
+[support_24_7_contact]
+  - Campus Police (24/7): 519‑824‑4120 ext. 52245
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - The University of Guelph's classification for OSAP purposes is crucial:
+  - Full-time OSAP: You are considered a full-time student for OSAP if you are enrolled in at least 60% of a full course load (1.5 credits or more per term for undergraduate students).
+  - Students with Disabilities: If you have a permanent, persistent, or prolonged disability, you can be considered a full-time student for OSAP if you are taking at least 40% of a full course load (1.0 credits or more per term for undergraduate students).
+  - Part-time OSAP: If you are taking between 20% and 59% of a full course load, you'll apply for part-time OSAP. Students with disabilities taking 40% of a course load have the option to apply for either full-time or part-time OSAP.
+
+[bursaries]
+  - University of Guelph Accessibility Bursary (entrance)
+  - Justin Eves Foundation Scholarships
+  - BSWD / CSG-DSE

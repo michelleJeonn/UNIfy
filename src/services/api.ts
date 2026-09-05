@@ -12,6 +12,11 @@ export interface StudentProfile {
   severity: 'mild' | 'moderate' | 'severe';
 }
 
+export interface Evidence {
+  accommodation: string;
+  quote: string;
+}
+
 export interface University {
   name: string;
   score: number;
@@ -20,13 +25,29 @@ export interface University {
   available_accommodations: string[];
   location: string;
   reason: string;
+  // Added with the grounded backend. Optional so older responses still typecheck.
+  matched_accommodations?: string[];
+  missing_accommodations?: string[];
+  evidence?: Evidence[];
+  // What the ratings actually count. They are coverage measures, not quality
+  // judgments -- no one has rated these schools. Show this if you show a rating.
+  rating_basis?: string;
 }
 
 export interface RecommendationResponse {
   success: boolean;
+  // 'claude_grounded' | 'rule_based_grounded' | 'unavailable'
   source: string;
+  model?: string | null;
   needed_accommodations: string[];
+  needed_accommodation_ids?: string[];
   recommendations: University[];
+  grounding?: {
+    universities_considered: number;
+    extractor: string;
+    extractor_quality: string;
+    caveat: string;
+  };
   error?: {
     code: string;
     message: string;

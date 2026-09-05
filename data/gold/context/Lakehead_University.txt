@@ -1,0 +1,86 @@
+Lakehead University
+===================
+
+[physical_disabilities_supported]
+  - Mobility impairments
+  - Dexterity limitations (e.g., arthritis, repetitive strain, injuries)
+  - Vision or hearing impairments
+  - Chronic medical conditions affecting learning
+  - Temporary physical conditions (e.g., recovery from surgery, concussion)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet exam rooms
+  - Alternate formats: audio, large print, Braille, accessible PDFs
+  - Note-taking support and lecture recording available
+  - Assistive tech: screen readers, magnifiers, memory aids
+  - Personalized accommodation plans each term
+  - Support for physical, sensory, chronic, and temporary conditions
+  - Interim accommodations available for short-term issues
+  - One-on-one intake meeting required to register
+  - Confidential service—diagnosis disclosure not mandatory
+  - Accessible campus: ramps, elevators, washrooms, housing
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet exam rooms
+  - Alternate formats: audio, large print, accessible PDFs
+  - Note-taking support and lecture recording available
+  - Assistive tech: screen readers, memory aids
+  - Personalized accommodation plans each term
+  - Support for learning, mental health, and temporary conditions
+  - Interim accommodations available for short-term issues
+  - One-on-one intake meeting required to register
+  - Confidential service—diagnosis disclosure not mandatory
+
+[documentation_requirements]
+  - Student Accessibility Services (SAS) with written documentation from a licensed medical/psychological professional
+  - Medical Documentation Form
+  - SAS Service Animal on Campus Form
+
+[documentation_submission]
+  - Email, fax, or drop off your documentation, or bring it with you to your appointment with Student Accessibility Services (sas@lakeheadu.ca)
+
+[registration_process]
+  - Collect Your Documentation - Once you have accepted an offer of admission to Lakehead University, gather your documentation of a permanent or temporary disability and/or medical condition.
+  - You can email, fax or drop off your documentation, or bring it with you to your appointment with Student Accessibility Services.
+  - For more information on documentation please visit our webpage on documentation. (If you do not have any documentation, or are unsure if your documentation is sufficient you can skip to Step 2 and connect with SAS to discuss documentation.)
+  - Connect With SAS - Once you have registered in your classes, connect with SAS to schedule an appointment to set up accommodations and start the registration process. (this appointment can take place as early as late June or July)
+  - If you are unable to meet in person, email or phone SAS to request a phone or video appointment.
+  - Activate Your Term Accommodations - Prior to the term start date SAS will email you with instructions on how to activate your accommodations for the term.
+  - You will need to complete this process each and every term for which you require accommodations. (SAS Staff will process your accommodation request and send your accommodation form(s) to your instructors.
+  - You will receive a copy of the email that goes to your instructors in your Lakehead University email inbox.
+  - The Accommodation Form will be attached to the email.
+  - Save this form to your computer for your future reference.
+  - Once you receive these emails your accommodations are active for the term.)
+  - Participate in SAS Procedures - Students requesting or registered with academic accommodations through Student Accessibility Services (SAS) have a duty to participate in the accommodation process by following SAS timeline requests: including but not limited to regularly checking your @lakeheadu.ca student email, completing the accommodation request form at the beginning of each term, booking tests, or requesting alternate dates/start times for tests according to the SAS timelines.
+
+[counselling_services]
+  - Lakehead University offers 1:1 in-person, virtual counselling services
+
+[support_24_7_contact]
+  - Campus Security (Thunder Bay): 807‑343‑8911
+  - Campus Security (Orillia): 705‑330‑4008
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To qualify for OSAP at Lakehead University, you generally must meet the following:
+  - Ontario Resident: You must be an Ontario resident, determined by criteria such as having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident of Canada, or a Protected Person. International students are not eligible for OSAP.
+  - Approved Institution and Program: Both Lakehead campuses (Thunder Bay and Orillia) are approved institutions. You must be enrolled in an OSAP-approved program that is at least 12 weeks in length and leads to a degree, diploma, or certificate.
+  - Eligible Course Load: You must maintain an eligible course load to be considered for full-time or part-time OSAP.
+  - Good Standing: You must have no defaults on previous student loans and no restrictions on your OSAP account.
+  - Satisfactory Academic Progress: You must demonstrate academic progress within your program, defined as successfully completing at least 60% (pass) of a full course load of your program year while receiving OSAP funding. For students with a permanent disability, this is 40%.
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need.
+  - Lifetime Funding Limit: Full-time students receiving OSAP have a lifetime limit of 340 weeks of post-secondary study (400 weeks for doctoral programs, and up to 520 weeks for students with a permanent disability).
+  - No Fraud/Theft Conviction: You are ineligible if convicted of fraud or theft related to any student financial assistance program in Canada.
+
+[bursaries]
+  - BSWD / CSG-DSE
+  - Alumni Association of Lakehead University Bursary for Persons with a Disability

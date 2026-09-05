@@ -1,0 +1,91 @@
+{
+  "seed": 0,
+  "per_stratum": 3,
+  "n_universities": 28,
+  "labels": {
+    "exam_breaks": {
+      "rejudged": 1
+    },
+    "exam_private_room": {
+      "rejudged": 0
+    },
+    "deadline_extension": {
+      "rejudged": 1
+    },
+    "reduced_course_load": {
+      "rejudged": 2
+    },
+    "note_taking": {
+      "rejudged": 2
+    },
+    "lecture_recording": {
+      "rejudged": 1
+    },
+    "asl_interpretation": {
+      "rejudged": 0
+    },
+    "realtime_captioning": {
+      "rejudged": 1
+    },
+    "format_braille": {
+      "rejudged": 1
+    },
+    "format_audio": {
+      "rejudged": 3
+    },
+    "format_large_print": {
+      "rejudged": 1
+    },
+    "format_accessible_digital": {
+      "rejudged": 0
+    },
+    "screen_reader": {
+      "rejudged": 0
+    },
+    "speech_to_text": {
+      "rejudged": 2
+    },
+    "accessible_buildings": {
+      "rejudged": 1
+    },
+    "accessible_housing": {
+      "rejudged": 3
+    },
+    "accessible_parking_transit": {
+      "rejudged": 1
+    },
+    "personalized_plan": {
+      "rejudged": 1
+    },
+    "per_term_renewal": {
+      "rejudged": 0
+    },
+    "interim_without_documentation": {
+      "rejudged": 3
+    },
+    "confidentiality": {
+      "rejudged": 3
+    },
+    "intake_meeting": {
+      "rejudged": 2
+    },
+    "counselling_individual": {
+      "rejudged": 3
+    },
+    "counselling_group": {
+      "rejudged": 2
+    },
+    "counselling_same_day": {
+      "rejudged": 3
+    },
+    "peer_support": {
+      "rejudged": 1
+    },
+    "transition_program": {
+      "rejudged": 0
+    },
+    "bursaries_scholarships": {
+      "rejudged": 2
+    }
+  }
+}

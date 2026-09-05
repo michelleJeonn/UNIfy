@@ -7,7 +7,7 @@ echo "========================================"
 
 # Check if .env file exists
 if [ ! -f ".env" ]; then
-    echo "❌ .env file not found. Please create one with your GEMINI_API_KEY"
+    echo "❌ .env file not found. Create one with CLAUDE_API_KEY (see README)."
     exit 1
 fi
 

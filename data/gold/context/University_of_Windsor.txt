@@ -1,0 +1,101 @@
+University of Windsor
+=====================
+
+[physical_disabilities_supported]
+  - Mobility or functional limitations (e.g., wheelchair/scooter use, difficulty navigating stairs or long distances, temporary injuries)
+  - Vision impairments (e.g., low vision, legal blindness)
+  - Hearing impairments (hard-of-hearing to Deaf)
+  - Chronic medical conditions (e.g., diabetes, MS, asthma, cancer)
+  - Temporary or episodic disabilities (e.g., concussion, post-surgery recovery)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Personalized accommodation plans via intake meeting
+  - Exam accommodations: extra time, breaks, quiet/private rooms, readers/scribes
+  - Alternate formats: audio, large print, Braille, accessible PDFs
+  - Assistive technology lab: screen readers, magnifiers, speech-to-text
+  - Peer note-taking and lecture recording support
+  - ASL interpretation and real-time captioning available
+  - Support for sensory, chronic, and temporary physical conditions
+  - Confidential service; needs shared with faculty, not diagnosis
+  - Staff coordinate with students & professors to implement accommodations
+  - Accessible housing and exam centre support
+
+[mental_accommodations]
+  - Personalized accommodation plans via intake meeting
+  - Exam accommodations: extra time, breaks, quiet/private rooms
+  - Alternate formats: audio, large print, accessible PDFs
+  - Assistive technology lab: screen readers, speech-to-text
+  - Peer note-taking and lecture recording support
+  - ASL interpretation and real-time captioning available
+  - Support for learning, ADHD, mental health, and temporary conditions
+  - Confidential service; needs shared with faculty, not diagnosis
+  - Staff coordinate with students & professors to implement accommodations
+
+[documentation_requirements]
+  - Attention Disability:
+  - SAS SAS Disability Verification Form for Attention Disability
+  - Psychoeducational Assessment – Completed within the last 3 years
+  - Brain Injury:
+  - SAS Disability Verification Form for Brain Injury
+  - Neuropsychological Assessment – Completed within the last 3 years
+  - Concussion Clinic Documentation/Assessment
+  - SAS Disability Verification Form for Hearing Loss
+  - Audiogram – Completed within the last 1 year
+  - Audiology Assessment
+  - Learning Disability:
+  - Students with LD must submit a psycho-educational assessment report in support of their request for academic accommodation at the University of Windsor.
+  - Medical Disability:
+  - SAS Disability Verification Form for Medical Disability
+  - Mental Health:
+  - SAS Disability Verification Form for Mental Health/Psychiatric Disability
+  - Neuropsychological Assessment - Completed within the last 1 year
+  - Psychoeducational Assessment – Completed within the last 1 year
+  - Psychological Assessment – Completed within the last 1 year
+  - Psychiatric Assessment/Report – Completed within the last 1 year
+  - Physical DIsability:
+  - SAS Disability Verification Form for Physical/Functional Disability
+  - Handwriting Assessment – Completed within the last 3 years
+  - SAS Disability Verification Form for Vision Loss
+  - Vision Assessment
+
+[documentation_submission]
+  - Fill out and upload documents on the Intake Form.
+
+[registration_process]
+  - If you have questions, please contact the Student Accessibility Office at 519-253-3000 ext 6172 or email sas@uwindsor.ca
+  - If you are ready to fill out an Intake Form this link will take you to the form in our system called AIM.
+  - Once the Intake Form is filled out an advisor will reach out to you to set up an appointment to talk about your needs and how to best support you. These appointments are offered in person or virtually
+  - If you do not have up to date documentation you can check out our Documentation Requirements which will give you an idea of what you need in order to be accommodated.
+
+[counselling_services]
+  - University of Windsor offers:
+  - Group therapy
+  - Individual therapy
+  - Self-guided therapy through TAO
+  - Combination of different therapies
+
+[support_24_7_contact]
+  - Campus Police (24/7): 519‑253‑3000 ext. 4444
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP at the University of Windsor, you must generally meet the following:
+  - Ontario Resident: You must be an Ontario resident. This is typically defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident of Canada, or a Protected Person. International students are not eligible for OSAP.
+  - Approved Program of Study: You must be enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate. Most undergraduate and graduate programs at the University of Windsor are approved for OSAP. Non-degree students are generally not eligible.
+  - Eligible Course Load: Your registration must meet the minimum requirements for either full-time or part-time OSAP.
+  - Good Standing: You must not be in default on any previous OSAP loans or have any restrictions on your OSAP account.
+  - Satisfactory Academic Progress: You need to maintain satisfactory academic progress in your program of study.
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need.
+  - Lifetime Funding Limit: You must not have exceeded the lifetime limit of student loan funding (typically 340 weeks for most students, 400 weeks for doctoral studies, or up to 520 weeks for students with a permanent disability).
+
+[bursaries]
+  - BSWD / CSG‑DSE

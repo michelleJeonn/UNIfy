@@ -1,0 +1,111 @@
+Queen's University
+==================
+
+[physical_disabilities_supported]
+  - "Mobility Impairments
+  - Examples: wheelchair/scooter users, difficulty navigating stairs or long distances, muscular dystrophy, limb loss.
+  - Support: accessible buildings and classrooms, seating accommodations, mobility on campus, photocopy assistance for those with limited mobility .
+  - Dexterity Impairments
+  - Examples: arthritis, repetitive strain injuries, short-term arm or hand injuries.
+  - Support: ergonomic keyboards/mice, ability to type exams, assistance with note-taking and materials.
+  - Vision Impairments
+  - Examples: low vision or total blindness.
+  - Support: adaptive technology like screen readers and magnifiers (e.g., JAWS, Kurzweil 3000), alternative-format documents (large-print, digital), orientation aids .
+  - Hearing Impairments
+  - Examples: partial hearing loss, deafness.
+  - Support: captioning services, FM systems, assistive audio devices, note-taking support.
+  - Chronic Physical Health Conditions
+  - Examples: multiple sclerosis, cancer treatment, severe asthma, chronic fatigue, cardiovascular conditions.
+  - Support: flexible deadlines, attendance and exam modifications, rest breaks, accommodation plans tailored to health-related barriers .
+  - Temporary Physical Disabilities
+  - Examples: recovery from surgery, concussions, fractures or sprains.
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources."
+  - """Mobility Impairments
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources.""
+  - ""Mobility Impairments
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources."""
+  - Mobility impairments: wheelchair/scooter users, difficulty with stairs or walking long distances, temporary injuries
+  - Dexterity issues: arthritis, RSI, hand/arm injuries
+  - Vision impairments: low vision or blindness
+  - Hearing impairments: partial hearing loss to Deafness
+  - Chronic health conditions: MS, cancer treatment, asthma, fatigue, cardiovascular issues
+  - Temporary physical conditions: post-surgery recovery, concussions, fractures
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Individualized accommodation plans under ADA/Section 504
+  - Extra time, scheduled breaks, private exam spaces
+  - Alternate formats: audio, Braille, large print, accessible PDFs
+  - Assistive technology lab: screen readers, adaptive software/hardware
+  - Note-taking support (peer providers, audio tools)
+  - Residential life considerations for accessibility
+  - Orientation & transition support (e.g., START-UP program)
+  - Coaching for self-advocacy and independence
+  - Online accommodation portal (Ventus)
+  - Confidential advisor contact with faculty liaison
+
+[mental_accommodations]
+  - Individualized accommodation plans under ADA/Section 504
+  - Extra time, scheduled breaks, private exam spaces
+  - Alternate formats: audio, large print, accessible PDFs
+  - Assistive technology lab: screen readers, adaptive software
+  - Note-taking support (peer providers, audio tools)
+  - Orientation & transition support (e.g., START-UP program)
+  - Coaching for self-advocacy and independence
+  - Online accommodation portal (Ventus)
+  - Confidential advisor contact with faculty liaison
+
+[documentation_requirements]
+  - OSAP Disability Verification Form
+  - Attention/Neurodiversity: Queen’s Verification of Attention/Neurodiversity Disability
+  - Hearing/Vision: Queen’s Verification of Sensory Disability (Hearing/Vision)
+  - Learning Disability: Psychoeducational assessment completed within the last 5 years or after the age of 18
+  - Medical/brain injury: Queen’s Verification of Medical & Brain Injury Disability
+  - Mental health: Queen’s Verification of Mental Health Disability
+  - Physical disability: Queen’s Verification of Physical Disability
+
+[documentation_submission]
+  - Upload documentation through the Ventus Student Portal.
+  - Each type of documentation must be in one document and saved/uploaded as a PDF.
+  - Label PDF as follows: “Last name, First Initial_Type of Documentation_Year”
+
+[registration_process]
+  - Login to the Ventus Student Portal using your Queen's netID and password.
+  - Complete the intake form when prompted.
+  - Submit documentation that meets QSAS documentation criteria. If you do not have documentation that meets our criteria at the time of registration, please upload the documentation you currently have which indicates the need for accommodations.
+  - You will receive an email from the Intake Coordinator team with next steps.
+  - When you receive an email with the name of your Accessibility Advisor, book your intake appointment as soon as possible. Your Advisor will help you create an accommodation plan during your first appointment.
+
+[counselling_services]
+  - Queen’s University offers:
+  - One-on-one appointments
+  - Physcoeducation
+  - Therapy groups
+  - Mental health training
+
+[support_24_7_contact]
+  - Campus Security (24/7): 613‑533‑6111
+  - Empower Me (24/7 mental health): 1‑855‑649‑8641
+
+[osap_eligibility]
+  - To be considered for OSAP, a student must meet the following requirements:
+  - Be a Canadian citizen, permanent resident, or protected person
+  - Meet Ontario residency requirements
+  - Be enrolled in an approved post-secondary institution and take an approved program which leads to a degree, diploma, or certificate (interest non-degree programs are not eligible for government student assistance)*
+  - Full-time undergraduate students must be taking at least 60% of a full course load (9 credit units in each term of study) or 40% (in each term of study) if the student has an identified permanent disability. No averaging of course loads is permitted
+  - Part-time students must be taking 59% or less of a full course load
+  - Graduate students must be enrolled full-time (100%). Graduate students with a permanent disability may be enrolled part-time (50%)
+  - An approved program is one which has (a) obtained the Minister’s approval for General Purpose Operating Grants (GPOG) through the Ministry of Colleges and Universities, and (b) there is a full-time equivalent of the program offered by the university.
+
+[bursaries]
+  - BSWD / CSG-DSE
+  - AMS Taxi Bursary
+  - AGC Academic Accessibility Bursary
+  - Emergency Taxi Fund

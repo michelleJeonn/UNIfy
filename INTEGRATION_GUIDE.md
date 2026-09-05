@@ -48,7 +48,7 @@ FLASK_DEBUG=True
 FRONTEND_ORIGINS=http://localhost:5173,http://localhost:3000
 
 # Gemini AI Configuration
-GEMINI_API_KEY=your_gemini_api_key_here
+CLAUDE_API_KEY=sk-ant-your-key-here
 
 # React Configuration
 VITE_API_URL=http://localhost:5000
@@ -183,7 +183,7 @@ export FLASK_PORT=5001
 **Gemini API errors:**
 ```bash
 # Verify API key is set
-echo $GEMINI_API_KEY
+echo $CLAUDE_API_KEY
 
 # Check API quota and permissions
 ```
@@ -209,8 +209,9 @@ python app.py
 ```
 UNIfy/
 ├── app.py                 # Flask API server
-├── gemini_recommender.py  # Gemini AI integration
-├── ml_pipeline.py         # ML recommendation system
+├── claude_recommender.py  # grounded recommender (Claude + dataset)
+├── preprocessing.py       # spreadsheet → validated tables
+├── extraction/            # accommodation extraction benchmark
 ├── test_integration.py    # Integration tests
 ├── start-dev.sh          # Development startup script
 ├── src/
@@ -249,7 +250,7 @@ FLASK_DEBUG=False
 FLASK_HOST=0.0.0.0
 
 # Secure Gemini API key management
-GEMINI_API_KEY=your_production_api_key
+CLAUDE_API_KEY=sk-ant-your-production-key
 ```
 
 ## Support

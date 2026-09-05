@@ -1,21 +1,24 @@
 # UNIfy Deployment Guide
 
-## 🎉 Current Status: Production-Ready ML/AI Backend
+## Current status
 
-### ✅ What's Working
+There is **no trained model** in this repo. `ml_pipeline.py` and its TensorFlow
+"accommodation predictor" / "university recommender" were removed: the network learned a
+hand-written if-statement and the recommender was never fitted. Recommendations are
+produced by Gemini prompting, and every response says so in its `source` field.
 
-1. **ML Pipeline** (`ml_pipeline.py`)
-   - TensorFlow-based accommodation predictor
-   - University recommendation system
-   - Separate encoders for mental/physical health conditions
-   - Robust error handling and data cleaning
-   - **Status**: ✅ Fully functional and tested
+### What's working
 
-2. **Gemini AI Fallback** (`gemini_recommender.py`)
-   - Intelligent AI-powered recommendations
-   - Multi-layered fallback system
-   - Works with or without API key
-   - **Status**: ✅ Fully functional and tested
+1. **Data pipeline** (`preprocessing.py`)
+   - Spreadsheet → `programs.csv` (1,690 × 20) and `universities.csv` (28 × 15)
+   - Cross-table validation that fails loudly on attribution bugs
+   - **Status**: working, validated
+
+2. **Grounded recommender** (`claude_recommender.py`)
+   - Claude maps a student profile onto the 32 accommodation labels
+   - Ranking is deterministic arithmetic over the measured extraction results
+   - Cannot name a university outside the dataset; works without an API key
+   - **Status**: working, tested end-to-end
 
 3. **Flask API Server** (`app.py`)
    - REST API endpoints for frontend
@@ -79,7 +82,7 @@ Content-Type: application/json
 ```json
 {
   "success": true,
-  "source": "ml_pipeline",
+  "source": "gemini_ai",
   "needed_accommodations": [
     "Extended time",
     "Quiet environment",
@@ -110,7 +113,7 @@ Content-Type: application/json
 
 ```bash
 # Optional: Gemini AI API key for enhanced recommendations
-export GEMINI_API_KEY="your-api-key-here"
+export CLAUDE_API_KEY="sk-ant-..."
 
 # Optional: Flask server configuration
 export FLASK_HOST="127.0.0.1"
@@ -123,14 +126,12 @@ export FLASK_DEBUG="False"
 ```
 UNIfy/
 ├── app.py                      # Flask API server ✅
-├── ml_pipeline.py              # ML recommendation system ✅
-├── gemini_recommender.py       # AI fallback system ✅
+├── preprocessing.py            # spreadsheet → validated tables ✅
+├── extraction/                 # accommodation extraction benchmark ✅
+├── gemini_recommender.py       # Gemini wrapper, flags fallback ✅
 ├── requirements.txt            # Python dependencies ✅
-├── models/                     # Trained ML models ✅
-│   ├── accommodation_predictor.h5
-│   ├── university_recommender.h5
-│   └── encoders.pkl
-├── data/clean/                 # Cleaned data files ✅
+├── data/clean/                 # cleaned tables + evidence + predictions ✅
+├── data/gold/                  # hand-labelled gold set ✅
 ├── src/                        # React frontend ⚠️ Needs Node.js
 │   ├── app/App.tsx
 │   ├── components/
@@ -239,7 +240,7 @@ npm run dev
 
 ## 🔐 Security Considerations
 
-1. **API Keys**: Store Gemini API key in environment variables
+1. **API Keys**: Store CLAUDE_API_KEY in environment variables, never in tracked files
 2. **CORS**: Configured for localhost, update for production
 3. **Rate Limiting**: Add rate limiting for production deployment
 4. **Input Validation**: Currently implemented in Flask API
@@ -256,19 +257,20 @@ lsof -i :5000
 FLASK_PORT=5001 python app.py
 ```
 
-### ML Models Not Found
+### Data Files Not Found
 ```bash
-# Train models
-python ml_pipeline.py
+# Rebuild the cleaned tables from the source spreadsheet
+python preprocessing.py
 ```
 
-### Gemini AI Not Working
+### Recommender Not Using Claude
+If `source` comes back as `rule_based_grounded`, the key was missing or the call failed.
 ```bash
 # Install package
-pip install google-generativeai
+pip install anthropic
 
 # Set API key
-export GEMINI_API_KEY="your-key"
+export CLAUDE_API_KEY="sk-ant-..."
 ```
 
 ### Frontend Won't Start
@@ -291,25 +293,27 @@ npm run dev
 4. **Push to GitHub**
 5. **Deploy** to production servers
 
-## 🎓 Training New Models
+## Rebuilding the extraction benchmark
 
 ```bash
-# Run full ML pipeline training
-python ml_pipeline.py
-
-# Models will be saved to models/ directory
-# Training takes ~5-10 minutes
+python preprocessing.py           # cleaned tables
+python extraction/corpus.py       # 2,265 evidence segments
+python extraction/baseline.py     # keyword extractor predictions
+python extraction/evaluate.py     # stratified precision / recall / F1
 ```
+
+No training is involved. The embedding extractor (`extraction/embedding.py`) downloads
+`all-MiniLM-L6-v2` on first run and does inference only.
 
 ## 📞 Support
 
 For issues or questions:
 1. Check this deployment guide
-2. Review GEMINI_INTEGRATION.md for AI fallback details
+2. Review CLAUDE_INTEGRATION.md for recommender details
 3. Check README.md for project overview
-4. Review code documentation in ml_pipeline.py
+4. Review extraction/README.md and extraction/RESULTS.md for the benchmark
 
 ---
 
-**Current Status**: Backend is 100% ready, frontend needs Node.js installation to complete full-stack deployment.
+**Current status**: the data pipeline and extraction benchmark are the finished parts. The recommendation API works but is Gemini-backed and not yet grounded in the extracted accommodation data.
 

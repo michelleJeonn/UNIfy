@@ -1,0 +1,81 @@
+OCAD University
+===============
+
+[physical_disabilities_supported]
+  - Mobility and dexterity issues (e.g., wheelchair use, fine motor challenges, injuries)
+  - Sensory impairments (hearing or vision loss)
+  - Chronic health/medical conditions
+  - Physical injuries (e.g., concussion, broken bones)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and private rooms for exams
+  - Alternate formats: audio, Braille, large print, accessible PDFs
+  - Note-taking support and ASL interpretation available
+  - Assistive technology advising and software referrals
+  - Support for physical, sensory, and temporary conditions
+  - Interim accommodations available without formal diagnosis
+  - Personalized plans created with an Accessibility Advisor
+  - Accommodations activated each term through online system
+  - Confidential service; diagnosis disclosure not required
+
+[mental_accommodations]
+  - Extra time, breaks, and private rooms for exams
+  - Deadline extensions and reduced course load options
+  - Alternate formats: audio, large print, accessible PDFs
+  - Note-taking support
+  - Assistive technology advising and software referrals
+  - Support for learning, mental health, and temporary conditions
+  - Interim accommodations available without formal diagnosis
+  - Personalized plans created with an Accessibility Advisor
+  - Accommodations activated each term through online system
+  - Confidential service; diagnosis disclosure not required
+
+[documentation_requirements]
+  - SAS Student Registration Form
+  - SAS Medical Documentation
+  - Psychoeducational assessment
+
+[documentation_submission]
+  - Download a copy of our Registration Package (PDF).
+  - Contact Student Accessibility Services to schedule a registration appointment by emailing sas@ocadu.ca or you can also make an appointment in-person, Monday to Friday, 9am to 4pm, at 230 Richmond St. W., located in the Student Wellness Centre on the 6th floor.
+  - Bring your completed Medical Documentation (PDF), OR psychoeducational assessment to your registration appointment.
+
+[registration_process]
+  - Download a copy of our Registration Package (PDF).
+  - Contact Student Accessibility Services to schedule a registration appointment by emailing sas@ocadu.ca or you can also make an appointment in-person, Monday to Friday, 9am to 4pm, at 230 Richmond St. W., located in the Student Wellness Centre on the 6th floor.
+  - Bring your completed Medical Documentation (PDF) OR psychoeducational assessment to your registration appointment.
+  - During your registration appointment, you'll meet with an Accessibility Advisor who will review your medical documentation with you to discuss the impact of your disability(ies), your learning needs, essential requirements of your program of study, and any previous academic accommodations.
+  - Following this discussion, academic accommodations will be identified and your accommodation plan will be developed with your Advisor.
+
+[counselling_services]
+  - OCAD University offers:
+  - Single counselling sessions
+  - Same day counselling services
+  - Short-term counselling services
+
+[support_24_7_contact]
+  - Campus Security (24/7): 416‑977‑6000 ext. 511
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP, you must be:
+  - An Ontario resident who is a Canadian citizen, permanent resident, or a protected person._x000B__x000B_
+  - Enrolled in an OSAP-approved program._x000B__x000B_
+  - Enrolled in an eligible course load.
+  - In good standing with previous OSAP loans (no defaults or restrictions)._x000B__x000B_
+  - Maintaining satisfactory academic progress.
+  - Able to demonstrate financial need.
+  - Within the lifetime limit of student loan funding (340 weeks for most students, 400 for doctoral students, and up to 520 for students with disabilities).
+  - International students are not eligible for OSAP.
+
+[bursaries]
+  - BSWD / CSG-DSE
+  - OCAD U Need-based Disability Bursaries

@@ -1,0 +1,116 @@
+York University (Glendon)
+=========================
+
+[physical_disabilities_supported]
+  - Mobility Impairments
+  - Examples: wheelchair/scooter users, difficulty navigating stairs or long distances, muscular dystrophy, limb loss.
+  - Support: accessible buildings and classrooms, seating accommodations, mobility on campus, photocopy assistance for those with limited mobility .
+  - Dexterity Impairments
+  - Examples: arthritis, repetitive strain injuries, short-term arm or hand injuries.
+  - Support: ergonomic keyboards/mice, ability to type exams, assistance with note-taking and materials.
+  - Vision Impairments
+  - Examples: low vision or total blindness.
+  - Support: adaptive technology like screen readers and magnifiers (e.g., JAWS, Kurzweil 3000), alternative-format documents (large-print, digital), orientation aids .
+  - Hearing Impairments
+  - Examples: partial hearing loss, deafness.
+  - Support: captioning services, FM systems, assistive audio devices, note-taking support.
+  - Chronic Physical Health Conditions
+  - Examples: multiple sclerosis, cancer treatment, severe asthma, chronic fatigue, cardiovascular conditions.
+  - Support: flexible deadlines, attendance and exam modifications, rest breaks, accommodation plans tailored to health-related barriers .
+  - Temporary Physical Disabilities
+  - Examples: recovery from surgery, concussions, fractures or sprains.
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources.
+  - "Mobility Impairments
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources."
+  - """Mobility Impairments
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources.""
+  - ""Mobility Impairments
+  - Support: temporary exam adjustments, classroom seating changes, provision of mobility aids and note-taking resources."""
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and private rooms for exams
+  - Alternate formats: Braille, large print, audio, accessible PDFs
+  - Assistive tech lab with adaptive hardware and software
+  - ASL interpreting available
+  - Personalized accommodation plans shared each term
+  - Support for physical, sensory, and chronic conditions
+  - Temporary and interim accommodations for undiagnosed issues
+  - One-on-one support from accessibility counsellors
+  - Orientation and peer support for new students
+  - Accessible campus layout and shuttle between Glendon and Keele
+
+[mental_accommodations]
+  - Extra time, breaks, and private rooms for exams
+  - Alternate formats: audio, large print, accessible PDFs
+  - Assistive tech lab with adaptive software
+  - Note-taking available
+  - Personalized accommodation plans shared each term
+  - Support for learning, mental health, and chronic conditions
+  - Temporary and interim accommodations for undiagnosed issues
+  - One-on-one support from accessibility counsellors
+  - Orientation and peer support for new students
+
+[documentation_requirements]
+  - Student Accessibility Services Medical Form
+  - Medical/psychological report
+  - Psychoeducational assessment (for learning disability/disorder)
+
+[documentation_submission]
+  - Collect required documentation.
+  - Upload an electronic copy of documentation to the online Registration Questionnaire.
+  - Look for an email from sasreg@yorku.ca outlining the next steps; you should hear back within five business days.
+
+[registration_process]
+  - Collect your medical/psychological documentation.
+  - Upload an electronic copy of your documentation to our online Registration Questionnaire. Once completed, you will receive a confirmation email acknowledging your submission.
+  - Look for an email from sasreg@yorku.ca outlining next steps; you should hear back within five business days.
+
+[counselling_services]
+  - York University offers:
+  - In-person counselling
+  - Virtual counselling
+  - Group counselling
+
+[support_24_7_contact]
+  - Security Services (24/7): 416‑736‑5333
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To apply for full-time OSAP aid, you must:
+  - register in full-time studies for the session
+  - be a Canadian citizen, permanent resident or have protected person status; international students are ineligible.
+  - have Ontario residency, that is, have lived in Ontario for at least 12 consecutive months without attending full-time postsecondary school.
+  - register in an OSAP-approved degree program. Most degree programs at York are OSAP approved.
+  - be neither in default on a previous OSAP student loan nor on OSAP restriction.
+  - maintain satisfactory academic progress while receiving OSAP aid.
+  - have demonstrated financial need as calculated by the government. Gross family income as well as student resources and assets are taken into consideration.
+
+[bursaries]
+  - OPEN TO STUDENTS WITH A PERMANENT DISABILITY (UNSPECIFIED):
+  - Jaswant Singh Randhawa Memorial Dis/Ability Award
+  - Shirley Halevy Bursary
+  - Shirley Halevy Bursary (Ontario)
+  - The Roy I. Wolfe Scholarship, The Sheldon Levy Award
+  - FOR STUDENTS WITH PHYSICAL, SENSORY, AND/OR MEDICAL DISABILITIES:
+  - Canadian Hand Emulation Research Organization Bursary
+  - Andrew Roberts Bursary
+  - Dr. Harry Botterell Bursary
+  - Ethel Armstrong Awards
+  - Ron Cope Bursary
+  - The Dusk Family Bursary
+  - University Women’s Club of North York Award for Female Students with Disabilities
+  - Vera Morris Bursary
+  - FOR STUDENTS WITH LEARNING DISABILITIES:
+  - Learning Disabilities Association of Toronto District Bursary
+  - STUDENTS WITH MENTAL HEALTH/PSYCHIATRIC DISABILITIES:
+  - Enid Weiner Student Award
+  - The Glenn Thompson CMHA Bursary
+  - BSWD / CSG-DSE

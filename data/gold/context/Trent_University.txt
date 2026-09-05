@@ -1,0 +1,126 @@
+Trent University
+================
+
+[physical_disabilities_supported]
+  - Mobility impairments – wheelchair/scooter use, difficulty walking or climbing stairs, temporary injuries
+  - Dexterity limitations – arthritis, repetitive strain, hand or arm injuries
+  - Vision and hearing impairments – low vision, blindness, partial or total hearing loss
+  - Chronic health conditions – asthma, chronic fatigue, arthritis
+  - Temporary conditions – post‑surgery recovery, concussion, fractures
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, Braille, large print, PDFs
+  - Assistive tech and adaptive software support
+  - Note-taking and lecture recording available
+  - Personalized accommodation plans each term
+  - Support for physical and temporary conditions
+  - Temporary accommodations available
+  - Confidential service; diagnosis not shared with instructors
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, large print, PDFs
+  - Assistive tech and adaptive software support
+  - Note-taking and lecture recording available
+  - Personalized accommodation plans each term
+  - Support for learning, mental health, and temporary conditions
+  - Temporary accommodations available
+  - Confidential service; diagnosis not shared with instructors
+
+[documentation_requirements]
+  - Students with Physical, Mental Health, Sensory or Chronic Health Disabilities:
+  - SAS Disability Documentation Form
+  - for OSAP-eligible students, an option is to have the OSAP DIsability Verification Form (DVF)
+  - Students with Learning Disability:
+  - copy of your latest psycho-educational assessment report, completed by a Registered Psychologist within the last 5 years.
+  - a detailed letter from the Psychologist that outlines the functional impacts and recommended accommodations.
+  - Students with Attention Deficit Hyperactivity Disorder (ADHD):
+  - SAS Disability Documentation Form or a psycho-educational assessment (completed in-person using Adult Measures and within the past 5 years).
+  - Students with Autism Spectrum Disorder (ASD):
+  - SAS Disability Documentation Form or a psycho-educational/psychological assessment (completed in-person and within the past 5 years, unless the student was at least 18 years of age at the time of assessment).
+  - Service Animals:
+  - Service Animal Recommendation Form
+
+[documentation_submission]
+  - Obtain required documents.
+  - Complete & upload documents to the pre-intake questionnaire.
+
+[registration_process]
+  - Review the documentation requirements - Your documentation needs to be as recent as possible, and must outline the functional limitations of your disability.
+  - If you have older or incomplete documentation, it is possible that only minimal accommodation can be implemented until more current or complete documentation is provided.
+  - Criteria regarding age of documentation is specific to the nature of a person's disability, and is outlined on the Documentation Requirements section of the school website.
+  - Complete the pre-intake questionnaire - All students who register with SAS begin the formal intake registration process by completing a Pre-Intake Questionnaire.
+  - This questionnaire is designed to connect you with an appropriate SAS Advisor, and helps us to anticipate questions or concerns that you may have prior to your first appointment.
+  - You will be asked a series of questions pertaining to your disability and how your disability impacts your academics.
+  - This questionnaire will take approximately 15 minutes to complete, and it will "time out" after 30 minutes.
+  - Please have your disability documentation ready to upload to your questionnaire.
+  - After you have completed and submitted the questionnaire, you will be contacted by a SAS staff member within 3 to 5 business days to schedule an intake appointment with one of our SAS Advisors.
+  - Thank you in advance for completing the Pre-Intake Questionnaire first.
+  - We appreciate your patience while we review your information and match you with the appropriate Advisor.
+
+[counselling_services]
+  - Trent University offers:
+  - Self-Directed Resources
+  - Group Workshops
+  - Individual Counselling
+  - Crisis Support
+  - Culturally Affirming Mental Health Support
+  - Ontario Shores Structured Psychotherapy Program
+  - Support for Eating Disorders - Sheena's Place
+  - Private Therapy with Student Health Benefits
+  - 2SLGBTQ+ Support
+  - Talk Now - Mental Health and Addictions Clinic
+  - Peterborough Family Health Team - Groups
+
+[support_24_7_contact]
+  - Campus Security (Peterborough): 705‑748‑1333
+  - Campus Security (Durham): 905‑435‑5111
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP at Trent University, you generally must meet the following:
+  - Ontario Resident: You must be an Ontario resident. This is typically defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident of Canada, or a Protected Person. International students are not eligible for OSAP.
+  - Approved Program of Study: You must be enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate. Most undergraduate and graduate programs at Trent University are approved.
+  - Eligible Course Load: Your registration must meet the minimum requirements for either full-time or part-time OSAP.
+  - Good Standing: You must not be in default on any previous OSAP loans or have any restrictions on your OSAP account.
+  - Satisfactory Academic Progress: You need to maintain satisfactory academic progress in your program of study.
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need.
+  - Lifetime Funding Limit: You must not have exceeded the lifetime limit of student loan funding (typically 340 weeks for most students, 400 weeks for doctoral studies, or up to 520 weeks for students with a permanent disability).
+
+[bursaries]
+  - BSWD / CSG-DSE
+  - Scholarship Opportunities for Students with Disabilities (NEADS list, etc.)
+  - Bloorview School Authority Bursary
+  - David C. Onley Award for Leadership in Accessibility
+  - Dr. John & Olive Pyper Scholarship
+  - Dr. John Davis Burton Award
+  - Easter Seals Ontario Scholarships
+  - Ed Ireland Bursary for Students with Disabilities
+  - EKO Scholarship
+  - Epilepsy Toronto Scholarships
+  - Eric Waldron Scholarship
+  - IODE Lord Dundonald Giselle Lazure Memorial Award
+  - John Teuscher Memorial Scholarship
+  - Judge Brian Stevenson Scholarship
+  - Luciana Spring Mascarin Bursary
+  - Michael Kamin Hart Scholarship
+  - Nicholas Leroux Memorial Bursary
+  - Epilepsy Ontario Scholarship
+  - RE/MAX Quest for Excellence Scholarship Program
+  - RMT Assoc. of Ontario Scholarship (Under‑represented Groups)
+  - Rixon Rafter Scholarship
+  - Roy Cooper Scholarship
+  - Seneca College Scholarships & Bursaries (Disabilities)
+  - Susan Parker Scott Scholarship
+  - Tamara Gordon Foundation Scholarship
+  - Thomas Sorensen Memorial Scholarship

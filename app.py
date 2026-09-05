@@ -3,13 +3,11 @@ UNIfy Flask API Server
 Provides REST API endpoints for the React frontend to access ML/AI recommendations.
 """
 
-from gemini_recommender import get_gemini_recommendations
-from ml_pipeline import get_recommendations
+from claude_recommender import get_claude_recommendations
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 import logging
-from typing import Dict, Any
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -64,7 +62,8 @@ def health_check():
         'endpoints': {
             'recommendations': '/api/recommendations',
             'health': '/',
-            'test': '/api/test'
+            'test': '/api/test',
+            'claude': '/api/claude'
         }
     })
 
@@ -83,22 +82,37 @@ def get_university_recommendations():
         "severity": "moderate"
     }
 
+    Served by claude_recommender.  Claude maps the profile onto the 32 accommodation
+    labels in extraction/taxonomy.json; ranking is then deterministic arithmetic over
+    the measured extraction results for the 28 Ontario universities in the dataset.
+    The model does not choose the schools, so it cannot invent one -- which is exactly
+    what the previous Gemini backend did when its key failed.
+
+    `source` is "claude_grounded" when Claude mapped the needs and
+    "rule_based_grounded" when it was unavailable and rules did. Both rank only real
+    schools; neither fabricates.
+
     Returns:
     {
         "success": true,
-        "source": "ml_pipeline|gemini_ai|default_fallback",
-        "needed_accommodations": ["Extended time", "Academic coaching"],
+        "source": "claude_grounded|rule_based_grounded",
+        "model": "claude-sonnet-5",
+        "needed_accommodations": ["Extended time on exams", "Note-taking support"],
         "recommendations": [
             {
-                "name": "University of Toronto",
-                "score": 4.3,
-                "accessibility_rating": 4.5,
-                "disability_support_rating": 4.7,
-                "available_accommodations": ["Extended time", "Note-taking services"],
+                "name": "University of Guelph",
+                "score": 3.72,
+                "accessibility_rating": 3.6,
+                "disability_support_rating": 4.4,
+                "rating_basis": "...what the number counts...",
+                "matched_accommodations": [...],
+                "missing_accommodations": [...],
+                "evidence": [{"accommodation": "...", "quote": "..."}],
                 "location": "Ontario",
-                "reason": "Strong disability services"
+                "reason": "Evidences 6 of 7 needed accommodations..."
             }
-        ]
+        ],
+        "grounding": {...extractor and its measured quality...}
     }
     """
     try:
@@ -122,8 +136,7 @@ def get_university_recommendations():
         logger.info(
             f"Processing recommendation request for: {student_profile}")
 
-        # Get recommendations from ML/AI pipeline
-        result = get_recommendations(student_profile)
+        result = get_claude_recommendations(student_profile)
 
         logger.info(
             f"Recommendation result: success={result['success']}, source={result.get('source', 'unknown')}")
@@ -149,7 +162,7 @@ def test_recommendations():
         }
 
         logger.info("Running test recommendation")
-        result = get_recommendations(test_profile)
+        result = get_claude_recommendations(test_profile)
 
         return jsonify({
             'message': 'Test completed successfully',
@@ -162,10 +175,14 @@ def test_recommendations():
         return error_response("Internal server error", 500, "INTERNAL_ERROR")
 
 
-@app.route('/api/gemini', methods=['POST'])
-def get_gemini_recommendations_endpoint():
+@app.route('/api/claude', methods=['POST'])
+@app.route('/api/gemini', methods=['POST'])  # deprecated alias, kept for old clients
+def get_claude_recommendations_endpoint():
     """
-    Direct Gemini AI endpoint for testing.
+    Direct recommender endpoint, identical to /api/recommendations.
+
+    /api/gemini is a deprecated alias: the Gemini backend has been replaced. It is
+    retained only so existing frontend builds keep working.
 
     Expected JSON payload: same as /api/recommendations
     """
@@ -192,18 +209,17 @@ def get_gemini_recommendations_endpoint():
             'severity': str(data['severity'])
         }
 
-        logger.info(f"Processing Gemini AI request for: {student_profile}")
+        logger.info(f"Processing direct recommender request for: {student_profile}")
 
-        # Get recommendations directly from Gemini AI
-        result = get_gemini_recommendations(student_profile)
+        result = get_claude_recommendations(student_profile)
 
         logger.info(
-            f"Gemini AI result: success={result['success']}, source={result.get('source', 'unknown')}")
+            f"Recommender result: success={result['success']}, source={result.get('source', 'unknown')}")
 
         return jsonify(result)
 
     except Exception as e:
-        logger.error(f"Error in Gemini endpoint: {str(e)}")
+        logger.error(f"Error in direct recommender endpoint: {str(e)}")
         return error_response("Internal server error", 500, "INTERNAL_ERROR")
 
 
@@ -238,10 +254,11 @@ if __name__ == '__main__':
     print("\n🚀 UNIfy API Server Starting...")
     print(f"📍 Server: http://{host}:{port}")
     print("📋 Available Endpoints:")
-    print(f"   GET  /                    - Health check")
-    print(f"   POST /api/recommendations - Main recommendations endpoint")
-    print(f"   GET  /api/test           - Test with sample data")
-    print(f"   POST /api/gemini         - Direct Gemini AI endpoint")
+    print("   GET  /                    - Health check")
+    print("   POST /api/recommendations - Main recommendations endpoint")
+    print("   GET  /api/test            - Test with sample data")
+    print("   POST /api/claude          - Same recommender, direct")
+    print("   POST /api/gemini          - Deprecated alias for /api/claude")
     print("\n🔗 Frontend Integration:")
     print(
         f"   Set your React app to call: http://{host}:{port}/api/recommendations")

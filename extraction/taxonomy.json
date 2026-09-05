@@ -1,0 +1,452 @@
+{
+  "version": "1",
+  "about": "Accommodation label space for UNIfy. Derived by reading the accessibility prose in data/clean/evidence.jsonl, not invented up front: every label below is attested in the corpus, and labels appearing at fewer than 3 of 28 schools were dropped as unlearnable at this sample size.",
+  "caveats": [
+    "keyword_estimate_schools is what the keyword baseline finds, NOT ground truth. Real base rates come from the hand-labelled gold set.",
+    "Labels marked near_universal are true at (nearly) every school. They are facts about Ontario, not features that can distinguish schools, and a recommender that ranks on them will rank on noise. Keep them for description; exclude them from scoring.",
+    "The source prose was paraphrased by whoever compiled the spreadsheet, so phrasing is more normalised than real university web copy. Extraction accuracy here is an upper bound on what the same method would achieve when scraping live sites.",
+    "The source sheet's own hand-coded columns are NOT reliable gold. Annotation of 6 peer_support cells found the column marks 'yes' wherever a school has anything peer-adjacent ('Peer note-taking' is note-taking; 'Counsellor Assisted E-Support' is counselling), giving 3 false positives and 0 true positives on the sample. Hand-coded columns are recorded alongside predictions, never used as labels.",
+    "Do not tune these seeds against data/gold/gold.csv. The gold set is the test set; fitting the extractor to it makes the reported score meaningless. The error analysis says what a better extractor must handle -- it is not a patch list."
+  ],
+  "labels": [
+    {
+      "id": "exam_extended_time",
+      "group": "assessment",
+      "name": "Extended time on exams",
+      "definition": "Additional time granted for tests or examinations.",
+      "seeds": [
+        "extra time",
+        "extended time",
+        "additional time",
+        "time extension"
+      ],
+      "keyword_estimate_schools": 28,
+      "near_universal": true
+    },
+    {
+      "id": "exam_breaks",
+      "group": "assessment",
+      "name": "Breaks during exams",
+      "definition": "Scheduled or as-needed rest breaks during an assessment.",
+      "seeds": [
+        "breaks"
+      ],
+      "context": [
+        "exam",
+        "test",
+        "assessment"
+      ],
+      "keyword_estimate_schools": 27
+    },
+    {
+      "id": "exam_private_room",
+      "group": "assessment",
+      "name": "Private or quiet exam room",
+      "definition": "Writing in a separate, private, individual or reduced-distraction space.",
+      "seeds": [
+        "private room",
+        "quiet room",
+        "separate room",
+        "individual room",
+        "quiet space",
+        "private space",
+        "reduced distraction"
+      ],
+      "keyword_estimate_schools": 27
+    },
+    {
+      "id": "deadline_extension",
+      "group": "assessment",
+      "name": "Assignment deadline extensions",
+      "definition": "Flexibility on assignment due dates (distinct from exam time).",
+      "seeds": [
+        "deadline extension",
+        "extension on deadline",
+        "flexible deadline",
+        "extended deadline"
+      ],
+      "keyword_estimate_schools": 13
+    },
+    {
+      "id": "reduced_course_load",
+      "group": "assessment",
+      "name": "Reduced course load",
+      "definition": "Studying fewer courses per term while keeping full-time status or funding.",
+      "seeds": [
+        "reduced course load",
+        "reduced load",
+        "part-time study option",
+        "lighter course load"
+      ],
+      "keyword_estimate_schools": 6
+    },
+    {
+      "id": "note_taking",
+      "group": "instruction",
+      "name": "Note-taking support",
+      "definition": "Peer or professional note-takers, or provided lecture notes.",
+      "seeds": [
+        "note-taking",
+        "note taking",
+        "notetaking",
+        "note-taker"
+      ],
+      "keyword_estimate_schools": 27
+    },
+    {
+      "id": "lecture_recording",
+      "group": "instruction",
+      "name": "Lecture recording",
+      "definition": "Permission or equipment to record lectures.",
+      "seeds": [
+        "lecture recording",
+        "record lectures",
+        "recording of lectures",
+        "audio recording of class"
+      ],
+      "keyword_estimate_schools": 14
+    },
+    {
+      "id": "asl_interpretation",
+      "group": "instruction",
+      "name": "ASL / sign language interpretation",
+      "definition": "Sign language interpreters for classes or meetings.",
+      "seeds": [
+        "ASL",
+        "sign language",
+        "interpreter",
+        "interpretation"
+      ],
+      "keyword_estimate_schools": 13
+    },
+    {
+      "id": "realtime_captioning",
+      "group": "instruction",
+      "name": "Captioning of spoken course content",
+      "definition": "The institution offers captioning or transcription of spoken course content -- live/CART, or transcription of recorded material. Deliberately phrased as a claim about the service, not about wording: a captioning mention that is not an offer of service (a policy reference, or something the student must arrange themselves) does not count, and a school that describes the service without the word 'real-time' still does.",
+      "seeds": [
+        "captioning",
+        "captions",
+        "CART",
+        "real-time transcription"
+      ],
+      "keyword_estimate_schools": 15,
+      "definition_revised": "v2: dropped the requirement that the text say 'real-time'. Under v1 the definition demanded live/CART while the seeds fired on bare 'captioning', so York (Keele)'s 'Support: captioning services' was an extractor positive and an annotator negative.",
+      "scoring_caveat": "This label carries little evidential weight for the KEYWORD baseline specifically: its seeds are the same captioning words the definition describes, so agreement is close to tautological. It remains a real test for semantic extractors, which can over-fire on neighbouring concepts (ASL interpretation, assistive audio devices)."
+    },
+    {
+      "id": "format_braille",
+      "group": "materials",
+      "name": "Braille materials",
+      "definition": "Course materials produced in Braille.",
+      "seeds": [
+        "braille"
+      ],
+      "keyword_estimate_schools": 23
+    },
+    {
+      "id": "format_audio",
+      "group": "materials",
+      "name": "Audio format materials",
+      "definition": "Course materials in audio form.",
+      "seeds": [
+        "audio format",
+        "audio",
+        "audiobook"
+      ],
+      "keyword_estimate_schools": 25
+    },
+    {
+      "id": "format_large_print",
+      "group": "materials",
+      "name": "Large print materials",
+      "definition": "Enlarged-text versions of course materials.",
+      "seeds": [
+        "large print",
+        "large-print"
+      ],
+      "keyword_estimate_schools": 26
+    },
+    {
+      "id": "format_accessible_digital",
+      "group": "materials",
+      "name": "Accessible digital formats",
+      "definition": "Screen-reader-compatible PDFs, e-text and other digital alternates.",
+      "seeds": [
+        "accessible pdf",
+        "e-text",
+        "etext",
+        "alternate format",
+        "alternative format",
+        "accessible format"
+      ],
+      "keyword_estimate_schools": 26
+    },
+    {
+      "id": "assistive_tech_general",
+      "group": "technology",
+      "name": "Assistive technology / adaptive software",
+      "definition": "Provision, loan or advising on assistive hardware and software.",
+      "seeds": [
+        "assistive technology",
+        "assistive tech",
+        "adaptive software",
+        "adaptive technology",
+        "assistive software"
+      ],
+      "keyword_estimate_schools": 28,
+      "near_universal": true
+    },
+    {
+      "id": "screen_reader",
+      "group": "technology",
+      "name": "Screen readers",
+      "definition": "Screen reading software named specifically.",
+      "seeds": [
+        "screen reader",
+        "screen-reader",
+        "JAWS",
+        "NVDA"
+      ],
+      "keyword_estimate_schools": 17
+    },
+    {
+      "id": "speech_to_text",
+      "group": "technology",
+      "name": "Speech-to-text / dictation",
+      "definition": "Voice recognition or dictation tools.",
+      "seeds": [
+        "speech-to-text",
+        "voice-to-text",
+        "dictation",
+        "speech recognition",
+        "voice recognition"
+      ],
+      "keyword_estimate_schools": 8
+    },
+    {
+      "id": "accessible_buildings",
+      "group": "campus",
+      "name": "Physically accessible buildings",
+      "definition": "The institution states that campus buildings or facilities are physically accessible -- either as a general claim ('accessible buildings/entrances/classrooms') or by naming features (ramps, elevators, automatic doors, accessible washrooms). Does NOT include wayfinding or navigation help that makes no claim about physical accessibility.",
+      "seeds": [
+        "ramp",
+        "elevator",
+        "automatic door",
+        "accessible building",
+        "accessible washroom",
+        "wheelchair access"
+      ],
+      "keyword_estimate_schools": 16,
+      "definition_revised": "v2: a general accessibility claim now counts. Under v1 ('ramps, elevators, automatic doors, accessible washrooms') near-identical text was judged both ways."
+    },
+    {
+      "id": "accessible_housing",
+      "group": "campus",
+      "name": "Accessible housing / residence",
+      "definition": "The institution provides, reserves, or assists students in obtaining accessible or adapted residence. Any of provision, priority allocation, or help arranging it counts. Does NOT include mentions of housing that make no reference to accessibility.",
+      "seeds": [
+        "accessible housing",
+        "accessible residence",
+        "residence accommodation",
+        "adapted room"
+      ],
+      "keyword_estimate_schools": 7,
+      "definition_revised": "v2: 'help with accessible housing' now counts. v1 ('adapted residence rooms or priority accessible housing') did not say how to treat assistance versus provision."
+    },
+    {
+      "id": "accessible_parking_transit",
+      "group": "campus",
+      "name": "Accessible parking or transit",
+      "definition": "Accessible parking, campus shuttle or paratransit support. Parking listed among a school's accessible campus facilities counts; a permit scheme need not be named.",
+      "seeds": [
+        "accessible parking",
+        "paratransit",
+        "campus shuttle",
+        "accessible transit"
+      ],
+      "keyword_estimate_schools": 9
+    },
+    {
+      "id": "personalized_plan",
+      "group": "process",
+      "name": "Personalised accommodation plan",
+      "definition": "An individualised plan agreed with an advisor.",
+      "seeds": [
+        "personalized plan",
+        "personalised plan",
+        "accommodation plan",
+        "individualized plan",
+        "individual plan"
+      ],
+      "keyword_estimate_schools": 24
+    },
+    {
+      "id": "per_term_renewal",
+      "group": "process",
+      "name": "Per-term reactivation required",
+      "definition": "Accommodations must be renewed or activated each term.",
+      "seeds": [
+        "each term",
+        "every term",
+        "per term",
+        "activate each",
+        "renew each"
+      ],
+      "keyword_estimate_schools": 23
+    },
+    {
+      "id": "interim_without_documentation",
+      "group": "process",
+      "name": "Interim accommodation without full documentation",
+      "definition": "Temporary support available before or without formal diagnosis paperwork.",
+      "seeds": [
+        "interim accommodation",
+        "pending documentation",
+        "without formal diagnosis",
+        "without documentation",
+        "provisional accommodation"
+      ],
+      "keyword_estimate_schools": 10
+    },
+    {
+      "id": "confidentiality",
+      "group": "process",
+      "name": "Confidentiality / no diagnosis disclosure",
+      "definition": "Diagnosis need not be disclosed to instructors; service is confidential.",
+      "seeds": [
+        "confidential",
+        "not required to disclose",
+        "without disclosing",
+        "diagnosis disclosure not required"
+      ],
+      "keyword_estimate_schools": 18
+    },
+    {
+      "id": "intake_meeting",
+      "group": "process",
+      "name": "Intake meeting required to register",
+      "definition": "Registration requires an appointment or intake interview.",
+      "seeds": [
+        "intake meeting",
+        "intake appointment",
+        "intake form",
+        "registration appointment",
+        "book an appointment"
+      ],
+      "keyword_estimate_schools": 19
+    },
+    {
+      "id": "counselling_individual",
+      "group": "wellbeing",
+      "name": "Individual counselling",
+      "definition": "One-to-one counselling or therapy.",
+      "seeds": [
+        "individual counselling",
+        "one-on-one counselling",
+        "personal counselling",
+        "individual therapy"
+      ],
+      "keyword_estimate_schools": 22
+    },
+    {
+      "id": "counselling_group",
+      "group": "wellbeing",
+      "name": "Group counselling or workshops",
+      "definition": "Group therapy, support groups or wellbeing workshops.",
+      "seeds": [
+        "group counselling",
+        "group therapy",
+        "support group",
+        "workshop"
+      ],
+      "keyword_estimate_schools": 17
+    },
+    {
+      "id": "counselling_same_day",
+      "group": "wellbeing",
+      "name": "Same-day or walk-in counselling",
+      "definition": "Urgent, drop-in or same-day access to a counsellor.",
+      "seeds": [
+        "same-day",
+        "same day",
+        "walk-in",
+        "drop-in",
+        "urgent counselling"
+      ],
+      "keyword_estimate_schools": 21
+    },
+    {
+      "id": "peer_support",
+      "group": "wellbeing",
+      "name": "Peer support or mentorship programme",
+      "definition": "Student-to-student mentoring or peer support programme.",
+      "seeds": [
+        "peer support",
+        "peer mentor",
+        "mentorship",
+        "peer mentoring"
+      ],
+      "keyword_estimate_schools": 6,
+      "hand_coded_column": "peer_support",
+      "note": "The source sheet hand-codes this column 25 yes / 3 no, but annotation of 6 sampled cells judged all 6 negative: the column counts peer note-taking and counselling as mentorship. The column is recorded as `hand_coded_column_value` and excluded from the prediction. True prevalence is likely far below 25/28."
+    },
+    {
+      "id": "crisis_line_24_7",
+      "group": "wellbeing",
+      "name": "24/7 crisis line",
+      "definition": "Round-the-clock crisis or helpline access.",
+      "seeds": [
+        "24/7",
+        "24 hours",
+        "crisis line",
+        "Good2Talk",
+        "helpline"
+      ],
+      "keyword_estimate_schools": 28,
+      "near_universal": true,
+      "hand_coded_column": "support_24_7",
+      "note": "The hand-coded column is 1 for all 28 schools. Zero variance, and unverified -- treat as descriptive only, not as a label."
+    },
+    {
+      "id": "transition_program",
+      "group": "wellbeing",
+      "name": "Transition programme",
+      "definition": "Structured support for entering students, including orientation programmes and high-school-to-university transition programmes.",
+      "seeds": [
+        "transition program",
+        "transition programme",
+        "transition support",
+        "bridging program"
+      ],
+      "keyword_estimate_schools": 11
+    },
+    {
+      "id": "osap_bswd",
+      "group": "financial",
+      "name": "OSAP disability funding / BSWD",
+      "definition": "Eligibility guidance for OSAP disability funding or the Bursary for Students with Disabilities.",
+      "seeds": [
+        "OSAP",
+        "BSWD",
+        "bursary for students with disabilities",
+        "CSG-DSE"
+      ],
+      "keyword_estimate_schools": 28,
+      "near_universal": true
+    },
+    {
+      "id": "bursaries_scholarships",
+      "group": "financial",
+      "name": "Disability bursaries or scholarships",
+      "definition": "Institution-specific bursaries, awards or scholarships for disabled students.",
+      "seeds": [
+        "bursary",
+        "bursaries",
+        "scholarship",
+        "award"
+      ],
+      "keyword_estimate_schools": 26
+    }
+  ]
+}

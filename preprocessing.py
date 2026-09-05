@@ -90,6 +90,14 @@ UNIVERSITY_COLUMN_NAMES = {
     "disability bursaries/ scholarships": "bursaries",
 }
 
+# Two of the "text" columns are actually hand-coded Y/N flags (stored as 1/0),
+# not prose.  They are already labelled data and must be typed as booleans rather
+# than carried as one-character strings.
+UNIVERSITY_BOOLEAN_COLUMNS = {
+    "peer support/ mentorship program",
+    "24/7 support info (Y /N)",
+}
+
 # Placeholders the spreadsheet uses for "nothing here".
 NULL_TOKENS = {"", "nan", "none", "null", "n/a", "na", "x", "-", "--"}
 
@@ -443,6 +451,17 @@ def build_universities(body: pd.DataFrame, programs: pd.DataFrame, issues: dict)
             if not values:
                 record[UNIVERSITY_COLUMN_NAMES[column]] = None
                 continue
+            if column in UNIVERSITY_BOOLEAN_COLUMNS:
+                flags = {v.strip().lower() in {"1", "1.0", "y", "yes", "true"} for v in values}
+                if len(flags) > 1:
+                    issues["notes"].append(
+                        f"{name}: `{column}` disagrees across its program rows; kept the majority"
+                    )
+                record[UNIVERSITY_COLUMN_NAMES[column]] = (
+                    Counter(v.strip().lower() in {"1", "1.0", "y", "yes", "true"}
+                            for v in values).most_common(1)[0][0]
+                )
+                continue
             counts = Counter(norm_key(v) for v in values)
             winner, winner_n = counts.most_common(1)[0]
             # Representative: the longest raw spelling of the winning variant.
@@ -663,6 +682,14 @@ def write_report(path: str, programs: pd.DataFrame, universities: pd.DataFrame,
                 excerpt = re.sub(r"\s+", " ", variant["text"])[:220]
                 lines.append(f"- **{variant['rows']} row(s)**: {excerpt}…")
             lines.append("")
+
+    constant = [c for c in universities.columns
+                if c not in {"university", "n_programs"} and universities[c].nunique(dropna=False) <= 1]
+    if constant:
+        lines += ["## Columns with no variance across universities", "",
+                  "Identical for all 28 schools, so they cannot discriminate between them.",
+                  "Useful as facts about Ontario; useless as recommender features.", ""]
+        lines += [f"- `{c}`" for c in constant] + [""]
 
     if issues["notes"]:
         lines += ["## Notes", ""] + [f"- {n}" for n in issues["notes"]] + [""]

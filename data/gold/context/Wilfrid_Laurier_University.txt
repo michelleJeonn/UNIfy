@@ -1,0 +1,90 @@
+Wilfrid Laurier University
+==========================
+
+[physical_disabilities_supported]
+  - Mobility impairments
+  - Wheelchair/scooter use, difficulty walking or climbing stairs, long-distance mobility issues, temporary injuries
+  - Dexterity limitations
+  - Conditions like arthritis, repetitive strain injuries, hand/arm injuries
+  - Vision impairments
+  - Low vision or legal blindness
+  - Hearing impairments
+  - From partial hearing loss to deafness
+  - Chronic health conditions
+  - Including MS, cancer, asthma, chronic fatigue, cardiovascular issues
+  - Temporary physical conditions
+  - Post-surgery recovery, concussions, fractures, etc.
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and private rooms for exams
+  - Alternate formats: audio, large print, Braille, accessible PDFs
+  - Assistive tech and adaptive software support
+  - Note-taking support from peer volunteers
+  - One-on-one accommodation planning with advisors
+  - Online system to manage accommodations each term
+  - Orientation program for incoming students with disabilities
+  - Support for physical and temporary conditions
+  - Help with accessible housing and campus navigation
+  - Confidential and personalized service
+
+[mental_accommodations]
+  - Extra time, breaks, and private rooms for exams
+  - Alternate formats: audio, large print, accessible PDFs
+  - Assistive tech and adaptive software support
+  - Note-taking support from peer volunteers
+  - One-on-one accommodation planning with advisors
+  - Online system to manage accommodations each term
+  - Orientation program for incoming students with disabilities
+  - Support for learning, mental health, and temporary conditions
+  - Confidential and personalized service
+
+[documentation_requirements]
+  - Attention Disability: Attention Disability/Autism Spectrum Disorder Verification Form, Psycho-educational assessment (completed using Adult Measures)
+  - Brain Injury: Brain Injury Disability Verification Form, Current medical assessment including SCATS, dated within the past six months
+  - Autism Spectrum Disorder: Attention Disability/Autism Spectrum Disorder Verification Form, Psycho-educational assessment (completed using Adult Measures), Neuro-psychological assessment (completed using Adult Measures)
+  - Hearing Disability: Hearing Disability Verification Form, Current audiologist assessment (completed within past year)
+  - Learning Disability: Learning Disability Documentation Requirements PDF, Psycho-educational assessment (completed using Adult Measures)
+  - Mental Disability: Mental Disability Verification Form
+  - Mental Health/Psychiatric Disability: Mental Health Disability Verification Form
+  - Physical/Functional Disability: Physical/Functional Disability Verification Form
+  - Vision Disability: Vision Disability Verification Form, Ophthalmologist’s report, Physician assessment, CNIB card/registration number
+
+[documentation_submission]
+  - Review Disability Documentation Requirements.
+  - If applicable, review Interim Accommodations, UW Double Degree, or Service Animals.
+  - Complete the Accessible Learning Registration Form.
+  - Submit your documentation.
+  - Promptly respond to messages from Accessible Learning in your myLaurier inbox about next steps.
+
+[registration_process]
+  - Registration and Documentation - (Review Disability Documentation Requirements - If applicable, review Interim Accommodations, UW Double Degree, or Service Animals. - Complete the Accessible Learning Registration Form - Submit your documentation. - Promptly respond to messages from Accessible Learning in your myLaurier inbox about next steps.)
+  - Meet Your Accessible Learning Consultant - (If Accessible Learning determines you are eligible for support after reviewing your registration form and documentation, we will email your @mylaurier email address about meeting with an Accessible Learning consultant.)
+
+[counselling_services]
+  - Laurier University offers virtual/on-site short-term or goal-directed counselling services
+
+[support_24_7_contact]
+  - Special Constables (24/7): 519‑885‑3333
+  - Empower Me (24/7 mental health): 1‑855‑649‑8641
+
+[osap_eligibility]
+  - To be generally eligible for OSAP, you must:
+  - Be an Ontario resident who is a Canadian citizen, permanent resident of Canada, or a protected person. International students are not eligible for OSAP.
+  - Be registered in an OSAP-approved program.
+  - Be enrolled in an eligible course load.
+  - Have previous OSAP loans in good standing, with no defaults or restrictions.
+  - Maintain satisfactory academic progress throughout your studies.
+  - Demonstrate financial need.
+
+[bursaries]
+  - Accessible Learning Accommodation Bursary (ALAB – undergrad)
+  - Accessible Learning Accommodation Bursary – Graduate (ALAG)
+  - BSWD / CSG-DSE

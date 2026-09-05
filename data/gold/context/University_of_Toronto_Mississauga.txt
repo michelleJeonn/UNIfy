@@ -1,0 +1,119 @@
+University of Toronto Mississauga
+=================================
+
+[physical_disabilities_supported]
+  - Mobility Impairments
+  - Wheelchair/scooter users
+  - Difficulty with stairs, long walking distances
+  - Conditions like cerebral palsy, muscular dystrophy, or limb loss
+  - Support Includes:
+  - Accessible classrooms/buildings
+  - Alternative transportation access
+  - Adjustable classroom furniture
+  - Reduced course load or modified scheduling
+  - Dexterity Impairments
+  - Repetitive strain injuries (RSI)
+  - Arm/hand injuries (e.g., broken limbs)
+  - Ergonomic keyboards and writing aids
+  - Note-taking assistance
+  - Option to type exams instead of handwrite
+  - Vision Impairments
+  - Partial sight / low vision
+  - Legal blindness / total blindness
+  - Screen readers and magnification software
+  - Large-print or Braille materials
+  - Orientation and mobility assistance
+  - Accessible electronic documents
+  - Hearing Impairments
+  - Partial hearing loss
+  - Profound deafness
+  - Real-time captioning (CART)
+  - ASL interpretation
+  - FM systems or amplified listening devices
+  - Captioned videos and lectures
+  - Chronic Physical Health Conditions
+  - Multiple sclerosis
+  - Cancer (during or after treatment)
+  - Severe asthma
+  - Chronic fatigue syndrome
+  - Cardiovascular conditions
+  - Flexible attendance
+  - Deadline extensions
+  - Rest breaks during class or exams
+  - Medical withdrawal or retroactive drop options
+  - Temporary Physical Disabilities
+  - Post-surgery recovery
+  - Sprains, fractures, or mobility loss
+  - Temporary exam accommodations
+  - Modified classroom seating
+  - Access to note-taking services
+  - Use of mobility devices
+  - UTM-Specific Support Services
+  - Student Accessibility Services (SAS): Central office for registering and managing accommodations.
+  - Adaptive Technology Centre: Located in the Hazel McCallion Academic Learning Centre; provides assisti
+  - Student Services Hub: Intake location for all disability-related documentation and support coordination
+
+[mental_disabilities_supported]
+  - schizophrenia
+  - eating disorders
+  - Attention Deficit and Hyperactivity Disorder (ADHD)
+  - Autism Spectrum Disorders.
+
+[physical_accommodations]
+  - Exam accommodations: quiet rooms, alternate formats
+  - Lecture support: ASL, captioning upon request
+  - Assistive tech: screen readers, adaptive software at library tech centre
+  - Accessible campus: ramps, elevators, automatic doors, accessible parking
+  - Academic advising: 1-on-1 support for accommodation planning
+  - Student Services Hub: centralized accessibility coordination
+  - Transition support: help with accessibility during university transition
+
+[mental_accommodations]
+  - Exam accommodations: extra time, alternate formats
+  - Lecture support: note-taking, captioning upon request
+  - Assistive tech: screen readers, adaptive software
+  - Academic advising: 1-on-1 support for accommodation planning
+  - Mental health accommodations: support for anxiety, depression, etc.
+  - Student Services Hub: accessibility, wellness, and advising support
+  - Transition support: help with high school-to-university adjustment
+
+[documentation_requirements]
+  - Certificate of Disability
+
+[documentation_submission]
+  - Complete online form.
+  - Upload documentations at the end of the form.
+
+[registration_process]
+  - Activate UTORid and Uoft email
+  - Obtain Certificate of Disbility Form from health care practitioner who is familiar with your disability, whose scope of practice includes your disability and who is licensed to make a diagnosis.
+  - Complete Student Intake Form
+  - After you submit a complete Student Intake Package, you will be contacted to schedule an appointment with an accessibility advisor.
+  - The accessibility advisor will review your Student Intake Package and discuss any barriers or difficulties you have been experiencing in your academic progress to develop effective accommodations.
+  - Make sure your UTORid is active and you have a UTmail+ account before your appointment.
+
+[counselling_services]
+  - University of Toronto offers:
+  - Same-day counselling
+  - On-location counselling
+  - Wellness counselling for Black, Indigenous and/or Persons of Colour (BIPOC) students
+  - Short-term intensive counselling
+
+[support_24_7_contact]
+  - Campus Security (24/7): 416‑978‑2222
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - Be an Ontario resident who is a Canadian citizen, permanent resident of Canada, or a protected person (international students are not eligible for OSAP)
+  - Be registered in an OSAP approved program
+  - Be enrolled in an eligible course load
+  - Have previous OSAP loans in good standing, with no defaults or restrictions
+  - Maintain satisfactory academic progress throughout your studies
+  - Demonstrate financial need
+  - Have not exceed the lifetime limit of student loan funding
+
+[bursaries]
+  - Bursary for Students with Disabilities (BSWD) & Canada Student Grant for Services & Equipment (CSG-DSE)
+  - Students for Barrier-Free Access (SBA) Student Scholarship
+  - TD Graduate Scholarship for People with Disabilities
+  - Campus accessibility bursaries listed by SBA (e.g., Allan Angus Rodgers Wheelchair Athletes’ Fund, Anita Garbarino Girard Award)

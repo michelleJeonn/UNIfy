@@ -1,0 +1,42 @@
+
+Extractor: keyword baseline
+Gold files: data/gold/gold.csv, data/gold/gold_supplement.csv  (13 cell(s) superseded by a later file)
+Gold cells judged: 165
+
+label                               prec recall    F1    n+  n-    precision 95% CI     recall 95% CI
+------------------------------------------------------------------------------------------------------------
+accessible_buildings                1.00   0.80  0.89     3   3  [ 0.44, 1.00]  [ 0.57, 1.00]
+accessible_housing                  1.00   0.50  0.67     3   3  [ 0.44, 1.00]  [ 0.25, 1.00]
+accessible_parking_transit          1.00   0.26  0.42     3   3  [ 0.44, 1.00]  [ 0.11, 1.00]
+asl_interpretation                  1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+bursaries_scholarships              1.00   1.00  1.00     3   2  [ 0.44, 1.00]  [ 1.00, 1.00]
+confidentiality                     1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+counselling_group                   0.67   1.00  0.80     3   3  [ 0.21, 0.94]  [ 1.00, 1.00]
+counselling_individual              1.00   0.59  0.74     3   3  [ 0.44, 1.00]  [ 0.32, 1.00]
+counselling_same_day                1.00   0.66  0.80     3   3  [ 0.44, 1.00]  [ 0.39, 1.00]
+deadline_extension                  1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+exam_breaks                         1.00   1.00  1.00     3   1  [ 0.44, 1.00]  [ 1.00, 1.00]
+exam_private_room                   1.00   0.75  0.86     3   3  [ 0.44, 1.00]  [ 0.75, 0.75]
+format_accessible_digital           1.00   1.00  1.00     3   0  [ 0.44, 1.00]  [ 1.00, 1.00]
+format_audio                        1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+format_braille                      1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+format_large_print                  1.00   1.00  1.00     3   2  [ 0.44, 1.00]  [ 1.00, 1.00]
+intake_meeting                      1.00   0.88  0.94     3   3  [ 0.44, 1.00]  [ 0.71, 1.00]
+interim_without_documentation       1.00   0.45  0.62     3   3  [ 0.44, 1.00]  [ 0.36, 1.00]
+lecture_recording                   1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+note_taking                         1.00   1.00  1.00     3   1  [ 0.44, 1.00]  [ 1.00, 1.00]
+peer_support                        0.67   1.00  0.80     3   9  [ 0.21, 0.94]  [ 1.00, 1.00]
+per_term_renewal                    1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+personalized_plan                   1.00   0.90  0.95     3   3  [ 0.44, 1.00]  [ 0.75, 1.00]
+realtime_captioning                 0.67   1.00  0.80     3   3  [ 0.21, 0.94]  [ 1.00, 1.00]
+reduced_course_load                 1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+screen_reader                       1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+speech_to_text                      1.00   1.00  1.00     3   3  [ 0.44, 1.00]  [ 1.00, 1.00]
+transition_program                  1.00   0.45  0.62     3   3  [ 0.44, 1.00]  [ 0.21, 1.00]
+------------------------------------------------------------------------------------------------------------
+MACRO AVERAGE                       0.96   0.87  0.89   over 28 label(s) with a defined F1
+
+[warn] 3 label(s) have fewer than 2 judged cells in a stratum; their intervals are not meaningful:
+       exam_breaks, format_accessible_digital, note_taking
+
+Note: per-label intervals are wide by construction at this sample size. Compare extractors on the macro average, not on individual labels.

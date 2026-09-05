@@ -1,6 +1,14 @@
-"""
-Gemini AI Fallback Recommender for UNIfy
-Provides AI-powered university accommodation recommendations when ML pipeline results are insufficient.
+"""UNUSED -- superseded by claude_recommender.py.
+
+Nothing imports this module. It is kept only for reference and can be deleted.
+
+It is retained mainly as a record of the failure it caused: asked for five Canadian
+universities from memory, with a dead API key, it returned UBC, McGill and Alberta --
+none of them Ontario schools, none of them in this project's dataset -- reported as a
+successful answer. The replacement never lets a model choose the schools.
+
+Gemini AI Fallback Recommender for UNIfy.
+Provides AI-powered university accommodation recommendations.
 """
 
 import os
@@ -18,6 +26,9 @@ class GeminiRecommender:
         Args:
             api_key: Google AI API key. If None, will try to get from environment variable GEMINI_API_KEY
         """
+        # Set whenever a hardcoded default is served, so the caller can report the
+        # real source instead of claiming the model answered.
+        self.used_fallback = False
         self.api_key = api_key or os.getenv('GEMINI_API_KEY')
         if not self.api_key:
             print("Warning: No Gemini API key provided. Set GEMINI_API_KEY environment variable or pass api_key parameter.")
@@ -201,6 +212,7 @@ Include exactly 5 universities with realistic scores and detailed accommodation 
     
     def _get_default_accommodations(self, student_profile: Dict) -> List[str]:
         """Get default accommodations when AI is not available."""
+        self.used_fallback = True
         mental_health = student_profile.get('mental_health', 'None')
         physical_health = student_profile.get('physical_health', 'None')
         
@@ -215,7 +227,14 @@ Include exactly 5 universities with realistic scores and detailed accommodation 
         return accommodations[:5]
     
     def _get_default_universities(self, student_profile: Dict, accommodations: List[str]) -> List[Dict]:
-        """Get default university recommendations when AI is not available."""
+        """Get default university recommendations when AI is not available.
+
+        NOTE: this list is hardcoded and is not drawn from the project's dataset --
+        it names schools outside Ontario that appear nowhere in `universities.csv`.
+        It exists so the endpoint returns a shape, not an answer; callers must check
+        `source` before showing any of it to a student.
+        """
+        self.used_fallback = True
         return [
             {
                 "name": "University of Toronto",
@@ -286,7 +305,7 @@ def get_gemini_recommendations(student_profile: Dict, api_key: Optional[str] = N
     
     return {
         'success': True,
-        'source': 'gemini_ai' if gemini.available else 'default_fallback',
+        'source': 'default_fallback' if gemini.used_fallback else 'gemini_ai',
         'needed_accommodations': accommodations,
         'recommendations': universities
     }

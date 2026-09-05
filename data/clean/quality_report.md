@@ -237,6 +237,13 @@ Resolving these 28 schools by hand is the highest-value manual pass on this data
 - **9 row(s)**: BSWD / CSG-DSE External Scholarships via NEADS database…
 - **3 row(s)**: Doris and Owen Foster Scholarship BSWD / CSG-DSE…
 
+## Columns with no variance across universities
+
+Identical for all 28 schools, so they cannot discriminate between them.
+Useful as facts about Ontario; useless as recommender features.
+
+- `support_24_7`
+
 ## Notes
 
 - severity value 'mid' under ADHD read as 'mild'

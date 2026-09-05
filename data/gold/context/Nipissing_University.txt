@@ -1,0 +1,84 @@
+Nipissing University
+====================
+
+[physical_disabilities_supported]
+  - Mobility impairments (wheelchairs/scooters, difficulty walking or navigating stairs, temporary injuries)
+  - Dexterity limitations (arthritis, repetitive strain, hand/arm injuries)
+  - Vision or hearing impairments
+  - Chronic health conditions affecting learning and physical access
+  - Temporary conditions (post-surgery, concussion, fractures)
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, large print, Braille, PDFs
+  - Assistive technology and adaptive software support
+  - Note-taking and lecture recording assistance
+  - Personalized accommodation plans each term
+  - Temporary accommodations available
+  - Support for physical and sensory disabilities
+  - Accessible campus: ramps, elevators, washrooms, and parking
+
+[mental_accommodations]
+  - Extra time, breaks, and quiet rooms for exams
+  - Alternate formats: audio, large print, PDFs
+  - Assistive technology and adaptive software support
+  - Note-taking and lecture recording assistance
+  - Personalized accommodation plans each term
+  - Temporary accommodations available
+  - Support for learning and mental health disabilities
+
+[documentation_requirements]
+  - Accessibility Services Self-Identification Form
+  - ADHD: Psycho-educational assessment (completed by a registered psychologist), SAS Medical Documentation form for Mental Health and ADHD (by a qualified healthcare professional with experience in the diagnosis and treatment of ADHD is required)
+  - Deaf,Deafened, Hard of Hearing: SAS Medical Documentation form for Physical, Sensory, and Medical Disabilities
+  - Low Vision, Blind: SAS Medical Documentation form for Physical, Sensory, and Medical Disabilities
+  - Medical or Physical Condition: SAS Medical Documentation form for Physical, Sensory, and Medical Disabilities
+  - Acquired Brain Injury: SAS Medical Documentation form for Physical, Sensory, and Medical Disabilities
+  - Mental Health: SAS Medical Documentation form for Mental Health and ADHD, A recent psycho-educational assessment* or formal letter from a family physician, psychologist, or psychiatrist* is preferred (If the former is not available, the completion of the SAS Medical Documentation form for Physical, Sensory, and Medical Disabilities)
+  - Temporary: SAS Medical Documentation form for Physical, Sensory, and Medical Disabilities
+
+[documentation_submission]
+  - Student completes the Self-Identification Form and submits any supporting documents to SAS.
+  - Documentation can be emailed to sas@nipissingu.ca
+
+[registration_process]
+  - Student completes the Self-Identification Form and submits any supporting documentation to SAS. Documentation can be emailed to sas@nipissingu.ca.
+  - An Accessibility Consultant will review the documentation and will contact the student with next steps and/or to schedule an Intake Appointment.
+  - An Accessibility Consultant meets with the student to discuss their accommodation needs. Appointments are available via audio/video conferencing, telephone or in person on campus.
+  - Together, the student and Accessibility Consultant create an Individual Accommodation plan.
+
+[counselling_services]
+  - Nipissing University offers:
+  - Self-Help Services
+  - Drop-In Sessions
+  - Counsellor Assisted E-Support
+  - Group Therapy
+  - Individual Therapy
+
+[support_24_7_contact]
+  - Campus Security (24/7): 705‑498‑7244
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP at Nipissing University, you must typically meet the following criteria:
+  - Ontario Resident: You must be an Ontario resident, generally defined by having lived in Ontario for the past 12 consecutive months, excluding time spent as a full-time post-secondary student.
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident, or Protected Person of Canada. International students are not eligible for OSAP.
+  - Approved Program of Study: You must be enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate. Most undergraduate and graduate programs at Nipissing University are approved.
+  - Eligible Course Load: Your registration must meet the minimum requirements for either full-time or part-time OSAP.
+  - Good Standing: You must not be in default on any previous OSAP loans or have any restrictions on your OSAP account.
+  - Satisfactory Academic Progress: You need to maintain satisfactory academic progress in your program of study. Nipissing states that for OSAP purposes, you're assessed on a pass/fail basis and are expected to successfully complete 60% of a full course load (or 40% if you have a permanent disability).
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need.
+  - Lifetime Funding Limit: You must not have exceeded the lifetime limit of student loan funding (typically 340 weeks for most students, 400 weeks for doctoral studies, or up to 520 weeks for students with a permanent disability).
+  - First-Time Applicant Module: If you are a full-time or micro-credential student applying for the first time for the 2024–2025 or 2025–2026 school year, you will need to complete an interactive financial literacy module.
+
+[bursaries]
+  - Kevin Collins Abilities Scholarship
+  - BSWD / CSG-DSE

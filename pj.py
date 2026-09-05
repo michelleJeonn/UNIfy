@@ -1,32 +1,47 @@
-# run "pip install pandas openpyxl"
-# excel file should be explicitly saved on ur device 
+"""Load the source spreadsheet into Unify.db.
 
-import pandas as pd 
-import sqlite3
+This is the ingest step; `preprocessing.py` reads the database it writes.
+
+    pip install pandas openpyxl
+    python pj.py path/to/UNIfy_Database_23_08_25.xlsx
+
+Every sheet becomes a table of the same name, replacing any existing one. The
+raw sheets are kept verbatim — parsing, validation and cleaning all happen in
+preprocessing.py, so that the untouched source is always recoverable.
+"""
+
+import argparse
 import os
+import sqlite3
+import sys
+
+import pandas as pd
 
 
-# replace this w the path of excel file saved on ur device
-db = "/Users/chevinjeon/Downloads/UNIfy_Database_23_08_25.xlsx" 
-xlsx = pd.ExcelFile(db, engine='openpyxl')
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("xlsx", help="path to the source .xlsx workbook")
+    parser.add_argument("--db", default="Unify.db", help="output SQLite database")
+    args = parser.parse_args()
 
-conn = sqlite3.connect("Unify.db") # name modifiable 
+    if not os.path.exists(args.xlsx):
+        print(f"error: no such file: {args.xlsx}", file=sys.stderr)
+        return 1
 
-for sheet in xlsx.sheet_names:
-    df = pd.read_excel(xlsx, sheet_name = sheet, engine='openpyxl')
-    df.to_sql(sheet, conn, if_exists='replace', index = False)
-    print(f"Loaded sheet '{sheet}' into table '{sheet}'")
+    workbook = pd.ExcelFile(args.xlsx, engine="openpyxl")
+    conn = sqlite3.connect(args.db)
+    try:
+        for sheet in workbook.sheet_names:
+            frame = pd.read_excel(workbook, sheet_name=sheet, engine="openpyxl")
+            frame.to_sql(sheet, conn, if_exists="replace", index=False)
+            print(f"loaded sheet {sheet!r} -> table {sheet!r} ({len(frame)} rows)")
+    finally:
+        conn.close()
 
-dfs = {}
-for sheet in xlsx.sheet_names:
-    dfs[sheet] = pd.read_sql_query(f"SELECT * FROM '{sheet}'", conn)
-
-conn.close()
-
-print(dfs['student info'])
+    print(f"\nwrote {os.path.abspath(args.db)}")
+    print("next: python preprocessing.py")
+    return 0
 
 
-# save as Excel
-dfs['student info'].to_excel('student_info.xlsx', index=False)
-print(os.path.abspath("Unify.db"))
-
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,3 +1,10 @@
+"""UNUSED -- superseded by claude_recommender.py at the repo root.
+
+Nothing imports this module; the Flask API does not use it. Kept for reference only.
+Note that _initialize_client calls exit() on failure, which would terminate the host
+process -- another reason not to wire this in as-is.
+"""
+
 from google import genai
 from google.genai import types
 import certifi

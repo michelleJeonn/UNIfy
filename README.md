@@ -1,362 +1,221 @@
-# UNIfy - University Accommodation Recommendation System
+# UNIfy
 
-UNIfy is an intelligent recommendation system that helps students with disabilities find universities that best match their accessibility needs and accommodation requirements. The project combines a machine learning backend with a modern React frontend.
+Accessibility and accommodation information for the **28 Ontario universities**, turned
+into structured, citable data — plus a measured benchmark for how well that extraction
+can be automated.
 
-## 🎯 Project Overview
+The project has two halves that are worth keeping separate:
 
-The system uses machine learning to:
-- **Predict accommodations** needed based on student disability profiles
-- **Recommend universities** that provide the best match for accessibility needs
-- **Match students** with institutions based on accommodation availability and support ratings
+1. **A dataset and benchmark** (`preprocessing.py`, `extraction/`) — reproducible,
+   hand-labelled, and evaluated with stated uncertainty. This is the part with results.
+2. **A recommendation API and React frontend** (`app.py`, `src/`) — backed by Claude
+   for judgment and by the extracted dataset for facts. It is not a trained model and
+   does not claim to be.
 
-## 🚀 Quick Start
+## Status
 
-### Prerequisites
+| Component | State |
+|---|---|
+| Preprocessing → `programs.csv`, `universities.csv` | Working, validated |
+| Evidence corpus (2,265 citable segments) | Working |
+| 32-label accommodation taxonomy | Working, 2 definitions revised after annotation |
+| Keyword baseline extractor | Measured: **P 0.96 / R 0.87 / F1 0.89** |
+| Embedding extractor (MiniLM-L6-v2) | Measured, **provisional** — does not beat the baseline |
+| Gold set | 165 human-judged cells; 40-cell fairness batch outstanding |
+| LLM extractor | Not started |
+| Recommendation API | Working, Claude-backed and grounded in the extracted data |
 
-- **Node.js** (latest version) - [Download here](https://nodejs.org/en/download/)
-- **Python 3.8+** (for ML backend)
-- **8GB+ RAM** (for TensorFlow training)
+There is no trained model in this repo. An earlier version contained a neural
+"accommodation predictor", a "university recommender", and an HMM; all three were
+removed because they did not do what they claimed — the network learned a hand-written
+if-statement, the recommender was never fitted and returned identical scores for every
+school, and the HMM decoded noise. The accuracy figures previously quoted in this file
+(85–90%, MAE < 0.3) were not measured against anything and have been deleted.
 
-### Frontend Setup
+## Data
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/michelleJeonn/UNIfy.git
-   cd UNIfy
-   ```
+The source is a compiled spreadsheet of Ontario university programs and accessibility
+services. `preprocessing.py` parses it into two tables:
 
-2. **Install frontend dependencies**
-   ```bash
-   npm install
-   ```
+- **`data/clean/programs.csv`** — 1,690 programs × 20 columns. Admission averages parsed
+  into bands and co-op/regular splits, prerequisites into `{n, options}` groups, with the
+  raw text always retained alongside the parse.
+- **`data/clean/universities.csv`** — 28 schools × 15 columns of accessibility services,
+  support programs, and contact information.
 
-3. **Run the frontend locally**
-   ```bash
-   npm run dev
-   ```
-
-### Backend Setup (ML Pipeline)
-
-1. **Install Python dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Verify TensorFlow installation**
-   ```bash
-   python -c "import tensorflow as tf; print(f'TensorFlow {tf.__version__} installed successfully')"
-   ```
-
-3. **Train the ML models**
-   ```bash
-   python ml_pipeline.py
-   ```
-
-## 📊 Data Structure
-
-### Cleaned CSV Files
-
-Your cleaned CSV files contain valuable information for building the ML model:
-
-1. **`clean_student_info.csv`** - Student disability profiles and course information
-   - Mental health conditions (ADHD, Autism, Depression, etc.)
-   - Physical health conditions (Hearing, Mobility, Neurological, etc.)
-   - High school courses completed
-
-2. **`clean_uni_info.csv`** - University information and available accommodations
-   - University names and locations
-   - Available accommodations and services
-   - Accessibility and disability support ratings
-
-3. **`clean_user_input.csv`** - Student input data for training
-   - GPA and academic performance
-   - Health condition details
-   - Severity levels and preferences
-
-## 🤖 Machine Learning Pipeline
-
-### 1. Train the Models
-
-Run the complete ML pipeline to train the recommendation system:
+Both are written as CSV and Parquet, with `vocabulary.json` and a `quality_report.md`.
 
 ```bash
-python ml_pipeline.py
+python preprocessing.py
 ```
 
-This will:
-- Load and preprocess your cleaned CSV data
-- Create training datasets from student and university information
-- Train a neural network to predict needed accommodations
-- Build a university recommendation system
-- Save trained models to the `models/` directory
+Two things this pipeline exists to prevent, both of which had already happened:
 
-### 2. Model Architecture
+- **Mode-fill mislabelled all 1,690 programs as one university.** Merged spreadsheet
+  cells were filled with the column mode rather than forward-filled in sheet order.
+  Attribution is now `ffill`, and `validate()` cross-checks program-table university
+  names against the university table so this class of bug fails loudly.
+- **`pd.NA` is not `None`, and `bool(pd.NA)` raises.** Eighteen missing supplemental-
+  application flags silently became `False`. All cell access now goes through a
+  null-safe accessor.
 
-#### Accommodation Predictor
-- **Input**: Student disability profile, courses, GPA, severity
-- **Output**: Predicted accommodations needed
-- **Architecture**: 4-layer neural network with dropout regularization
-- **Training**: Binary cross-entropy loss for multi-label classification
+## The extraction benchmark
 
-#### University Recommender
-- **Input**: University features and accommodation availability
-- **Output**: Match scores for student-university pairs
-- **Scoring**: Combines accessibility ratings (70%) with accommodation match (30%)
+See **`extraction/README.md`** for the pipeline and design decisions, and
+**`extraction/RESULTS.md`** for full results and error analysis.
 
-### 3. Data Processing
-
-The pipeline automatically:
-- Encodes categorical variables (disabilities, courses, accommodations)
-- Scales numerical features (GPA, ratings)
-- Handles missing data and data inconsistencies
-- Creates synthetic training data when needed
-
-## 🔌 Frontend Integration API
-
-### 1. Main API Function
-
-The system provides a simple API function for frontend integration:
-
-```python
-from ml_pipeline import get_recommendations
-
-# Student profile input
-student_profile = {
-    'mental_health': 'ADHD',
-    'physical_health': 'None',
-    'courses': 'Computer Science',
-    'gpa': 3.8,
-    'severity': 'moderate'
-}
-
-# Get recommendations
-result = get_recommendations(student_profile)
-
-if result['success']:
-    accommodations = result['needed_accommodations']
-    universities = result['recommendations']
-    print(f"Recommended accommodations: {accommodations}")
-    print(f"Top universities: {universities}")
+```bash
+python extraction/corpus.py      # 2,265 citable evidence segments
+python extraction/baseline.py    # 28 × 32 label matrix, every label cites its source
+python extraction/make_gold.py   # blind annotation template
+python extraction/evaluate.py    # stratified precision / recall / F1 with intervals
 ```
 
-### 2. Input Format
+**Keyword baseline**, 28 labels, 165 human-judged cells:
+P 0.96 / R 0.87 / F1 0.89.
 
-The `student_profile` dictionary should contain:
+**Embedding extractor** vs keyword, on the 23 labels both can be scored on:
 
-- **`mental_health`**: str - Mental health condition (e.g., 'ADHD', 'Autism', 'Depression', 'None')
-- **`physical_health`**: str - Physical health condition (e.g., 'Hearing', 'Mobility', 'Neurological', 'None')
-- **`courses`**: str - High school courses (e.g., 'Computer Science', 'Mathematics', 'Arts')
-- **`gpa`**: float - Grade point average (0.0 to 4.0)
-- **`severity`**: str - Condition severity ('mild', 'moderate', 'severe')
+| | precision | recall | F1 |
+|---|---|---|---|
+| keyword | **0.96** | 0.84 | **0.87** |
+| embedding | 0.84 | **0.92** | 0.86 |
 
-### 3. Output Format
+Recall improved as predicted; precision fell further. The failure mode is
+**near-neighbour collapse** — the model matches the topic and then cannot resolve the
+distinction that defines the label. `counselling_group` fires on "One-on-one counselling
+services" at cosine 0.65. The taxonomy draws contrasts *within* families, and phrase-level
+cosine similarity does not represent contrast.
 
-The function returns a dictionary with:
+This comparison is **provisional**. The gold set is stratified by the keyword baseline's
+predictions, and a gold set stratified by one system's predictions cannot fairly score
+another. `data/gold/gold_embedding_template.csv` (40 cells) is the outstanding top-up.
 
-```python
+### Findings that constrain any recommender built on this data
+
+- **Five labels are true at nearly every school** — extended time, assistive technology,
+  24/7 crisis line, OSAP/BSWD, and accessible digital formats. They cannot discriminate
+  between universities; ranking schools on them is ranking on noise. The first four are
+  flagged `near_universal` in the taxonomy and excluded from scoring. The fifth,
+  `format_accessible_digital`, is still scored — its gold sample drew no negatives, which
+  is itself the evidence that it is near-universal.
+- **The signal is in the rarer provisions**: ASL 13/28, real-time captioning 15/28,
+  accessible housing 7/28, reduced course load 6/28, and in process differences such as
+  interim accommodation without documentation (10/28).
+- **The source's own hand-coded columns are not gold.** The `peer_support` column marks
+  25/28 schools "yes"; annotation of the sampled cells found it counts peer note-taking
+  and counselling as mentorship. Hand-coded columns are recorded alongside predictions
+  and never used as labels.
+
+### Caveat on generalisation
+
+The source prose was paraphrased by whoever compiled the spreadsheet, so its phrasing is
+far more uniform than real university web copy. Accuracy measured here is an **upper
+bound** on what the same method would achieve scraping live sites.
+
+### Do not tune on the gold set
+
+`data/gold/gold.csv` is the test set. Keyword seeds must not be tuned against it, and the
+extractor's author should not annotate their own test cells. Six `realtime_captioning`
+cells in `gold_supplement2.csv` are model-proposed and marked
+`annotator: model-proposed (UNCONFIRMED)`; headline numbers use human judgments only.
+
+## Recommendation API
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+| Route | Method | Purpose |
+|---|---|---|
+| `/` | GET | Health check |
+| `/api/recommendations` | POST | Recommendations for a student profile |
+| `/api/claude` | POST | Same, direct |
+| `/api/gemini` | POST | Deprecated alias, kept for existing frontend builds |
+| `/api/test` | GET | Smoke test with a fixed profile |
+
+Set `CLAUDE_API_KEY` in `.env`. Without one the recommender still works — see below.
+
+Request body:
+
+```json
 {
-    'success': True,
-    'needed_accommodations': ['Extended time', 'Quiet environment', 'Academic coaching'],
-    'recommendations': [
-        {
-            'name': 'University of Toronto',
-            'score': 4.2,
-            'accessibility_rating': 4.5,
-            'disability_support_rating': 4.8,
-            'available_accommodations': ['Extended time', 'Quiet environment', ...],
-            'location': 'Ontario'
-        },
-        # ... more universities
-    ]
+  "mental_health": "ADHD",
+  "physical_health": "None",
+  "courses": "Computer Science",
+  "gpa": 3.8,
+  "severity": "moderate"
 }
 ```
 
-### 4. Error Handling
+**The model does not choose the universities.** Claude maps the student profile onto the
+32 accommodation labels — a judgment task — and ranking is then deterministic arithmetic
+over the measured extraction results for the 28 real Ontario universities, weighted by
+label rarity so the near-universal provisions cannot drive the result. Every
+recommendation quotes the source text each label was extracted from.
 
-If the function fails, it returns:
+This is a structural fix, not a prompt instruction. The previous Gemini backend, with a
+dead key, returned HTTP 200, `success: true`, `source: "gemini_ai"` and recommended UBC,
+McGill and Alberta — none of them Ontario schools, none of them in this dataset. The
+current backend cannot name a school that is not in
+`data/clean/accommodations_baseline.csv`; `test_integration.py` asserts it.
 
-```python
-{
-    'success': False,
-    'error': 'Error message describing what went wrong',
-    'recommendations': []
-}
+Responses still carry **`source`**: `claude_grounded` when Claude mapped the needs,
+`rule_based_grounded` when no key was available and rules did. Both rank real schools from
+real data — the fallback is blunter, not fabricated.
+
+`accessibility_rating` and `disability_support_rating` are coverage measures — the share
+of measured provisions a school's text evidences — not quality judgments. Each
+recommendation carries a `rating_basis` saying so. See `CLAUDE_INTEGRATION.md`.
+
+## Frontend
+
+```bash
+npm install
+npm run dev
 ```
 
-## 📈 Model Performance
+React 18 + TypeScript + Vite + Tailwind. See `INTEGRATION_GUIDE.md` and `DEPLOYMENT.md`.
 
-### Training Metrics
-- **Accommodation Predictor**: Accuracy typically 85-90%
-- **University Recommender**: Mean Absolute Error < 0.3
-- **Training Time**: ~5-10 minutes on standard hardware
-
-### Evaluation
-The system evaluates:
-- Accommodation prediction accuracy
-- University recommendation relevance
-- Match score distribution
-- User satisfaction metrics
-
-## 🔧 Customization
-
-### Adding New Disabilities
-1. Update the disability options in your frontend
-2. Retrain the model with new data
-3. Update the encoding mappings
-
-### Adding New Universities
-1. Add university data to `clean_uni_info.csv`
-2. Include accommodation information
-3. Add accessibility ratings
-
-### Modifying Accommodations
-1. Update accommodation lists in the ML pipeline
-2. Retrain models with new accommodation categories
-3. Update your frontend options
-
-## 📁 Project Structure
+## Project structure
 
 ```
 UNIfy/
+├── preprocessing.py            # spreadsheet → validated tables
+├── extraction/
+│   ├── corpus.py               # evidence segments
+│   ├── taxonomy.json           # 32 labels, 8 groups, decidable definitions
+│   ├── baseline.py             # keyword extractor
+│   ├── embedding.py            # MiniLM extractor
+│   ├── make_gold.py            # blind annotation templates
+│   ├── evaluate.py             # stratified metrics, Wilson + bootstrap CIs
+│   ├── README.md               # pipeline and design decisions
+│   └── RESULTS.md              # results and error analysis
 ├── data/
-│   └── clean/                 # Cleaned CSV files
-│       ├── clean_student_info.csv
-│       ├── clean_uni_info.csv
-│       └── clean_user_input.csv
-├── models/                    # Trained ML models (created after training)
-│   ├── accommodation_predictor.h5
-│   ├── university_recommender.h5
-│   └── encoders.pkl
-├── src/                       # React frontend
-│   ├── components/
-│   ├── pages/
-│   └── app/
-├── html-pages/               # Legacy HTML pages
-├── public/                   # Static assets
-├── ml_pipeline.py           # ML training pipeline and API functions
-├── test_system.py           # System testing and demonstration
-├── requirements.txt         # Python dependencies
-├── package.json             # Node.js dependencies
-└── README.md                # This file
+│   ├── clean/                  # programs, universities, evidence, predictions
+│   └── gold/                   # hand-labelled gold set + per-school context
+├── app.py                      # Flask API
+├── claude_recommender.py       # grounded recommender: Claude for judgment, data for facts
+├── src/                        # React frontend
+└── requirements.txt
 ```
 
-## 🚨 Troubleshooting
+## Security
 
-### Common Issues
+`.env` is **still tracked in git**. The old `GEMINI_API_KEY` is in the history of commits
+`2c7e024` and `054c0fc`, and `.env` now holds a `CLAUDE_API_KEY` — so the next commit
+would publish that one too.
 
-1. **Memory Errors During Training**
-   - Reduce batch size in `ml_pipeline.py`
-   - Use smaller neural network architectures
-   - Process data in chunks
-
-2. **Model Loading Errors**
-   - Ensure models are trained first (`python ml_pipeline.py`)
-   - Check file paths in the API function
-   - Verify TensorFlow version compatibility
-
-3. **Data Loading Issues**
-   - Check CSV file paths and permissions
-   - Verify CSV format and encoding
-   - Handle missing or corrupted data
-
-4. **Frontend Issues**
-   - Ensure Node.js is installed and up to date
-   - Clear npm cache: `npm cache clean --force`
-   - Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
-
-### Performance Optimization
-
-1. **Faster Training**
-   - Use GPU acceleration if available
-   - Reduce training epochs
-   - Use smaller datasets for testing
-
-2. **Faster Inference**
-   - Load models once at startup
-   - Cache frequently used data
-   - Optimize feature encoding
-
-## 🔮 Future Enhancements
-
-### Planned Features
-- **Real-time Updates**: Live accommodation availability
-- **Student Reviews**: Peer feedback on accessibility
-- **Advanced Analytics**: Detailed accessibility insights
-- **Full Frontend Integration**: Complete React UI with ML backend
-
-### Model Improvements
-- **Deep Learning**: Transformer-based architectures
-- **Multi-modal**: Text and image analysis
-- **Personalization**: User preference learning
-- **A/B Testing**: Continuous model optimization
-
-## 📚 Technical Details
-
-### Frontend Stack
-- **React 18**: Modern UI framework
-- **TypeScript**: Type-safe JavaScript
-- **Vite**: Fast build tool and dev server
-- **Tailwind CSS**: Utility-first CSS framework
-
-### Machine Learning Stack
-- **TensorFlow 2.x**: Neural network training and inference
-- **scikit-learn**: Data preprocessing and evaluation
-- **pandas**: Data manipulation and analysis
-- **numpy**: Numerical computations
-
-### API Design
-- **Simple Function Interface**: Easy to integrate with any frontend
-- **JSON-like Output**: Standardized response format
-- **Error Handling**: Graceful failure with informative messages
-- **Model Management**: Automatic model loading and training
-
-## 🤝 Frontend Integration Guide
-
-### For React/JavaScript Developers
-
-```javascript
-// Example API call from frontend
-const getRecommendations = async (studentProfile) => {
-    try {
-        const response = await fetch('/api/recommendations', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(studentProfile)
-        });
-        
-        const result = await response.json();
-        return result;
-    } catch (error) {
-        console.error('Error getting recommendations:', error);
-        return { success: false, error: error.message };
-    }
-};
+```bash
+git rm --cached .env       # stop tracking; the local file is kept
 ```
 
-### For Python Backend Developers
+`.env` is now in `.gitignore`, which prevents re-adding it but does nothing about history.
+The old Gemini key must still be revoked at https://aistudio.google.com/apikey — removing
+a file from the working tree does not remove it from history, and anyone with a clone has
+it.
 
-```python
-# Direct import and usage
-from ml_pipeline import get_recommendations
+## License
 
-@app.route('/api/recommendations', methods=['POST'])
-def api_recommendations():
-    student_profile = request.json
-    result = get_recommendations(student_profile)
-    return jsonify(result)
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-For questions or support:
-- Create an issue in the repository
-- Contact the development team
-- Check the troubleshooting section above
-
----
-
-**UNIfy** - Empowering students with disabilities to find their perfect university match through intelligent technology and comprehensive accessibility information.
+MIT.

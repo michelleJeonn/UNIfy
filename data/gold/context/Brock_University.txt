@@ -1,0 +1,73 @@
+Brock University
+================
+
+[physical_disabilities_supported]
+  - Mobility impairments: wheelchair or scooter use, difficulty walking or climbing stairs, temporary injuries or surgery recovery
+  - Dexterity limitations: arthritis, repetitive strain injuries, hand/arm impairments
+  - Vision impairments, hearing impairments, chronic medical conditions, and temporary health challenges
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Personalized accommodation plans based on your needs
+  - Exam support: extra time, breaks, quiet/private rooms
+  - Assistive tech and adaptive software available
+  - Note-taking support and lecture recording options
+  - Alternate formats: audio, large-print, accessible PDFs, Braille
+  - Support for physical and temporary conditions
+  - Interim accommodations are possible pending documentation
+  - Campus accessible housing and facilities (ramps, elevators, washrooms)
+  - Register via intake meeting and manage accommodations each term online
+  - Confidential service—no need to disclose diagnosis to professors
+
+[mental_accommodations]
+  - Personalized accommodation plans based on your needs
+  - Exam support: extra time, breaks, quiet/private rooms
+  - Assistive tech and adaptive software available
+  - Note-taking support and lecture recording options
+  - Alternate formats: audio, large-print, accessible PDFs
+  - Support for learning, mental health, and temporary conditions
+  - Interim accommodations are possible pending documentation
+  - Register via intake meeting and manage accommodations each term online
+  - Confidential service—no need to disclose diagnosis to professors
+
+[documentation_requirements]
+  - A completed SAS Medical Documentation Form which is available from the SAS reception in ST400 or by emailing askSAS@brocku.ca.
+  - A letter or original functional assessment report from a licensed medical practitioner, qualified in the appropriate specialty area (or a general medical practitioner who has preferably been treating the patient over the last 6 months), which must be current (within the last 6 months).
+
+[documentation_submission]
+  - Upload through the SAS Student Registration.
+
+[registration_process]
+  - Complete SAS Student Registration
+
+[counselling_services]
+  - Brock University offers:
+  - Open door single session counselling
+  - Group workshops
+  - In-person or online 1:1 counselling
+
+[support_24_7_contact]
+  - Campus Security (24/7): 905‑688‑5550 ext. 3200
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP at Brock University, you must typically be:
+  - An Ontario resident: This is usually based on where you have lived for the past 12 consecutive months, excluding time spent as a full-time post-secondary student.
+  - A Canadian citizen, Permanent Resident, or Protected Person: International students are not eligible for OSAP.
+  - Enrolled in an OSAP-approved program of study: This generally includes programs leading to a degree, diploma, or certificate. Certain non-degree programs or upgrading courses may only be eligible if they are specifically approved by the Ministry (e.g., approved micro-credentials or required upgrading courses for admission into a degree program).
+  - Enrolled in an eligible course load: This dictates whether you apply for full-time or part-time OSAP.
+  - In good standing with previous OSAP loans: You must not be in default on any past OSAP loans or have any restrictions on your OSAP account.
+  - Maintaining satisfactory academic progress: You need to meet the academic requirements to continue receiving funding.
+  - Able to demonstrate financial need: Your and your family's (if applicable) financial information will be assessed to determine your level of need.
+  - Within the lifetime limit of student loan funding: Generally, this is 340 weeks for most students, with exceptions for doctoral students (400 weeks) and students with disabilities (up to 520 weeks).
+
+[bursaries]
+  - BSWD / CSG-DSE
+  - SAS Disability‑Related Bursary Funding

@@ -1,0 +1,95 @@
+Western University (Affiliated University Colleges)
+===================================================
+
+[physical_disabilities_supported]
+  - Mobility impairments: wheelchair or scooter users, difficulty walking/climbing stairs, temporary injuries
+  - Dexterity limitations: arthritis, repetitive strain injuries, issues with fine motor skills
+  - Sensory impairments: vision loss (low vision to blindness), hearing impairment
+  - Chronic medical conditions: MS, asthma, chronic fatigue, etc.
+  - Temporary physical conditions: concussion, post-surgery recovery, fractures
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Personalized accommodation plans for students with disabilities
+  - Exam support: extra time, breaks, private/quiet rooms
+  - Accessible formats: audio, Braille, large print, PDFs
+  - Assistive technology support: software and hardware tools (e.g., magnifiers, screen readers)
+  - ASL interpretation and real-time captioning offered
+  - Peer note-taking and lecture recording available
+  - Interim accommodations available during temporary conditions
+  - Accessible campus features: parking, ramps, and buildings
+  - Confidential coordination with faculty to implement accommodations
+
+[mental_accommodations]
+  - Personalized accommodation plans for students with disabilities
+  - Exam support: extra time, breaks, private/quiet rooms
+  - Accessible formats: audio, large print, PDFs
+  - Assistive technology support: software tools (e.g., speech-to-text)
+  - Peer note-taking and lecture recording available
+  - Interim accommodations available during temporary conditions
+  - Confidential coordination with faculty to implement accommodations
+
+[documentation_requirements]
+  - Acquired Brain Injury & Concussion:
+  - Certificate of Acquired Brain Injury & Concussion Disability (PDF)
+  - Recent medical documentation from an appropriate regulated health care practitioner (e.g., an emergency room physician, sports medicine, concussion specialist, family doctor, and/or neurologist) that outlines the functional impacts of your disability and your accommodation needs.
+  - Psycho-educational Assessment
+  - Certificate of ADHD Disability (PDF)
+  - Certificate of Hearing Disability (PDF)
+  - Documentation may take the form of a detailed letter from an appropriate health care practitioner (e.g. Audiologist, Otolaryngologist (ENT) or family doctor) that outlines the functional impacts of your disability and your accommodation needs.
+  - Learning Disabilities:
+  - Certificate of Medical Disability (PDF)
+  - Documentation may take the form of a detailed letter from an appropriate health care practitioner (e.g. family doctor. specialist physician nd/or nurse practitioner) that outlines the functional impacts of your disability and your accommodation needs.
+  - Mental Health:
+  - Certificate of Mental Health (PDF)
+  - Documentation may take the form of a detailed letter from an appropriate health care practitioner (e.g. psychiatrist, psychologist, family doctor and/or nurse practitioner) that outlines the functional impacts of your disability and your accommodation needs.
+  - Physical/Mobility:
+  - Certificate of Physical Mobility (PDF)
+  - Documentation may take the form of a detailed letter from an appropriate health care practitioner (e.g. an emergency room physician, family doctor, and/or neurologist) that outlines the functional impacts of your disability and your accommodation needs.
+  - Certificate of Vision Disability (PDF)
+  - Documentation may take the form of a detailed letter from an appropriate health care practitioner (e.g. Ophthalmologist, Optometrist and/or family doctor) that outlines the functional impacts of your disability and your accommodation needs.
+
+[documentation_submission]
+  - Upload documentations on the Online Registration Form.
+
+[registration_process]
+  - Complete our online registration form.
+  - Provide supporting documentation that verifies your disability. Find information about documentation here.
+  - After we have reviewed your Primary Documentation for Registration you will be invited to attend an Intake & Onboarding appointment.
+  - Meet with your Accessible Education Facilitator to discuss your eligibility for accommodations during your Western career.
+
+[counselling_services]
+  - Western University offers:
+  - Group/Individual Workshops
+  - Single session counselling
+  - Brief individual therapy
+  - Case manager involvement
+  - Support from Special Constables
+
+[support_24_7_contact]
+  - Campus Safety (24/7): 519‑661‑3300
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - Residency Requirements
+  - OSAP is open to Ontario residents who are:
+  - Canadian Citizen
+  - Permanent Resident
+  - Protected Person (Protected Person Status Document is required)
+  - Course Load Requirements
+  - In order to be considered a full-time student for the purpose of receiving OSAP funding you must meet one of the following criteria:
+  - Undergraduate students must be fully-registered student in at least 60% of a full-time course load per term (the equivalent of at least three half courses per term)
+  - Undergraduate students who have a permanent disability are eligible if enrolled in at least 40% of a full-time course load per term (the equivalent of at least two half courses per term)
+  - All full-time graduate students are assessed for OSAP based on a 100% course load. Part-time students are considered to be registered in a 50% course load. Only graduate students who self-identify as having a permanent disability are eligible for full-time OSAP at this course load.
+
+[bursaries]
+  - Doris and Owen Foster Scholarship
+  - BSWD / CSG-DSE
+  - External Scholarships via NEADS database

@@ -1,0 +1,62 @@
+Université de l’Ontario français
+================================
+
+[physical_disabilities_supported]
+  - Physical accommodations such as accessible entries, elevators, restrooms, and service-animal access
+  - Academic supports including alternative formats, exam accommodations, assistive technologies
+  - Feedback and complaint channels for barriers in infrastructure, services, or facilities
+  - Ongoing development of accessibility plans, staff training, and progress reporting
+
+[mental_disabilities_supported]
+  - anxiety disorders (Generalized Anxiety Disorder, Social Anxiety Disorder, Panic Disorder)
+  - mood disorders (Major Depressive Disorder, Bipolar Disorder), thought disorders (Schizophrenia)
+  - eating disorders
+  - personality disorders
+  - learning disabilities
+  - attention disorders (ADD/ADHD)
+
+[physical_accommodations]
+  - Supports students with permanent or temporary disabilities
+  - Offers academic, service, and facility accommodations
+  - Exam accommodations available (extra time, quiet space)
+  - Alternate formats and assistive technologies provided as needed
+  - Personalized and confidential support plans
+  - Staff help identify and remove accessibility barriers
+  - Campus committed to ongoing improvement in accessibility
+
+[mental_accommodations]
+  - Supports students with permanent or temporary disabilities
+  - Offers academic accommodations
+  - Exam accommodations available (extra time, quiet space)
+  - Alternate formats and assistive technologies provided as needed
+  - Personalized and confidential support plans
+  - Staff help identify and remove accessibility barriers
+
+[documentation_requirements]
+  - Email communications@uontario.ca for document information.
+
+[documentation_submission]
+  - Email communications@uontario.ca
+
+[registration_process]
+  - email communications@uontario.ca
+
+[counselling_services]
+  - email communications@uontario.ca
+
+[support_24_7_contact]
+  - Good2Talk (24/7 mental health): 1‑866‑925‑5454
+
+[osap_eligibility]
+  - To be eligible for OSAP at Université de l'Ontario français, you must typically meet the following:
+  - Ontario Resident: You must be an Ontario resident. This is generally defined by having lived in Ontario for the past 12 consecutive months, not including time spent as a full-time post-secondary student.
+  - Citizenship/Status: You must be a Canadian citizen, Permanent Resident of Canada, or a Protected Person. International students are not eligible for OSAP.
+  - Approved Program of Study: You must be enrolled in an OSAP-approved program that leads to a degree, diploma, or certificate. UOF's undergraduate and graduate programs are generally approved for OSAP.
+  - Eligible Course Load: Your registration must meet the minimum requirements for either full-time or part-time OSAP.
+  - Good Standing: You must not be in default on any previous OSAP loans or have any restrictions on your OSAP account.
+  - Satisfactory Academic Progress: You need to maintain satisfactory academic progress in your program of study.
+  - Financial Need: Your application will be assessed based on your and your family's (if applicable) financial situation to determine your financial need.
+  - Lifetime Funding Limit: You must not have exceeded the lifetime limit of student loan funding (typically 340 weeks for most students, 400 weeks for doctoral studies, or up to 520 weeks for students with a permanent disability).
+
+[bursaries]
+  - BSWD / CSG-DSE
