@@ -1,0 +1,681 @@
+{
+  "mental_health": {
+    "ADHD": {
+      "types": [
+        "Inattentive",
+        "Hyperactive-Impulsive",
+        "Combined",
+        "Other"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ]
+    },
+    "Autism": {},
+    "Down Syndrome": {},
+    "Depression": {},
+    "Eating Disorders": {
+      "types": [
+        "Anorexia Nervosa",
+        "Binge Eating",
+        "Bulimia Nervosa",
+        "Avoidant Restrictive Food Intake Disorder",
+        "Other"
+      ]
+    }
+  },
+  "physical_health": {
+    "Hearing": {
+      "types": [
+        "Conductive",
+        "Sensirineural",
+        "Mixed",
+        "Other"
+      ]
+    },
+    "Mobility": {},
+    "Neurological": {
+      "types": [
+        "Strokes",
+        "Epilepsy",
+        "Migranes",
+        "Other"
+      ]
+    }
+  },
+  "severity": [
+    "mild",
+    "moderate",
+    "severe"
+  ],
+  "courses": [
+    {
+      "name": "Dramatic Arts",
+      "codes": [
+        "ADA4M",
+        "ADA4E"
+      ]
+    },
+    {
+      "name": "Media Arts",
+      "codes": [
+        "ASM4M",
+        "ASM4E"
+      ]
+    },
+    {
+      "name": "Music",
+      "codes": [
+        "AMU4M",
+        "AMU4E"
+      ]
+    },
+    {
+      "name": "Dance",
+      "codes": [
+        "ATC4M",
+        "ATC4E"
+      ]
+    },
+    {
+      "name": "Visual Arts",
+      "codes": [
+        "AVI4M",
+        "AVI4E"
+      ]
+    },
+    {
+      "name": "Exploring and Creating in the Arts",
+      "codes": [
+        "AEA3O"
+      ]
+    },
+    {
+      "name": "Financial Accounting Principles",
+      "codes": [
+        "BAT4M"
+      ]
+    },
+    {
+      "name": "International Business Fundamentals",
+      "codes": [
+        "BBB4M"
+      ]
+    },
+    {
+      "name": "Business Leadership: Management Fundamentals",
+      "codes": [
+        "BOH4M"
+      ]
+    },
+    {
+      "name": "Accounting for a Small Business",
+      "codes": [
+        "BAN4E"
+      ]
+    },
+    {
+      "name": "Business Leadership: Becoming a Manager",
+      "codes": [
+        "BOG4E"
+      ]
+    },
+    {
+      "name": "Entrepreneurship: Venture Planning in an Electronic Age",
+      "codes": [
+        "BDV4C"
+      ]
+    },
+    {
+      "name": "Information and Comminication Technology: Multimedia Solutions",
+      "codes": [
+        "BTX4C"
+      ]
+    },
+    {
+      "name": "Information and Comminication Technology in the Workplace",
+      "codes": [
+        "BTX4E"
+      ]
+    },
+    {
+      "name": "International Business Essentials",
+      "codes": [
+        "BBB4E"
+      ]
+    },
+    {
+      "name": "Making Personal Economic Choices",
+      "codes": [
+        "CIC4E"
+      ]
+    },
+    {
+      "name": "Spatial Technologies in Action",
+      "codes": [
+        "CGO4M"
+      ]
+    },
+    {
+      "name": "The Environment and Resource Management",
+      "codes": [
+        "CGR4M"
+      ]
+    },
+    {
+      "name": "World Geography: Urban Patterns and Population Issues",
+      "codes": [
+        "CGU4M"
+      ]
+    },
+    {
+      "name": "World Issues: A Geographic Analysis",
+      "codes": [
+        "CGW4U"
+      ]
+    },
+    {
+      "name": "Canada: History, Identity and Culture",
+      "codes": [
+        "CHI4U"
+      ]
+    },
+    {
+      "name": "World History since the Fifteenth Century",
+      "codes": [
+        "CHY4U"
+      ]
+    },
+    {
+      "name": "Analysing Current Economic Issues",
+      "codes": [
+        "CIA4U"
+      ]
+    },
+    {
+      "name": "Canadian and International Law",
+      "codes": [
+        "CLN4U"
+      ]
+    },
+    {
+      "name": "Canadian and International Politics",
+      "codes": [
+        "CPW4U"
+      ]
+    },
+    {
+      "name": "Word Issues: A Geographic Analysis",
+      "codes": [
+        "CGW4C"
+      ]
+    },
+    {
+      "name": "Living in a Sustainable World",
+      "codes": [
+        "CGR4E"
+      ]
+    },
+    {
+      "name": "Advantures in World History",
+      "codes": [
+        "CHM4E"
+      ]
+    },
+    {
+      "name": "Legal Studies",
+      "codes": [
+        "CLN4C"
+      ]
+    },
+    {
+      "name": "Computer Programming",
+      "codes": [
+        "ICS4C"
+      ]
+    },
+    {
+      "name": "Business and Technological Communication",
+      "codes": [
+        "EBT4O"
+      ]
+    },
+    {
+      "name": "Ontario Secondary School Literacy Course",
+      "codes": [
+        "OLC40"
+      ]
+    },
+    {
+      "name": "English",
+      "codes": [
+        "ENG4U",
+        "ENG4C",
+        "ENG4E"
+      ]
+    },
+    {
+      "name": "Studies in Literature",
+      "codes": [
+        "ETS4U"
+      ]
+    },
+    {
+      "name": "The Writer’s Craft",
+      "codes": [
+        "EWC4U"
+      ]
+    },
+    {
+      "name": "Extended French",
+      "codes": [
+        "FEF4U"
+      ]
+    },
+    {
+      "name": "French Immersion",
+      "codes": [
+        "FIF4U",
+        "FIF4O"
+      ]
+    },
+    {
+      "name": "Core French",
+      "codes": [
+        "FSF4U",
+        "FSF4O"
+      ]
+    },
+    {
+      "name": "Nutrition and Health",
+      "codes": [
+        "HFA4U",
+        "HFA4C"
+      ]
+    },
+    {
+      "name": "Human Development throughout the Lifespan",
+      "codes": [
+        "HHG4M"
+      ]
+    },
+    {
+      "name": "Families in Canada",
+      "codes": [
+        "HHS4U"
+      ]
+    },
+    {
+      "name": "The World of Fashion",
+      "codes": [
+        "HNB4M"
+      ]
+    },
+    {
+      "name": "Challenge and Change in Society",
+      "codes": [
+        "HSB4U"
+      ]
+    },
+    {
+      "name": "World Cultures",
+      "codes": [
+        "HSC4M"
+      ]
+    },
+    {
+      "name": "Equity and Social Justice: From Theory to Practice",
+      "codes": [
+        "HSE4M"
+      ]
+    },
+    {
+      "name": "Philosophy: Questions and Theories",
+      "codes": [
+        "HZT4U"
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "codes": [
+        "ICS4U"
+      ]
+    },
+    {
+      "name": "Interdisciplinary Studies",
+      "codes": [
+        "IDC4U",
+        "IDP4U",
+        "IDC4O",
+        "IDP4O"
+      ]
+    },
+    {
+      "name": "Classical Civilization",
+      "codes": [
+        "LVV4U"
+      ]
+    },
+    {
+      "name": "Calculus and Vectors",
+      "codes": [
+        "MCV4U"
+      ]
+    },
+    {
+      "name": "Mathematics of Data Management",
+      "codes": [
+        "MDM4U"
+      ]
+    },
+    {
+      "name": "Advanced Functions",
+      "codes": [
+        "MHF4U"
+      ]
+    },
+    {
+      "name": "First Nations, Métis and Inuit Governance in Canada",
+      "codes": [
+        "NDG4M"
+      ]
+    },
+    {
+      "name": "Contemporary Indigenous Issues and Perspectives in a Global Context",
+      "codes": [
+        "NDW4M"
+      ]
+    },
+    {
+      "name": "Recreation and Healthy Active Living Leadership",
+      "codes": [
+        "PLF4M"
+      ]
+    },
+    {
+      "name": "Introductory Kinesiology",
+      "codes": [
+        "PSK4U"
+      ]
+    },
+    {
+      "name": "Biology",
+      "codes": [
+        "SBI4U"
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "codes": [
+        "SCH4U",
+        "SCH4C"
+      ]
+    },
+    {
+      "name": "Earth and Space Science",
+      "codes": [
+        "SES4U"
+      ]
+    },
+    {
+      "name": "Science",
+      "codes": [
+        "SNC4M",
+        "SNC4E"
+      ]
+    },
+    {
+      "name": "Physics",
+      "codes": [
+        "SPH4U",
+        "SPH4C"
+      ]
+    },
+    {
+      "name": "Technological Design",
+      "codes": [
+        "TDJ4M"
+      ]
+    },
+    {
+      "name": "Computer Engineering Technology",
+      "codes": [
+        "TEJ4M"
+      ]
+    },
+    {
+      "name": "Communications Technology",
+      "codes": [
+        "TGJ4M"
+      ]
+    },
+    {
+      "name": "Green Industries",
+      "codes": [
+        "THJ4M",
+        "THJ4E"
+      ]
+    },
+    {
+      "name": "Health Care",
+      "codes": [
+        "TPJ4M",
+        "TPJ4C"
+      ]
+    },
+    {
+      "name": "Manufacturing Engineering Technology",
+      "codes": [
+        "TMJ4M"
+      ]
+    },
+    {
+      "name": "Advanced Learning Strategies: Skills for Success After Secondary School",
+      "codes": [
+        "GLS4O",
+        "GLE4O"
+      ]
+    },
+    {
+      "name": "Healthy Active Living Education",
+      "codes": [
+        "PPL4O"
+      ]
+    },
+    {
+      "name": "Mathematics for College Technology",
+      "codes": [
+        "MCT4C"
+      ]
+    },
+    {
+      "name": "Foundatons for College Mathematics",
+      "codes": [
+        "MAP4C"
+      ]
+    },
+    {
+      "name": "Mathematics for Work and Everyday Life",
+      "codes": [
+        "MEL4E"
+      ]
+    },
+    {
+      "name": "Food and Healthy Living",
+      "codes": [
+        "HFL4E"
+      ]
+    },
+    {
+      "name": "Personal Life Management",
+      "codes": [
+        "HIP4O"
+      ]
+    },
+    {
+      "name": "Working with School-Age Children and Adolescents",
+      "codes": [
+        "HPD4C"
+      ]
+    },
+    {
+      "name": "Communications Technology: Digital Imagery and Web Design",
+      "codes": [
+        "TGJ4O"
+      ]
+    },
+    {
+      "name": "Computer Technology",
+      "codes": [
+        "TEJ4E"
+      ]
+    },
+    {
+      "name": "Construction Engineering Technology",
+      "codes": [
+        "TCJ4C"
+      ]
+    },
+    {
+      "name": "Construction Technology",
+      "codes": [
+        "TCJ4E"
+      ]
+    },
+    {
+      "name": "Custom Woodworking",
+      "codes": [
+        "TWJ4E"
+      ]
+    },
+    {
+      "name": "Hairstyling and Aesthetics",
+      "codes": [
+        "TXJ4E"
+      ]
+    },
+    {
+      "name": "Health Care: Support Service",
+      "codes": [
+        "TPJ4E"
+      ]
+    },
+    {
+      "name": "Child Development and Greontology",
+      "codes": [
+        "TOJ4C"
+      ]
+    },
+    {
+      "name": "Hospitality and Tourism",
+      "codes": [
+        "TFJ4C",
+        "TFJ4E"
+      ]
+    },
+    {
+      "name": "Manufacturing Technology",
+      "codes": [
+        "TMJ4C",
+        "TMJ4E"
+      ]
+    },
+    {
+      "name": "Technological Design in the Twenty-first Century",
+      "codes": [
+        "TDJ4O"
+      ]
+    },
+    {
+      "name": "Transportation Technology",
+      "codes": [
+        "TTJ4C"
+      ]
+    },
+    {
+      "name": "Transportation Technology: Vehicle Maintenance",
+      "codes": [
+        "TTJ4E"
+      ]
+    }
+  ],
+  "grade_scale": [
+    {
+      "letter": "A+",
+      "percent_low": 95.0,
+      "percent_high": 100.0
+    },
+    {
+      "letter": "A",
+      "percent_low": 87.0,
+      "percent_high": 94.0
+    },
+    {
+      "letter": "A-",
+      "percent_low": 80.0,
+      "percent_high": 86.0
+    },
+    {
+      "letter": "B+",
+      "percent_low": 77.0,
+      "percent_high": 79.0
+    },
+    {
+      "letter": "B",
+      "percent_low": 73.0,
+      "percent_high": 76.0
+    },
+    {
+      "letter": "B-",
+      "percent_low": 70.0,
+      "percent_high": 72.0
+    },
+    {
+      "letter": "C+",
+      "percent_low": 67.0,
+      "percent_high": 69.0
+    },
+    {
+      "letter": "C",
+      "percent_low": 63.0,
+      "percent_high": 66.0
+    },
+    {
+      "letter": "C-",
+      "percent_low": 60.0,
+      "percent_high": 62.0
+    },
+    {
+      "letter": "D+",
+      "percent_low": 57.0,
+      "percent_high": 59.0
+    },
+    {
+      "letter": "D",
+      "percent_low": 53.0,
+      "percent_high": 56.0
+    },
+    {
+      "letter": "D-",
+      "percent_low": 50.0,
+      "percent_high": 52.0
+    },
+    {
+      "letter": "F",
+      "percent_low": 0.0,
+      "percent_high": 49.0
+    }
+  ],
+  "extracurriculars": [
+    "volunteer",
+    "clubs",
+    "school activities (choir, orchestra, student counsil..)",
+    "internships"
+  ],
+  "admission_type": [
+    "early",
+    "general"
+  ]
+}

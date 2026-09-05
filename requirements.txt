@@ -10,3 +10,4 @@ flask>=3.0.0
 flask-cors>=6.0.0
 hmmlearn>=0.3.0
 python-dotenv>=1.2.1
+pyarrow>=14.0.0
