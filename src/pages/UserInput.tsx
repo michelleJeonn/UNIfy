@@ -1,7 +1,7 @@
 import { type FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import { getRecommendations, gemini_handler, type StudentProfile } from "../services/api";
+import { getRecommendations, type StudentProfile } from "../services/api";
 
 export default function UserInput() {
   const navigate = useNavigate();
@@ -28,8 +28,7 @@ export default function UserInput() {
       console.log('Form submitted with profile:', profile);
 
       // Get recommendations from API
-      // const result = await getRecommendations(profile);
-      const result = await gemini_handler(JSON.stringify(profile));
+      const result = await getRecommendations(profile);
 
       // Store recommendations in sessionStorage for the recommendations page
       sessionStorage.setItem('recommendations', JSON.stringify(result));

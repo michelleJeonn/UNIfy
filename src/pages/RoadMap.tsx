@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
-import type { RecommendationResult, StudentProfile } from "../services/api";
+import type { RecommendationResponse, StudentProfile } from "../services/api";
 
 
 interface RoadmapData {
   studentProfile: StudentProfile;
-  recommendations: RecommendationResult;
+  recommendations: RecommendationResponse;
 }
 
 
@@ -79,20 +79,6 @@ export default function RoadMap() {
             <p className="mt-6 text-[18px] sm:text-xl leading-6 sm:leading-7 tracking-[-0.02em] text-black">
               Click on each Checkpoint for more details.
             </p>
-            {/* Verification Summary */}
-            {recommendations.verification_summary && (
-              <div className="mt-6 p-4 bg-lime-50 border border-lime-200 rounded-lg">
-                <p className="text-sm text-lime-800">
-                  <strong>AI-Verified Results:</strong> Found {recommendations.verification_summary.total_verified} recommendations
-                  {recommendations.verification_summary.overlap_count > 0 && 
-                    ` (${recommendations.verification_summary.overlap_count} high-confidence matches)`
-                  }
-                </p>
-                <p className="text-xs text-lime-600 mt-1">
-                  Source: {recommendations.source.replace('_', ' ')}
-                </p>
-              </div>
-            )}
 
             {/* Accommodations Needed */}
             {recommendations.needed_accommodations && recommendations.needed_accommodations.length > 0 && (

@@ -8,7 +8,7 @@ import Eligibility from "../pages/Eligibility";
 import RequiredDocs from "../pages/RequiredDocs";
 import Submission from "../pages/Submissions";
 import Signup from "../pages/signup";
-import About from "../pages/about";
+import About from "../pages/About";
 
 export default function App() {
   return (
