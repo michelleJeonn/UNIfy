@@ -6,15 +6,18 @@ import RoadMap from "../pages/RoadMap";
 import Recommendations from "../pages/Recommendations";
 import Eligibility from "../pages/Eligibility";
 import RequiredDocs from "../pages/RequiredDocs";
+import FinancialAid from "../pages/FinancialAid";
 import Submission from "../pages/Submissions";
 import Signup from "../pages/signup";
 import About from "../pages/About";
+import Services from "../pages/Services";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/login" element={<Login />} />
       <Route path="/information" element={<UserInput />} />
       <Route path="/roadmap" element={<RoadMap />} />
@@ -22,6 +25,7 @@ export default function App() {
       <Route path="/eligibility" element={<Eligibility />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/required" element={<RequiredDocs />} />
+      <Route path="/financial-aid" element={<FinancialAid />} />
       <Route path="/submission" element={<Submission />} />
     </Routes>
   );

@@ -1,16 +1,89 @@
 @import "tailwindcss";
 
+/* ── BL Melody ──────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: "BL Melody";
+  src: url("/fonts/BLMelody-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BL Melody";
+  src: url("/fonts/BLMelody-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BL Melody";
+  src: url("/fonts/BLMelody-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BL Melody";
+  src: url("/fonts/BLMelody-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Design tokens (from the UNIfy Figma file) ──────────────────────────── */
+
+@theme {
+  --font-blmelody: "BL Melody", ui-sans-serif, system-ui, sans-serif;
+
+  /* Greens */
+  --color-unify-green: #8bc110;
+  --color-unify-green-dark: #598000;
+  --color-unify-green-pale: #e2ffbe;
+  --color-unify-green-tint: #eaf7d5;
+
+  /* Accents */
+  --color-unify-blue: #6fa1b8;
+  --color-unify-blue-tint: #e2f1f9;
+  /* The design's #6fa1b8 sits at 2.4:1 on its own tint, below the 3:1 floor for
+     large text. This darker step of the same hue (5.0:1) carries the numerals
+     and labels; #6fa1b8 stays on the icon glyph. */
+  --color-unify-blue-deep: #3c6b85;
+
+  /* Neutrals */
+  --color-unify-field: #d9d9d9;
+  --color-unify-rule: #878787;
+
+  /* Radii */
+  --radius-card: 35px;
+  --radius-pill: 18px;
+  --radius-field: 15px;
+  --radius-select: 10px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 25.2px 5px rgb(0 0 0 / 0.15);
+  --shadow-panel: 0 4px 13px 5px rgb(0 0 0 / 0.25);
+  --shadow-header: 0 4px 25.3px 10px rgb(0 0 0 / 0.25);
+}
+
+/* ── Base ───────────────────────────────────────────────────────────────── */
+
 @layer base {
   html,
   body {
     @apply h-full m-0 p-0;
   }
-}
 
-@font-face {
-  font-family: "BLMelody";
-  src: url("/fonts/BLMelody-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  body {
+    font-family: var(--font-blmelody);
+    @apply bg-white text-black antialiased;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-unify-green-dark);
+    outline-offset: 2px;
+  }
 }

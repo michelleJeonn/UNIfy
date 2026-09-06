@@ -1,93 +1,93 @@
+import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
-import PageHeader from "../components/PageHeader";
+import PageHeader, {
+  CheckpointSection,
+  NoData,
+} from "../components/PageHeader";
+import { readRoadmapData, type RoadmapData } from "../services/session";
 
+/**
+ * Eligibility and Prerequisites — Figma `MacBook Pro 16" - 15` (node 558:277).
+ *
+ * The design's hairline-separated section list, filled from the student's
+ * profile and the selected school where the API provides the data.
+ */
 export default function Eligibility() {
+  const [data, setData] = useState<RoadmapData | null>(null);
+
+  useEffect(() => {
+    setData(readRoadmapData());
+  }, []);
+
+  const profile = data?.studentProfile;
+  const university = data?.university;
+
   return (
-    <div className="font-blmelody bg-white text-gray-900 min-h-screen">
-      {/* Navbar */}
+    <div className="min-h-screen bg-white text-black">
       <NavBar />
 
-      {/* Body */}
-      <main className="pt-32 pb-16 px-4 max-w-6xl mx-auto">
+      <main className="mx-auto max-w-[1728px] px-6 pb-20 pt-[120px] md:px-10 lg:px-[96px] lg:pt-[150px]">
         <PageHeader
           title="Eligibility and Prerequisites"
-          description="Let’s see if you meet the minimum requirements for your target programs."
+          description={
+            university
+              ? `What ${university.name} expects from applicants.`
+              : "Let’s see if you meet the minimum requirements for your target programs."
+          }
         />
 
-        {/* Requirements Display */}
-        <div className="space-y-12">
-          {/* GPA */}
-          <div className="grid grid-cols-12 gap-4 items-start">
-            <label className="col-span-2">Your GPA:</label>
-            <input
-              type="text"
-              className="col-span-2 border border-lime-400 rounded-md px-3 py-2"
-            />
+        <CheckpointSection label="Your Academic Profile">
+          {profile ? (
+            <dl className="grid gap-x-10 gap-y-2 sm:grid-cols-2">
+              <div>
+                <dt className="inline font-semibold">GPA: </dt>
+                <dd className="inline">{profile.gpa}</dd>
+              </div>
+              <div>
+                <dt className="inline font-semibold">Program area: </dt>
+                <dd className="inline">{profile.courses}</dd>
+              </div>
+            </dl>
+          ) : (
+            <NoData note="Complete the information form to see your profile here." />
+          )}
+        </CheckpointSection>
 
-            <label className="col-span-2">Required GPA:</label>
-            <input
-              type="text"
-              className="col-span-2 border border-lime-400 rounded-md px-3 py-2"
-            />
+        <CheckpointSection label="Anticipated Admission Range">
+          <NoData note="Not available — /api/recommendations doesn’t return program GPA cut-offs yet, though data/clean/programs.csv holds them." />
+        </CheckpointSection>
 
-            <div className="col-span-4 flex items-start space-x-3">
-              <img
-                src="/src/assets/arrowRight.svg"
-                alt="Arrow"
-                className="h-6 w-20"
-              />
-              <span className="font-medium">Meets Requirement</span>
-            </div>
-          </div>
+        <CheckpointSection label="Required Courses">
+          <NoData note="Not available — course prerequisites aren’t exposed by the API yet, though data/clean/programs.csv holds them per program." />
+        </CheckpointSection>
 
-          {/* Courses */}
-          <div className="grid grid-cols-12 gap-4 items-start">
-            <label className="col-span-2">Your Completed Courses:</label>
-            <textarea
-              rows={3}
-              className="col-span-2 border border-lime-400 rounded-md px-3 py-2"
-            />
+        <CheckpointSection label="Accessibility Fit">
+          {university?.matched_accommodations?.length ? (
+            <>
+              <p className="font-semibold">Evidenced at this school</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                {university.matched_accommodations.map((a) => (
+                  <li key={a}>{a}</li>
+                ))}
+              </ul>
 
-            <label className="col-span-2">Required Courses:</label>
-            <textarea
-              rows={3}
-              className="col-span-2 border border-lime-400 rounded-md px-3 py-2"
-            />
+              {university.missing_accommodations?.length ? (
+                <>
+                  <p className="mt-6 font-semibold">Not evidenced</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-black/70">
+                    {university.missing_accommodations.map((a) => (
+                      <li key={a}>{a}</li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
+            </>
+          ) : (
+            <NoData note="Pick a university from your recommendations to see how its accommodations line up." />
+          )}
+        </CheckpointSection>
 
-            <div className="col-span-4 flex items-start space-x-3">
-              <img
-                src="/src/assets/arrowRight.svg"
-                alt="Arrow"
-                className="h-6 w-20"
-              />
-              <span className="font-medium">Missing:</span>
-            </div>
-          </div>
-
-          {/* Disabilities */}
-          <div className="grid grid-cols-12 gap-4 items-start">
-            <label className="col-span-2">Your Disabilities:</label>
-            <textarea
-              rows={3}
-              className="col-span-2 border border-lime-400 rounded-md px-3 py-2"
-            />
-
-            <label className="col-span-2">Accommodations:</label>
-            <textarea
-              rows={3}
-              className="col-span-2 border border-lime-400 rounded-md px-3 py-2"
-            />
-
-            <div className="col-span-4 flex items-start space-x-3">
-              <img
-                src="/src/assets/arrowRight.svg"
-                alt="Arrow"
-                className="h-6 w-20"
-              />
-              <span className="font-medium">Good Fit</span>
-            </div>
-          </div>
-        </div>
+        <div className="border-t border-unify-rule" />
       </main>
     </div>
   );

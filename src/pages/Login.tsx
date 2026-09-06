@@ -1,7 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import type { FormEvent } from "react";
 
+/**
+ * Login — Figma `Login` frame (node 15:15).
+ *
+ * Oversized "Login." headline and supporting copy on the left, a floating
+ * white card holding the form on the right.
+ */
 export default function Login() {
   const navigate = useNavigate();
 
@@ -12,71 +18,79 @@ export default function Login() {
   };
 
   return (
-    <div className="bg-gray-100 flex items-center justify-center min-h-screen">
-      {/* Navbar */}
+    <div className="min-h-screen bg-white text-black">
       <NavBar />
 
-      {/* Login Card */}
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md mt-20">
-        {/* Logo + Header */}
-        <div className="flex flex-col items-center mb-8">
-          <img src="/logo.svg" alt="UNIfy logo" className="w-12 h-12 mb-2" />
-          <h1 className="text-2xl font-bold">UNIfy</h1>
-          <p className="text-gray-600 mt-2">Log in to your account</p>
+      <main className="mx-auto flex max-w-[1728px] flex-col items-center gap-12 px-6 pb-24 pt-[130px] md:px-10 lg:flex-row lg:gap-16 lg:px-[182px] lg:pb-32 lg:pt-[200px]">
+        {/* Headline */}
+        <div className="w-full lg:flex-1">
+          <h1 className="text-[clamp(3.5rem,7vw,6.75rem)] leading-[1.08] tracking-[-0.02em]">
+            Login.
+          </h1>
+          <p className="mt-6 max-w-[589px] text-[clamp(1.0625rem,1.6vw,1.6875rem)] leading-snug">
+            Log in to save your progress and get a personalized admissions
+            roadmap tailored to your needs.
+          </p>
         </div>
 
-        {/* Login Form */}
-        <form className="space-y-6" onSubmit={handleSubmit}>
-          {/* Email */}
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500"
-            />
-          </div>
+        {/* Card */}
+        <div className="w-full rounded-card bg-white p-8 shadow-card md:p-[75px] lg:w-[709px] lg:shrink-0">
+          <form className="space-y-8" onSubmit={handleSubmit}>
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-[clamp(1.5rem,2.2vw,2.375rem)] text-unify-green-dark"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autoComplete="email"
+                className="mt-3 block h-[42px] w-full bg-unify-field px-3 text-[18px] outline-none focus:ring-2 focus:ring-unify-green-dark"
+              />
+            </div>
 
-          {/* Password */}
-          <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500"
-            />
-          </div>
+            <div>
+              <label
+                htmlFor="password"
+                className="block text-[clamp(1.5rem,2.2vw,2.375rem)] text-unify-green-dark"
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                autoComplete="current-password"
+                className="mt-3 block h-[42px] w-full bg-unify-field px-3 text-[18px] outline-none focus:ring-2 focus:ring-unify-green-dark"
+              />
+            </div>
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-lime-500 hover:bg-lime-600 text-white font-semibold py-2 px-4 rounded-md transition"
-          >
-            Log In
-          </button>
+            <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
+              <p className="text-[19px]">
+                Don’t have an account yet?{" "}
+                <Link
+                  to="/signup"
+                  className="text-unify-green-dark underline-offset-2 hover:underline"
+                >
+                  Sign Up.
+                </Link>
+              </p>
 
-          {/* Optional links */}
-          <div className="text-center mt-4">
-            <a href="#" className="text-sm text-lime-600 hover:underline">
-              Forgot password?
-            </a>
-          </div>
-        </form>
-      </div>
+              <button
+                type="submit"
+                className="h-[44px] w-[137px] cursor-pointer rounded-pill bg-unify-green text-[26px] tracking-[-0.02em] text-black transition hover:brightness-95 active:translate-y-px"
+              >
+                Go!
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
     </div>
   );
 }
