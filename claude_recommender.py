@@ -44,6 +44,30 @@ DEFAULT_MODEL = "claude-sonnet-5"
 DATA_DIR = "data/clean"
 TAXONOMY = "extraction/taxonomy.json"
 
+# Which extractor's output grounds the ranking.
+#
+# The default stays the keyword baseline. It is the system whose quality is measured
+# against a gold set on neutral terms -- every other extractor here is scored on a gold
+# set stratified by *this* one's predictions, and the learned ones are additionally
+# trained on its output. Until a batch stratified by the challenger's own predictions
+# is judged, switching the default would silently change what every rating the API
+# returns actually means.
+#
+# Set UNIFY_EXTRACTOR=embedding|classifier|hybrid to serve a different matrix. Nothing
+# downstream changes: the ranking arithmetic, the rarity weights and the evidence
+# quotes all read the same two files whatever produced them.
+EXTRACTOR = os.environ.get("UNIFY_EXTRACTOR", "baseline")
+
+# name and measured quality, reported in the API's `grounding` block so a caller can
+# tell which system's numbers they are looking at.
+EXTRACTORS = {
+    "baseline": ("keyword baseline", "extraction/baseline.py"),
+    "embedding": ("MiniLM embedding extractor", "extraction/embedding.py"),
+    "multilabel": ("fine-tuned multi-label DistilBERT", "extraction/classifier.py --model-dir ..."),
+    "classifier": ("fine-tuned cross-encoder", "extraction/classifier.py --model-dir ..."),
+    "hybrid": ("embedding retrieval + cross-encoder rerank", "extraction/hybrid.py --model-dir ..."),
+}
+
 # Scores are derived from measured label coverage, never invented. See rating_basis
 # on each recommendation for what the number actually counts.
 RATING_GROUPS = {
@@ -61,18 +85,27 @@ def _load_labels() -> List[Dict]:
         return json.load(handle)["labels"]
 
 
+def _extractor_name() -> str:
+    if EXTRACTOR not in EXTRACTORS:
+        raise GroundingUnavailable(
+            f"UNIFY_EXTRACTOR={EXTRACTOR!r} is not one of {sorted(EXTRACTORS)}"
+        )
+    return EXTRACTOR
+
+
 def _load_matrix() -> pd.DataFrame:
-    path = os.path.join(DATA_DIR, "accommodations_baseline.csv")
+    name = _extractor_name()
+    path = os.path.join(DATA_DIR, f"accommodations_{name}.csv")
     if not os.path.exists(path):
         raise GroundingUnavailable(
-            f"{path} not found. Run: python extraction/baseline.py"
+            f"{path} not found. Run: python {EXTRACTORS[name][1]}"
         )
     return pd.read_csv(path)
 
 
 def _load_evidence() -> Dict[tuple, List[str]]:
     """(university, label) -> the source sentences the label was extracted from."""
-    path = os.path.join(DATA_DIR, "accommodations_baseline.jsonl")
+    path = os.path.join(DATA_DIR, f"accommodations_{_extractor_name()}.jsonl")
     evidence: Dict[tuple, List[str]] = {}
     if not os.path.exists(path):
         return evidence
@@ -87,6 +120,28 @@ def _load_evidence() -> Dict[tuple, List[str]]:
                         unique.append(text)
                 evidence[(record["university"], record["label"])] = unique[:3]
     return evidence
+
+
+def _extractor_quality() -> str:
+    """The measured quality of whichever extractor is grounding this response.
+
+    Read from extraction/results_ml.json when it exists, so the string the API reports
+    cannot drift away from the last evaluation run. Falls back to the keyword
+    baseline's published figure, which is the only one recorded in RESULTS.md.
+    """
+    name = _extractor_name()
+    path = os.path.join("extraction", "results_ml.json")
+    if os.path.exists(path):
+        try:
+            with open(path) as handle:
+                macro = json.load(handle)[name]["macro"]
+            return (f"precision {macro['precision']:.2f} / recall {macro['recall']:.2f} "
+                    f"/ F1 {macro['f1']:.2f}, macro-averaged over the human-judged cells")
+        except (KeyError, TypeError, ValueError):
+            pass
+    if name == "baseline":
+        return "precision 0.96 / recall 0.87 / F1 0.89 on 165 human-judged cells"
+    return "not measured; run python extraction/evaluate_ml.py --json-out extraction/results_ml.json"
 
 
 class ClaudeRecommender:
@@ -228,6 +283,15 @@ selection with the select_accommodations tool."""
     # -- step 2: rank the 28 real schools -----------------------------------------
 
     def rank(self, needed: List[str], limit: int = 5) -> List[Dict]:
+        """The best `limit` schools. Thin wrapper over score_all."""
+        return self.score_all(needed)[:limit]
+
+    def score_all(self, needed: List[str]) -> List[Dict]:
+        """Every school in the dataset, scored and sorted best-first.
+
+        Kept separate from rank() so a caller can look up a school the student
+        named even when it falls outside the top few.
+        """
         scored = []
         total_weight = sum(self.weights.get(i, 0.0) for i in needed)
 
@@ -274,7 +338,7 @@ selection with the select_accommodations tool."""
             )
 
         scored.sort(key=lambda item: (-item["score"], item["name"]))
-        return scored[:limit]
+        return scored
 
     def _group_ratings(self, row: pd.Series) -> Dict[str, float]:
         """Coverage of measured provisions by taxonomy group, scaled to 0-5.
@@ -310,6 +374,20 @@ selection with the select_accommodations tool."""
         return text + "."
 
 
+def _normalise_name(name: str) -> str:
+    """Fold a university name for comparison.
+
+    The dataset uses a curly apostrophe in "Université de l’Ontario français" and
+    "Queen’s University"; a client that sends a straight one should still match.
+    """
+    if not name:
+        return ""
+    folded = str(name).strip().casefold()
+    for curly, straight in (("’", "'"), ("‘", "'"), ("–", "-"), ("—", "-")):
+        folded = folded.replace(curly, straight)
+    return " ".join(folded.split())
+
+
 def get_claude_recommendations(student_profile: Dict, api_key: Optional[str] = None) -> Dict:
     """Recommendations for a student profile, grounded in the extracted dataset."""
     try:
@@ -324,7 +402,24 @@ def get_claude_recommendations(student_profile: Dict, api_key: Optional[str] = N
         }
 
     needed = recommender.needed_accommodations(student_profile)
-    universities = recommender.rank(needed)
+    all_scored = recommender.score_all(needed)
+    universities = all_scored[:5]
+
+    # The school the student actually put first. It is scored against the same
+    # 28-school ranking, so it carries a real position even when it misses the
+    # top five -- which is the common case, and the whole point of returning it.
+    preferred_match = None
+    wanted = _normalise_name(student_profile.get("preferred_university", ""))
+    if wanted:
+        for position, entry in enumerate(all_scored, start=1):
+            if _normalise_name(entry["name"]) == wanted:
+                preferred_match = {
+                    **entry,
+                    "rank": position,
+                    "total_universities": len(all_scored),
+                    "in_top_5": position <= 5,
+                }
+                break
 
     return {
         "success": True,
@@ -336,10 +431,13 @@ def get_claude_recommendations(student_profile: Dict, api_key: Optional[str] = N
         "needed_accommodations": [recommender.by_id[i]["name"] for i in needed],
         "needed_accommodation_ids": needed,
         "recommendations": universities,
+        # None when the student named no preference, or named something outside
+        # the 28 schools in the dataset.
+        "preferred_match": preferred_match,
         "grounding": {
             "universities_considered": len(recommender.matrix),
-            "extractor": "keyword baseline",
-            "extractor_quality": "precision 0.96 / recall 0.87 / F1 0.89 on 165 human-judged cells",
+            "extractor": EXTRACTORS[EXTRACTOR][0],
+            "extractor_quality": _extractor_quality(),
             "caveat": "Labels come from an automatic extractor over compiled prose, not from the universities. Verify with the school before relying on any of it.",
         },
     }

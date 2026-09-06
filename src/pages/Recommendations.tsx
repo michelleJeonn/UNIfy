@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import ScoreGauge from "../components/ScoreGauge";
 import StatTile from "../components/StatTile";
 import type {
+  PreferredMatch,
   RecommendationResponse,
   StudentProfile,
   University,
@@ -93,17 +94,39 @@ export default function Recommendations() {
 
   const needed = recommendations.needed_accommodations ?? [];
   const list = recommendations.recommendations ?? [];
-  const [top, ...rest] = list;
+  const preferred = recommendations.preferred_match ?? null;
+  // Their pick already leads the page; don't repeat it in the list below.
+  const others = preferred
+    ? list.filter((u) => u.name !== preferred.name)
+    : list;
+  const [top, ...rest] = others;
 
   return (
     <Shell>
-      {/* Heading */}
-      <h1 className="text-[clamp(2.5rem,5.2vw,5.25rem)] leading-[1.1] tracking-[-0.02em]">
-        University Recommendations.
-      </h1>
+      {/* The answer to "how good a match am I for the school I want?" comes
+          first — before the alternatives, which is what the rest of the page is. */}
+      {preferred && (
+        <PreferredMatchPanel
+          match={preferred}
+          neededCount={needed.length}
+          onViewRoadmap={() => viewRoadmap(preferred)}
+        />
+      )}
+
+      {/* Heading. Demoted to h2 when the match panel above owns the h1. */}
+      {preferred ? (
+        <h2 className="mt-16 text-[clamp(2.5rem,5.2vw,5.25rem)] leading-[1.1] tracking-[-0.02em]">
+          University Recommendations.
+        </h2>
+      ) : (
+        <h1 className="text-[clamp(2.5rem,5.2vw,5.25rem)] leading-[1.1] tracking-[-0.02em]">
+          University Recommendations.
+        </h1>
+      )}
       <p className="mt-4 max-w-[1373px] text-[clamp(1rem,1.3vw,1.6875rem)] leading-snug">
-        Review alternative programs and institutions aligned with your academic
-        and accessibility profile.
+        {preferred
+          ? "Other programs and institutions aligned with your academic and accessibility profile."
+          : "Review alternative programs and institutions aligned with your academic and accessibility profile."}
       </p>
       <hr className="mt-8 border-0 border-t border-unify-rule" />
 
@@ -180,29 +203,44 @@ export default function Recommendations() {
       )}
 
       {/* Recommendations */}
-      {list.length > 0 ? (
+      {others.length > 0 ? (
         <section className="mt-12 space-y-8">
-          {top && (
-            <UniversityCard
-              university={top}
-              neededCount={needed.length}
-              onViewRoadmap={() => viewRoadmap(top)}
-            />
-          )}
-
-          {rest.length > 0 && (
+          {preferred ? (
+            /* Their pick is the hero above, so everything here is already an
+               alternative — the design's "Other…" divider would be redundant. */
+            others.map((u) => (
+              <UniversityCard
+                key={u.name}
+                university={u}
+                neededCount={needed.length}
+                onViewRoadmap={() => viewRoadmap(u)}
+              />
+            ))
+          ) : (
             <>
-              <h2 className="pt-4 text-[clamp(1rem,1.15vw,1.25rem)]">
-                Other University Recommendations
-              </h2>
-              {rest.map((u) => (
+              {top && (
                 <UniversityCard
-                  key={u.name}
-                  university={u}
+                  university={top}
                   neededCount={needed.length}
-                  onViewRoadmap={() => viewRoadmap(u)}
+                  onViewRoadmap={() => viewRoadmap(top)}
                 />
-              ))}
+              )}
+
+              {rest.length > 0 && (
+                <>
+                  <h3 className="pt-4 text-[clamp(1rem,1.15vw,1.25rem)]">
+                    Other University Recommendations
+                  </h3>
+                  {rest.map((u) => (
+                    <UniversityCard
+                      key={u.name}
+                      university={u}
+                      neededCount={needed.length}
+                      onViewRoadmap={() => viewRoadmap(u)}
+                    />
+                  ))}
+                </>
+              )}
             </>
           )}
         </section>
@@ -248,6 +286,159 @@ export default function Recommendations() {
         </button>
       </div>
     </Shell>
+  );
+}
+
+/**
+ * Verdict bands for the accessibility match.
+ *
+ * The score is the rarity-weighted share of this student's needed
+ * accommodations that the school's published text evidences — a coverage
+ * measure, not a judgment of the school or of admission chances. The wording
+ * stays scoped to that so the number isn't read as something it isn't.
+ */
+function verdictFor(pct: number): { label: string; blurb: string } {
+  if (pct >= 80)
+    return {
+      label: "Strong match",
+      blurb: "This school publishes evidence for nearly everything you need.",
+    };
+  if (pct >= 60)
+    return {
+      label: "Good match",
+      blurb: "This school publishes evidence for most of what you need.",
+    };
+  if (pct >= 40)
+    return {
+      label: "Partial match",
+      blurb: "This school evidences some of what you need, with real gaps.",
+    };
+  return {
+    label: "Limited match",
+    blurb: "Little published evidence for the accommodations you need.",
+  };
+}
+
+/**
+ * The lead result: how well the student matches the university they put first.
+ * Shown above the recommendation list, because the school they chose is the
+ * question they asked — the ranked alternatives are the follow-up.
+ */
+function PreferredMatchPanel({
+  match,
+  neededCount,
+  onViewRoadmap,
+}: {
+  match: PreferredMatch;
+  neededCount: number;
+  onViewRoadmap: () => void;
+}) {
+  const pct = Math.round((match.score / 5) * 100);
+  const verdict = verdictFor(pct);
+  const matched = match.matched_accommodations?.length ?? 0;
+
+  // The score is rarity-weighted, so it can sit well below the plain count —
+  // a school can evidence 6 of 8 needs and still score low if the two it
+  // misses are the hard-to-find ones. Side by side those look contradictory,
+  // so say why whenever they diverge.
+  const rawPct = neededCount > 0 ? (matched / neededCount) * 100 : 0;
+  const weightingDiverges = neededCount > 0 && Math.abs(rawPct - pct) >= 15;
+
+  return (
+    <section
+      aria-labelledby="preferred-match-heading"
+      className="rounded-card bg-unify-green-pale p-6 md:p-10 lg:p-12"
+    >
+      <p className="text-[clamp(0.9375rem,1.1vw,1.1875rem)] uppercase tracking-[0.08em] text-unify-green-dark">
+        Your top choice
+      </p>
+
+      <h1
+        id="preferred-match-heading"
+        className="mt-2 text-[clamp(2rem,4vw,3.875rem)] leading-[1.1] tracking-[-0.02em]"
+      >
+        {match.name}
+      </h1>
+
+      <div className="mt-8 flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-12">
+        <ScoreGauge
+          value={pct}
+          label={`Accessibility match with ${match.name}`}
+          />
+
+        <div className="flex-1">
+          <p className="text-[clamp(1.5rem,2.6vw,2.6875rem)] leading-tight tracking-[-0.02em] text-unify-green-dark">
+            {verdict.label}
+          </p>
+          <p className="mt-2 text-[clamp(1rem,1.3vw,1.5rem)] leading-snug">
+            {verdict.blurb}
+          </p>
+
+          <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-3 text-[clamp(0.9375rem,1.1vw,1.1875rem)]">
+            <div>
+              <dt className="inline font-semibold">Accommodations evidenced: </dt>
+              <dd className="inline">
+                {matched} of {neededCount}
+              </dd>
+            </div>
+            <div>
+              <dt className="inline font-semibold">Ranks: </dt>
+              <dd className="inline">
+                {match.rank} of {match.total_universities} Ontario universities
+                for your needs
+              </dd>
+            </div>
+          </dl>
+
+          {weightingDiverges && (
+            <p className="mt-4 text-[clamp(0.9375rem,1.05vw,1.125rem)] leading-relaxed text-black/70">
+              {rawPct > pct
+                ? "The score weights harder-to-find accommodations more heavily, so it sits below the raw count — the ones missing here are the uncommon ones."
+                : "The score weights harder-to-find accommodations more heavily, so it sits above the raw count — this school evidences the uncommon ones."}
+            </p>
+          )}
+
+          {!match.in_top_5 && (
+            <p className="mt-4 text-[clamp(0.9375rem,1.05vw,1.125rem)] leading-relaxed text-unify-green-dark">
+              Schools below match your accessibility needs more closely — worth a
+              look before you decide.
+            </p>
+          )}
+
+          <button
+            onClick={onViewRoadmap}
+            className="group mt-7 inline-flex cursor-pointer items-center gap-4"
+          >
+            <span className="text-[clamp(1rem,1.3vw,1.625rem)]">
+              View my roadmap
+            </span>
+            <span className="flex h-[30px] w-[130px] items-center justify-center rounded-[15px] bg-unify-green transition group-hover:brightness-95">
+              <img
+                src="/icons/arrow-polygon.svg"
+                alt=""
+                aria-hidden="true"
+                className="h-[17px] w-[12px] rotate-90"
+              />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      {match.reason && (
+        <p className="mt-8 border-t border-unify-green-dark/20 pt-6 text-[clamp(0.9375rem,1.05vw,1.125rem)] leading-relaxed">
+          {match.reason}
+        </p>
+      )}
+
+      <p className="mt-3 text-[clamp(0.8125rem,0.95vw,1rem)] leading-relaxed text-black/60">
+        {/* rating_basis comes back unpunctuated, so terminate it before the
+            sentence that follows. */}
+        {(match.rating_basis ??
+          "Share of your needed accommodations evidenced in this school’s published materials"
+        ).replace(/\.?$/, ".")}{" "}
+        It is not a prediction of admission.
+      </p>
+    </section>
   );
 }
 

@@ -1,0 +1,526 @@
+{
+  "selected": [
+    {
+      "university": "Western University (Main Campus)",
+      "label": "bursaries_scholarships",
+      "disagreement": 1.0,
+      "uncertainty": 0.984,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.4919
+    },
+    {
+      "university": "University of Toronto Mississauga",
+      "label": "format_accessible_digital",
+      "disagreement": 1.0,
+      "uncertainty": 0.802,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.4009
+    },
+    {
+      "university": "Queen's University",
+      "label": "accessible_buildings",
+      "disagreement": 1.0,
+      "uncertainty": 0.429,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.2146
+    },
+    {
+      "university": "University of Windsor",
+      "label": "accessible_housing",
+      "disagreement": 1.0,
+      "uncertainty": 0.257,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.1286
+    },
+    {
+      "university": "Wilfrid Laurier University",
+      "label": "interim_without_documentation",
+      "disagreement": 1.0,
+      "uncertainty": 0.145,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.0727
+    },
+    {
+      "university": "Laurentian University",
+      "label": "counselling_individual",
+      "disagreement": 1.0,
+      "uncertainty": 0.102,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.051
+    },
+    {
+      "university": "Algoma University",
+      "label": "per_term_renewal",
+      "disagreement": 1.0,
+      "uncertainty": 0.083,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0415
+    },
+    {
+      "university": "University of Guelph",
+      "label": "lecture_recording",
+      "disagreement": 1.0,
+      "uncertainty": 0.05,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.0248
+    },
+    {
+      "university": "Brock University",
+      "label": "accessible_housing",
+      "disagreement": 1.0,
+      "uncertainty": 0.021,
+      "votes": {
+        "keyword": 1,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 1.0106
+    },
+    {
+      "university": "McMaster University",
+      "label": "format_audio",
+      "disagreement": 1.0,
+      "uncertainty": 0.021,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0105
+    },
+    {
+      "university": "McMaster University",
+      "label": "per_term_renewal",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0096
+    },
+    {
+      "university": "Queen's University",
+      "label": "format_audio",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0096
+    },
+    {
+      "university": "Brock University",
+      "label": "format_audio",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0094
+    },
+    {
+      "university": "McMaster University",
+      "label": "speech_to_text",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0094
+    },
+    {
+      "university": "OCAD University",
+      "label": "per_term_renewal",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0094
+    },
+    {
+      "university": "Lakehead University",
+      "label": "format_audio",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0093
+    },
+    {
+      "university": "Wilfrid Laurier University",
+      "label": "format_audio",
+      "disagreement": 1.0,
+      "uncertainty": 0.019,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 1
+      },
+      "priority": 1.0093
+    },
+    {
+      "university": "University of Toronto Mississauga",
+      "label": "speech_to_text",
+      "disagreement": 1.0,
+      "uncertainty": 0.018,
+      "votes": {
+        "keyword": 0,
+        "embedding": 0,
+        "classifier": 1,
+        "hybrid": 1
+      },
+      "priority": 1.0089
+    },
+    {
+      "university": "Algoma University",
+      "label": "speech_to_text",
+      "disagreement": 1.0,
+      "uncertainty": 0.017,
+      "votes": {
+        "keyword": 0,
+        "embedding": 0,
+        "classifier": 1,
+        "hybrid": 1
+      },
+      "priority": 1.0086
+    },
+    {
+      "university": "Carleton University",
+      "label": "accessible_buildings",
+      "disagreement": 1.0,
+      "uncertainty": 0.017,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0083
+    },
+    {
+      "university": "York University (Glendon)",
+      "label": "counselling_individual",
+      "disagreement": 1.0,
+      "uncertainty": 0.016,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0081
+    },
+    {
+      "university": "York University (Keele)",
+      "label": "counselling_individual",
+      "disagreement": 1.0,
+      "uncertainty": 0.016,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0081
+    },
+    {
+      "university": "York University (Markham)",
+      "label": "counselling_individual",
+      "disagreement": 1.0,
+      "uncertainty": 0.016,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0081
+    },
+    {
+      "university": "University of Ottawa",
+      "label": "counselling_same_day",
+      "disagreement": 1.0,
+      "uncertainty": 0.015,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0076
+    },
+    {
+      "university": "University of Waterloo",
+      "label": "counselling_individual",
+      "disagreement": 1.0,
+      "uncertainty": 0.015,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0076
+    },
+    {
+      "university": "McMaster University",
+      "label": "counselling_individual",
+      "disagreement": 1.0,
+      "uncertainty": 0.015,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 1,
+        "hybrid": 0
+      },
+      "priority": 1.0074
+    },
+    {
+      "university": "Queen's University",
+      "label": "reduced_course_load",
+      "disagreement": 0.5,
+      "uncertainty": 0.974,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.9871
+    },
+    {
+      "university": "York University (Keele)",
+      "label": "reduced_course_load",
+      "disagreement": 0.5,
+      "uncertainty": 0.974,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.9871
+    },
+    {
+      "university": "York University (Markham)",
+      "label": "reduced_course_load",
+      "disagreement": 0.5,
+      "uncertainty": 0.974,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.9871
+    },
+    {
+      "university": "Queen's University",
+      "label": "accessible_housing",
+      "disagreement": 0.5,
+      "uncertainty": 0.893,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.9464
+    },
+    {
+      "university": "York University (Markham)",
+      "label": "accessible_housing",
+      "disagreement": 0.5,
+      "uncertainty": 0.893,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.9464
+    },
+    {
+      "university": "Algoma University",
+      "label": "accessible_housing",
+      "disagreement": 0.5,
+      "uncertainty": 0.729,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.8645
+    },
+    {
+      "university": "Laurentian University",
+      "label": "accessible_housing",
+      "disagreement": 0.5,
+      "uncertainty": 0.729,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.8645
+    },
+    {
+      "university": "University of Ottawa",
+      "label": "peer_support",
+      "disagreement": 0.5,
+      "uncertainty": 0.609,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.8044
+    },
+    {
+      "university": "Wilfrid Laurier University",
+      "label": "peer_support",
+      "disagreement": 0.5,
+      "uncertainty": 0.517,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.7587
+    },
+    {
+      "university": "Ontario Tech University",
+      "label": "peer_support",
+      "disagreement": 0.5,
+      "uncertainty": 0.49,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.745
+    },
+    {
+      "university": "Western University (Affiliated University Colleges)",
+      "label": "reduced_course_load",
+      "disagreement": 0.5,
+      "uncertainty": 0.469,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.7345
+    },
+    {
+      "university": "Universit\u00e9 de l\u2019Ontario fran\u00e7ais",
+      "label": "accessible_housing",
+      "disagreement": 0.5,
+      "uncertainty": 0.432,
+      "votes": {
+        "keyword": 0,
+        "embedding": 1,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.716
+    },
+    {
+      "university": "TMU",
+      "label": "accessible_buildings",
+      "disagreement": 0.5,
+      "uncertainty": 0.429,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.7146
+    },
+    {
+      "university": "York University (Keele)",
+      "label": "accessible_buildings",
+      "disagreement": 0.5,
+      "uncertainty": 0.429,
+      "votes": {
+        "keyword": 1,
+        "embedding": 0,
+        "classifier": 0,
+        "hybrid": 0
+      },
+      "priority": 0.7146
+    }
+  ],
+  "candidates": 731,
+  "already_judged": 165
+}

@@ -38,3 +38,6 @@ __pycache__/
 
 # Derived caches - regenerable, not source of truth
 data/clean/segment_embeddings.npz
+
+# Trained checkpoints - regenerable from extraction/train_classifier.py, ~90MB each
+models/

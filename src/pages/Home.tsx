@@ -23,7 +23,7 @@ export default function Home() {
       <main className="mx-auto flex max-w-[1728px] flex-col-reverse items-center gap-12 px-6 pb-24 pt-[120px] md:px-10 lg:flex-row lg:gap-[3.4%] lg:px-[8.9%] lg:pb-32 lg:pt-[190px]">
         {/* Copy */}
         <div className="w-full lg:max-w-[900px] lg:flex-1">
-          <h1 className="text-[clamp(3rem,7vw,6.75rem)] leading-[1.08] tracking-[-0.02em]">
+          <h1 className="text-[clamp(2.5rem,5.6vw,5.5rem)] leading-[1.08] tracking-[-0.02em]">
             A personalized path to your dream university.
           </h1>
 

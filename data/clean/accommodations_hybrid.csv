@@ -1,0 +1,29 @@
+university,exam_extended_time,exam_breaks,exam_private_room,deadline_extension,reduced_course_load,note_taking,lecture_recording,asl_interpretation,realtime_captioning,format_braille,format_audio,format_large_print,format_accessible_digital,assistive_tech_general,screen_reader,speech_to_text,accessible_buildings,accessible_housing,accessible_parking_transit,personalized_plan,per_term_renewal,interim_without_documentation,confidentiality,intake_meeting,counselling_individual,counselling_group,counselling_same_day,peer_support,crisis_line_24_7,transition_program,osap_bswd,bursaries_scholarships
+Algoma University,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,1,1,1,0,1,0,1,0,1,1
+Brock University,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,0,1,0,0,1,0,1,1,1,0,1,0,0,1,0,1,1
+Carleton University,1,1,1,0,0,1,1,1,1,1,1,0,1,1,0,0,0,0,0,1,1,0,0,1,1,1,0,0,1,0,1,1
+Lakehead University,1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,1,0,1,1
+Laurentian University,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,0,1,0,0,1,1,0,1,1,0,1,1,0,1,0,1,1
+McMaster University,1,1,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,1,1,0,1,1,1,1
+Nipissing University,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,0,1,0,0,1,1,0,0,1,1,1,1,0,1,0,1,1
+OCAD University,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,0,1,1
+Ontario Tech University,1,1,1,0,0,1,1,1,0,1,1,1,1,1,0,0,0,0,0,1,1,0,1,1,0,1,1,0,1,0,1,1
+Queen's University,1,1,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,0,1,0,0,1,1,1,1
+TMU,1,1,1,1,0,1,0,0,1,0,0,1,1,1,1,1,0,0,0,1,0,0,1,1,0,1,1,0,1,1,1,1
+Trent University,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,1,1,0,1,1,1,1,0,0,1,0,1,1
+Trent University (Durham GTA),1,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,1,1,0,0,1,0,1,1
+University of Guelph,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1
+University of Guelph-Humber,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1
+University of Ottawa,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1
+University of Toronto Mississauga,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1
+University of Toronto Scarborough,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1
+University of Toronto St.George,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,0,0,0,0,1,0,1,1,0,1,1,1,1
+University of Waterloo,1,1,0,1,0,1,0,0,1,0,0,1,1,1,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,0,1,1
+University of Windsor,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0
+Université de l’Ontario français,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0
+Western University (Affiliated University Colleges),1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,0,0,1,0,1,1
+Western University (Main Campus),1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,1,1,1,1,1,0,0,1,0,1,0
+Wilfrid Laurier University,1,1,1,0,0,1,0,0,0,1,1,1,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,1,0,1,1
+York University (Glendon),1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,1,1,1,1,0,1,1
+York University (Keele),1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,1,0,1,1
+York University (Markham),1,1,1,1,0,1,0,1,1,0,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,1,1,0,1,1

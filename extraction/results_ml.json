@@ -1,0 +1,2327 @@
+{
+  "baseline": {
+    "per_label": {
+      "counselling_group": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.2076549551264879,
+          0.9385096847238394
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_same_day": {
+        "precision": 1.0,
+        "recall": 0.6600000000000001,
+        "f1": 0.7951807228915664,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.39285714285714285,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_braille": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "realtime_captioning": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "transition_program": {
+        "precision": 1.0,
+        "recall": 0.45000000000000007,
+        "f1": 0.6206896551724138,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.21428571428571427,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_parking_transit": {
+        "precision": 1.0,
+        "recall": 0.2647058823529412,
+        "f1": 0.4186046511627907,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.10714285714285714,
+          1.0
+        ],
+        "thin": false
+      },
+      "per_term_renewal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_individual": {
+        "precision": 1.0,
+        "recall": 0.5869565217391305,
+        "f1": 0.7397260273972603,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.32142857142857145,
+          1.0
+        ],
+        "thin": false
+      },
+      "deadline_extension": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_large_print": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_housing": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.25,
+          1.0
+        ],
+        "thin": false
+      },
+      "note_taking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "screen_reader": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "speech_to_text": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "asl_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "reduced_course_load": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "bursaries_scholarships": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "confidentiality": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "lecture_recording": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "peer_support": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision_ci": [
+          0.2076549551264879,
+          0.9385096847238394
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_audio": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_buildings": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.5714285714285714,
+          1.0
+        ],
+        "thin": false
+      },
+      "intake_meeting": {
+        "precision": 1.0,
+        "recall": 0.8823529411764706,
+        "f1": 0.9375,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.7142857142857143,
+          1.0
+        ],
+        "thin": false
+      },
+      "personalized_plan": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526316,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.75,
+          1.0
+        ],
+        "thin": false
+      },
+      "exam_private_room": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.75,
+          0.75
+        ],
+        "thin": false
+      },
+      "interim_without_documentation": {
+        "precision": 1.0,
+        "recall": 0.45454545454545453,
+        "f1": 0.625,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.35714285714285715,
+          1.0
+        ],
+        "thin": false
+      },
+      "exam_breaks": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "format_accessible_digital": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 0,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      }
+    },
+    "missing": 0,
+    "labels": 28,
+    "judged": 165,
+    "macro": {
+      "precision": 0.9761904761904762,
+      "recall": 0.8660200285647857,
+      "f1": 0.8963131389419671
+    },
+    "micro": {
+      "precision": 0.9830757910228108,
+      "recall": 0.8766404199475065,
+      "f1": 0.9268123482483523
+    }
+  },
+  "embedding": {
+    "per_label": {
+      "counselling_group": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.1176182311592533,
+          0.769280067791163
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "counselling_same_day": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.29998832134152864,
+          0.9032306674407831
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "format_braille": {
+        "precision": 1.0,
+        "recall": 0.8607594936708861,
+        "f1": 0.9251700680272108,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.6732673267326733,
+          1.0
+        ],
+        "thin": false
+      },
+      "realtime_captioning": {
+        "precision": 1.0,
+        "recall": 0.6153846153846154,
+        "f1": 0.761904761904762,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.34782608695652173,
+          1.0
+        ],
+        "thin": false
+      },
+      "transition_program": {
+        "precision": 1.0,
+        "recall": 0.5454545454545455,
+        "f1": 0.7058823529411766,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.2857142857142857,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_parking_transit": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "per_term_renewal": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "counselling_individual": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.29998832134152864,
+          0.9032306674407831
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "deadline_extension": {
+        "precision": 1.0,
+        "recall": 0.6153846153846154,
+        "f1": 0.761904761904762,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.34782608695652173,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_large_print": {
+        "precision": 1.0,
+        "recall": 0.7758620689655172,
+        "f1": 0.8737864077669902,
+        "n_pos": 2,
+        "n_neg": 3,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.5357142857142857,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_housing": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.29998832134152864,
+          0.9032306674407831
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "note_taking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "screen_reader": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "speech_to_text": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "asl_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "reduced_course_load": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "bursaries_scholarships": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": NaN,
+        "n_pos": 1,
+        "n_neg": 4,
+        "precision_ci": [
+          0.0,
+          0.7934567085261071
+        ],
+        "recall_ci": [
+          0.0,
+          0.0
+        ],
+        "thin": true
+      },
+      "confidentiality": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "lecture_recording": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "peer_support": {
+        "precision": 0.5,
+        "recall": 0.703125,
+        "f1": 0.5844155844155844,
+        "n_pos": 2,
+        "n_neg": 10,
+        "precision_ci": [
+          0.09452865480086614,
+          0.9054713451991339
+        ],
+        "recall_ci": [
+          0.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_audio": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "accessible_buildings": {
+        "precision": 0.5,
+        "recall": 0.696969696969697,
+        "f1": 0.5822784810126582,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.15003570882017148,
+          0.8499642911798285
+        ],
+        "recall_ci": [
+          0.0,
+          0.8214285714285714
+        ],
+        "thin": false
+      },
+      "intake_meeting": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "personalized_plan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "exam_private_room": {
+        "precision": 1.0,
+        "recall": 0.9642857142857143,
+        "f1": 0.9818181818181818,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.5655085052479191,
+          1.0
+        ],
+        "recall_ci": [
+          0.9642857142857143,
+          0.9642857142857143
+        ],
+        "thin": true
+      },
+      "interim_without_documentation": {
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.43649056343635395,
+          0.9699474141282697
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "exam_breaks": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "format_accessible_digital": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 0,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      }
+    },
+    "missing": 0,
+    "labels": 28,
+    "judged": 165,
+    "macro": {
+      "precision": 0.8076388888888889,
+      "recall": 0.8657177395881496,
+      "f1": 0.8501613837540241
+    },
+    "micro": {
+      "precision": 0.7963517665130568,
+      "recall": 0.8079560508065144,
+      "f1": 0.8021119405871658
+    }
+  },
+  "multilabel": {
+    "per_label": {
+      "counselling_group": {
+        "precision": 0.5,
+        "recall": 0.6976744186046512,
+        "f1": 0.5825242718446603,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.09452865480086614,
+          0.9054713451991339
+        ],
+        "recall_ci": [
+          0.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_same_day": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "format_braille": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.18761280689940868,
+          0.8123871931005913
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "realtime_captioning": {
+        "precision": 1.0,
+        "recall": 0.6896551724137931,
+        "f1": 0.8163265306122449,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.425531914893617,
+          1.0
+        ],
+        "thin": false
+      },
+      "transition_program": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "accessible_parking_transit": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "per_term_renewal": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_individual": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "deadline_extension": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_large_print": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "n_pos": 5,
+        "n_neg": 0,
+        "precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "accessible_housing": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "note_taking": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 0,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "screen_reader": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "speech_to_text": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.18761280689940868,
+          0.8123871931005913
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "asl_interpretation": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "reduced_course_load": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "bursaries_scholarships": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "confidentiality": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "lecture_recording": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "peer_support": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 12,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "format_audio": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.18761280689940868,
+          0.8123871931005913
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "accessible_buildings": {
+        "precision": 1.0,
+        "recall": 0.8225806451612903,
+        "f1": 0.9026548672566371,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.6071428571428571,
+          1.0
+        ],
+        "thin": false
+      },
+      "intake_meeting": {
+        "precision": 1.0,
+        "recall": 0.3571428571428571,
+        "f1": 0.5263157894736841,
+        "n_pos": 1,
+        "n_neg": 5,
+        "precision_ci": [
+          0.20654329147389294,
+          1.0
+        ],
+        "recall_ci": [
+          0.25,
+          0.625
+        ],
+        "thin": true
+      },
+      "personalized_plan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "exam_private_room": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 6,
+        "n_neg": 0,
+        "precision_ci": [
+          0.6096569663469354,
+          0.9999999999999999
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "interim_without_documentation": {
+        "precision": 1.0,
+        "recall": 0.2542372881355932,
+        "f1": 0.4054054054054054,
+        "n_pos": 1,
+        "n_neg": 5,
+        "precision_ci": [
+          0.20654329147389294,
+          1.0
+        ],
+        "recall_ci": [
+          0.21428571428571427,
+          0.4054054054054054
+        ],
+        "thin": true
+      },
+      "exam_breaks": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 0,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "format_accessible_digital": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 0,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      }
+    },
+    "missing": 0,
+    "labels": 28,
+    "judged": 165,
+    "macro": {
+      "precision": 0.8068181818181818,
+      "recall": 0.9009677446117356,
+      "f1": 0.8139922745089002
+    },
+    "micro": {
+      "precision": 0.7829621380846326,
+      "recall": 0.725593395252838,
+      "f1": 0.7531869309051955
+    }
+  },
+  "classifier": {
+    "per_label": {
+      "counselling_group": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.2076549551264879,
+          0.9385096847238394
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_same_day": {
+        "precision": 0.6,
+        "recall": 0.5192307692307693,
+        "f1": 0.5567010309278351,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "recall_ci": [
+          0.2647058823529412,
+          0.6428571428571429
+        ],
+        "thin": true
+      },
+      "format_braille": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "realtime_captioning": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "transition_program": {
+        "precision": 1.0,
+        "recall": 0.5454545454545455,
+        "f1": 0.7058823529411766,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.2857142857142857,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_parking_transit": {
+        "precision": 0.5,
+        "recall": 0.04878048780487805,
+        "f1": 0.08888888888888888,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.09452865480086614,
+          0.9054713451991339
+        ],
+        "recall_ci": [
+          0.0,
+          0.13333333333333333
+        ],
+        "thin": false
+      },
+      "per_term_renewal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_individual": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "deadline_extension": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_large_print": {
+        "precision": 0.6666666666666666,
+        "recall": 0.9454545454545454,
+        "f1": 0.7819548872180451,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.2076549551264879,
+          0.9385096847238394
+        ],
+        "recall_ci": [
+          0.8125,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_housing": {
+        "precision": 1.0,
+        "recall": 0.45000000000000007,
+        "f1": 0.6206896551724138,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.21428571428571427,
+          1.0
+        ],
+        "thin": false
+      },
+      "note_taking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "screen_reader": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "speech_to_text": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "asl_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "reduced_course_load": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "bursaries_scholarships": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "confidentiality": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "lecture_recording": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.5,
+          1.0
+        ],
+        "thin": false
+      },
+      "peer_support": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "n_pos": 4,
+        "n_neg": 8,
+        "precision_ci": [
+          0.15003570882017148,
+          0.8499642911798285
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_audio": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "n_pos": 0,
+        "n_neg": 6,
+        "precision_ci": [
+          NaN,
+          NaN
+        ],
+        "recall_ci": [
+          NaN,
+          NaN
+        ],
+        "thin": true
+      },
+      "accessible_buildings": {
+        "precision": 1.0,
+        "recall": 0.6341463414634146,
+        "f1": 0.7761194029850745,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.4642857142857143,
+          1.0
+        ],
+        "thin": false
+      },
+      "intake_meeting": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "personalized_plan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "exam_private_room": {
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.962962962962963,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.5655085052479191,
+          1.0
+        ],
+        "recall_ci": [
+          0.9285714285714286,
+          0.9285714285714286
+        ],
+        "thin": true
+      },
+      "interim_without_documentation": {
+        "precision": 1.0,
+        "recall": 0.29411764705882354,
+        "f1": 0.45454545454545453,
+        "n_pos": 1,
+        "n_neg": 5,
+        "precision_ci": [
+          0.20654329147389294,
+          1.0
+        ],
+        "recall_ci": [
+          0.25,
+          0.45454545454545453
+        ],
+        "thin": true
+      },
+      "exam_breaks": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "format_accessible_digital": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 0,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      }
+    },
+    "missing": 0,
+    "labels": 28,
+    "judged": 165,
+    "macro": {
+      "precision": 0.8901234567901234,
+      "recall": 0.8561391024088297,
+      "f1": 0.842068143471744
+    },
+    "micro": {
+      "precision": 0.9055177626606198,
+      "recall": 0.8299847582097825,
+      "f1": 0.8661075766338924
+    }
+  },
+  "hybrid": {
+    "per_label": {
+      "counselling_group": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.2076549551264879,
+          0.9385096847238394
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_same_day": {
+        "precision": 0.75,
+        "recall": 0.6666666666666666,
+        "f1": 0.7058823529411765,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.3006360524426366,
+          0.9544139373553637
+        ],
+        "recall_ci": [
+          0.4,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_braille": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "realtime_captioning": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "transition_program": {
+        "precision": 1.0,
+        "recall": 0.5454545454545455,
+        "f1": 0.7058823529411766,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.2857142857142857,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_parking_transit": {
+        "precision": 1.0,
+        "recall": 0.05813953488372093,
+        "f1": 0.10989010989010987,
+        "n_pos": 1,
+        "n_neg": 5,
+        "precision_ci": [
+          0.20654329147389294,
+          1.0
+        ],
+        "recall_ci": [
+          0.03571428571428571,
+          0.15625
+        ],
+        "thin": true
+      },
+      "per_term_renewal": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.5,
+          1.0
+        ],
+        "thin": false
+      },
+      "counselling_individual": {
+        "precision": 1.0,
+        "recall": 0.5454545454545455,
+        "f1": 0.7058823529411766,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.2857142857142857,
+          1.0
+        ],
+        "thin": false
+      },
+      "deadline_extension": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_large_print": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_housing": {
+        "precision": 1.0,
+        "recall": 0.39473684210526316,
+        "f1": 0.5660377358490566,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.17857142857142858,
+          1.0
+        ],
+        "thin": false
+      },
+      "note_taking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "screen_reader": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "speech_to_text": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "asl_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "reduced_course_load": {
+        "precision": 1.0,
+        "recall": 0.46511627906976744,
+        "f1": 0.6349206349206349,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.2247191011235955,
+          1.0
+        ],
+        "thin": false
+      },
+      "bursaries_scholarships": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 2,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "confidentiality": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "lecture_recording": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.5,
+          1.0
+        ],
+        "thin": false
+      },
+      "peer_support": {
+        "precision": 0.5,
+        "recall": 0.5208333333333333,
+        "f1": 0.5102040816326531,
+        "n_pos": 2,
+        "n_neg": 10,
+        "precision_ci": [
+          0.09452865480086614,
+          0.9054713451991339
+        ],
+        "recall_ci": [
+          0.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "format_audio": {
+        "precision": 1.0,
+        "recall": 0.9484536082474226,
+        "f1": 0.9735449735449735,
+        "n_pos": 2,
+        "n_neg": 4,
+        "precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "recall_ci": [
+          0.8598130841121495,
+          1.0
+        ],
+        "thin": false
+      },
+      "accessible_buildings": {
+        "precision": 1.0,
+        "recall": 0.7222222222222222,
+        "f1": 0.8387096774193548,
+        "n_pos": 3,
+        "n_neg": 3,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          0.4642857142857143,
+          1.0
+        ],
+        "thin": false
+      },
+      "intake_meeting": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "personalized_plan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 4,
+        "n_neg": 2,
+        "precision_ci": [
+          0.5100999795960008,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": false
+      },
+      "exam_private_room": {
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.962962962962963,
+        "n_pos": 5,
+        "n_neg": 1,
+        "precision_ci": [
+          0.5655085052479191,
+          1.0
+        ],
+        "recall_ci": [
+          0.9285714285714286,
+          0.9285714285714286
+        ],
+        "thin": true
+      },
+      "interim_without_documentation": {
+        "precision": 1.0,
+        "recall": 0.29411764705882354,
+        "f1": 0.45454545454545453,
+        "n_pos": 1,
+        "n_neg": 5,
+        "precision_ci": [
+          0.20654329147389294,
+          1.0
+        ],
+        "recall_ci": [
+          0.25,
+          0.45454545454545453
+        ],
+        "thin": true
+      },
+      "exam_breaks": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 1,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      },
+      "format_accessible_digital": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n_pos": 3,
+        "n_neg": 0,
+        "precision_ci": [
+          0.43849391955098227,
+          1.0
+        ],
+        "recall_ci": [
+          1.0,
+          1.0
+        ],
+        "thin": true
+      }
+    },
+    "missing": 0,
+    "labels": 28,
+    "judged": 165,
+    "macro": {
+      "precision": 0.9398809523809524,
+      "recall": 0.806777380466705,
+      "f1": 0.8329156175986905
+    },
+    "micro": {
+      "precision": 0.9488938053097344,
+      "recall": 0.8357365549493375,
+      "f1": 0.8887277248238707
+    }
+  }
+}

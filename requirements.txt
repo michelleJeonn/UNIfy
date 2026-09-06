@@ -13,10 +13,12 @@ python-dotenv>=1.2.1
 # rule-based needs mapping over the same measured data.
 anthropic>=1.4.0
 
-# Extraction benchmark (extraction/embedding.py) - optional, large.
-# The keyword baseline, corpus, gold tooling and evaluator need none of this.
+# Extraction benchmark - optional, large. The keyword baseline, corpus, gold tooling
+# and evaluator need none of this; embedding.py, dataset.py, train_classifier.py,
+# classifier.py and hybrid.py all do.
 sentence-transformers>=6.0.0
 torch>=2.4.0
+transformers>=4.44.0
 
 # Removed with the Gemini backend: google-generativeai. Removed with the old
 # pipeline: tensorflow, scikit-learn, hmmlearn,

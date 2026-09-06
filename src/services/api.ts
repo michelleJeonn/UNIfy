@@ -10,6 +10,11 @@ export interface StudentProfile {
   courses: string;
   gpa: number;
   severity: 'mild' | 'moderate' | 'severe';
+  /**
+   * The student's first-choice school. Optional. When it names one of the 28
+   * universities in the dataset, the response carries `preferred_match`.
+   */
+  preferred_university?: string;
 }
 
 export interface Evidence {
@@ -34,6 +39,17 @@ export interface University {
   rating_basis?: string;
 }
 
+/**
+ * The student's own first-choice school, scored against the same 28-school
+ * ranking. `rank` is its position out of `total_universities`, so a school that
+ * misses the top five still comes back with a real, comparable standing.
+ */
+export interface PreferredMatch extends University {
+  rank: number;
+  total_universities: number;
+  in_top_5: boolean;
+}
+
 export interface RecommendationResponse {
   success: boolean;
   // 'claude_grounded' | 'rule_based_grounded' | 'unavailable'
@@ -42,6 +58,8 @@ export interface RecommendationResponse {
   needed_accommodations: string[];
   needed_accommodation_ids?: string[];
   recommendations: University[];
+  /** Null when no preference was given, or it isn't one of the 28 schools. */
+  preferred_match?: PreferredMatch | null;
   grounding?: {
     universities_considered: number;
     extractor: string;

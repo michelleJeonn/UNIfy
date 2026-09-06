@@ -41,13 +41,14 @@ export default function ScoreGauge({
           aria-label={`${label}: ${Math.round(value)} out of ${max}`}
         >
           <g transform="rotate(135 50 50)">
-            {/* Track */}
+            {/* Track. A recessive neutral rather than the design's pale green,
+                which disappears when the gauge sits on a pale green surface. */}
             <circle
               cx="50"
               cy="50"
               r={R}
               fill="none"
-              stroke="var(--color-unify-green-pale)"
+              stroke="rgb(0 0 0 / 0.12)"
               strokeWidth="9"
               strokeLinecap="round"
               strokeDasharray={`${arcLength} ${CIRCUMFERENCE}`}

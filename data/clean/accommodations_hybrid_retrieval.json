@@ -1,0 +1,264 @@
+{
+  "recall_target": 0.98,
+  "pairs_scored": 7346,
+  "pairs_total": 72480,
+  "silver_retrieval_recall": 0.9758,
+  "per_label": [
+    {
+      "label": "exam_extended_time",
+      "threshold": 0.5762,
+      "candidates": 62,
+      "silver_positives": 51,
+      "silver_retained": 50,
+      "retrieval_recall": 0.98
+    },
+    {
+      "label": "exam_breaks",
+      "threshold": 0.3939,
+      "candidates": 98,
+      "silver_positives": 56,
+      "silver_retained": 56,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "exam_private_room",
+      "threshold": 0.5236,
+      "candidates": 63,
+      "silver_positives": 42,
+      "silver_retained": 42,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "deadline_extension",
+      "threshold": 0.1776,
+      "candidates": 756,
+      "silver_positives": 18,
+      "silver_retained": 17,
+      "retrieval_recall": 0.944
+    },
+    {
+      "label": "reduced_course_load",
+      "threshold": 0.6813,
+      "candidates": 7,
+      "silver_positives": 8,
+      "silver_retained": 7,
+      "retrieval_recall": 0.875
+    },
+    {
+      "label": "note_taking",
+      "threshold": 0.3588,
+      "candidates": 115,
+      "silver_positives": 85,
+      "silver_retained": 84,
+      "retrieval_recall": 0.988
+    },
+    {
+      "label": "lecture_recording",
+      "threshold": 0.7088,
+      "candidates": 27,
+      "silver_positives": 28,
+      "silver_retained": 27,
+      "retrieval_recall": 0.964
+    },
+    {
+      "label": "asl_interpretation",
+      "threshold": 0.3042,
+      "candidates": 72,
+      "silver_positives": 20,
+      "silver_retained": 19,
+      "retrieval_recall": 0.95
+    },
+    {
+      "label": "realtime_captioning",
+      "threshold": 0.1543,
+      "candidates": 886,
+      "silver_positives": 23,
+      "silver_retained": 22,
+      "retrieval_recall": 0.957
+    },
+    {
+      "label": "format_braille",
+      "threshold": 0.5637,
+      "candidates": 26,
+      "silver_positives": 26,
+      "silver_retained": 26,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "format_audio",
+      "threshold": 0.2507,
+      "candidates": 243,
+      "silver_positives": 61,
+      "silver_retained": 59,
+      "retrieval_recall": 0.967
+    },
+    {
+      "label": "format_large_print",
+      "threshold": 0.3752,
+      "candidates": 56,
+      "silver_positives": 56,
+      "silver_retained": 56,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "format_accessible_digital",
+      "threshold": 0.3562,
+      "candidates": 311,
+      "silver_positives": 70,
+      "silver_retained": 68,
+      "retrieval_recall": 0.971
+    },
+    {
+      "label": "assistive_tech_general",
+      "threshold": 0.4092,
+      "candidates": 338,
+      "silver_positives": 70,
+      "silver_retained": 68,
+      "retrieval_recall": 0.971
+    },
+    {
+      "label": "screen_reader",
+      "threshold": 0.2476,
+      "candidates": 512,
+      "silver_positives": 37,
+      "silver_retained": 37,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "speech_to_text",
+      "threshold": 0.2397,
+      "candidates": 342,
+      "silver_positives": 12,
+      "silver_retained": 12,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "accessible_buildings",
+      "threshold": 0.5326,
+      "candidates": 177,
+      "silver_positives": 16,
+      "silver_retained": 16,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "accessible_housing",
+      "threshold": 0.6304,
+      "candidates": 25,
+      "silver_positives": 9,
+      "silver_retained": 8,
+      "retrieval_recall": 0.889
+    },
+    {
+      "label": "accessible_parking_transit",
+      "threshold": 0.6283,
+      "candidates": 9,
+      "silver_positives": 3,
+      "silver_retained": 3,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "personalized_plan",
+      "threshold": 0.5195,
+      "candidates": 85,
+      "silver_positives": 55,
+      "silver_retained": 53,
+      "retrieval_recall": 0.964
+    },
+    {
+      "label": "per_term_renewal",
+      "threshold": 0.176,
+      "candidates": 612,
+      "silver_positives": 41,
+      "silver_retained": 40,
+      "retrieval_recall": 0.976
+    },
+    {
+      "label": "interim_without_documentation",
+      "threshold": 0.4318,
+      "candidates": 246,
+      "silver_positives": 20,
+      "silver_retained": 19,
+      "retrieval_recall": 0.95
+    },
+    {
+      "label": "confidentiality",
+      "threshold": 0.4695,
+      "candidates": 39,
+      "silver_positives": 36,
+      "silver_retained": 36,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "intake_meeting",
+      "threshold": 0.3209,
+      "candidates": 492,
+      "silver_positives": 161,
+      "silver_retained": 157,
+      "retrieval_recall": 0.975
+    },
+    {
+      "label": "counselling_individual",
+      "threshold": 0.8389,
+      "candidates": 11,
+      "silver_positives": 9,
+      "silver_retained": 8,
+      "retrieval_recall": 0.889
+    },
+    {
+      "label": "counselling_group",
+      "threshold": 0.4322,
+      "candidates": 98,
+      "silver_positives": 19,
+      "silver_retained": 18,
+      "retrieval_recall": 0.947
+    },
+    {
+      "label": "counselling_same_day",
+      "threshold": 0.4796,
+      "candidates": 51,
+      "silver_positives": 13,
+      "silver_retained": 12,
+      "retrieval_recall": 0.923
+    },
+    {
+      "label": "peer_support",
+      "threshold": 0.5532,
+      "candidates": 19,
+      "silver_positives": 8,
+      "silver_retained": 7,
+      "retrieval_recall": 0.875
+    },
+    {
+      "label": "crisis_line_24_7",
+      "threshold": 0.1704,
+      "candidates": 648,
+      "silver_positives": 52,
+      "silver_retained": 50,
+      "retrieval_recall": 0.962
+    },
+    {
+      "label": "transition_program",
+      "threshold": 0.6212,
+      "candidates": 12,
+      "silver_positives": 8,
+      "silver_retained": 8,
+      "retrieval_recall": 1.0
+    },
+    {
+      "label": "osap_bswd",
+      "threshold": 0.4364,
+      "candidates": 307,
+      "silver_positives": 157,
+      "silver_retained": 153,
+      "retrieval_recall": 0.975
+    },
+    {
+      "label": "bursaries_scholarships",
+      "threshold": 0.3122,
+      "candidates": 601,
+      "silver_positives": 175,
+      "silver_retained": 172,
+      "retrieval_recall": 0.983
+    }
+  ]
+}

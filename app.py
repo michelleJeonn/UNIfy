@@ -79,8 +79,14 @@ def get_university_recommendations():
         "physical_health": "None", 
         "courses": "Computer Science",
         "gpa": 3.8,
-        "severity": "moderate"
+        "severity": "moderate",
+        "preferred_university": "McMaster University"   # optional
     }
+
+    `preferred_university` is optional. When given and it names one of the 28
+    schools, the response carries `preferred_match`: that school's entry plus its
+    `rank` out of `total_universities`, so the client can lead with how well the
+    student matches their own first choice rather than the top-scoring school.
 
     Served by claude_recommender.  Claude maps the profile onto the 32 accommodation
     labels in extraction/taxonomy.json; ranking is then deterministic arithmetic over
@@ -130,7 +136,10 @@ def get_university_recommendations():
             'physical_health': str(data['physical_health']),
             'courses': str(data['courses']),
             'gpa': float(data['gpa']),
-            'severity': str(data['severity'])
+            'severity': str(data['severity']),
+            # Optional. The student's first-choice school, scored and returned
+            # as `preferred_match` so the UI can lead with it.
+            'preferred_university': str(data.get('preferred_university') or '')
         }
 
         logger.info(
@@ -206,7 +215,10 @@ def get_claude_recommendations_endpoint():
             'physical_health': str(data['physical_health']),
             'courses': str(data['courses']),
             'gpa': float(data['gpa']),
-            'severity': str(data['severity'])
+            'severity': str(data['severity']),
+            # Optional. The student's first-choice school, scored and returned
+            # as `preferred_match` so the UI can lead with it.
+            'preferred_university': str(data.get('preferred_university') or '')
         }
 
         logger.info(f"Processing direct recommender request for: {student_profile}")

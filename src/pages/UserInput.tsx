@@ -90,6 +90,8 @@ export default function UserInput() {
   /** Per-step gating so a half-filled profile never reaches the API. */
   function validateStep(i: number): string | null {
     if (i === 0 && !answers.gpa) return "Please select your current GPA.";
+    if (i === 1 && !answers.universities.some(Boolean))
+      return "Please choose at least one university — your first choice is what we rate you against.";
     if (i === 1 && !answers.programs.some(Boolean))
       return "Please choose at least one program.";
     if (i === 2 && !answers.severity)
@@ -133,6 +135,9 @@ export default function UserInput() {
         severity:
           (answers.severity.toLowerCase() as StudentProfile["severity"]) ||
           "moderate",
+        // Their top choice from step 2, so the results can lead with how well
+        // they match the school they actually want.
+        preferred_university: answers.universities.find(Boolean) || "",
       };
 
       const result = await getRecommendations(profile);

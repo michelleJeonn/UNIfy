@@ -39,7 +39,8 @@ export const UNIVERSITY_OPTIONS = [
   "Trent University",
   "Trent University (Durham GTA)",
   "University of Windsor",
-  "Université de l'Ontario français",
+  // Curly apostrophe, matching data/clean/universities.csv exactly.
+  "Université de l’Ontario français",
   "Western University (Main Campus)",
   "Western University (Affiliated University Colleges)",
 ];
